@@ -8,11 +8,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Streaming Analytics
   - Apache Flink
-  - Real-Time Processing
-  - Big Data
   - AWS
+  - Big Data
+  - Real-Time Processing
+  - Streaming Analytics
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/apis.yml
 created: '2026-03-16'
@@ -28,9 +28,9 @@ apis:
     humanURL: https://aws.amazon.com/managed-service-apache-flink/
     baseURL: https://kinesisanalytics.amazonaws.com
     tags:
-      - Streaming Analytics
       - Apache Flink
       - Real-Time Processing
+      - Streaming Analytics
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
