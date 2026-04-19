@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-start-application-request-structure.json",
+  "name": "StartApplicationRequest",
+  "description": "StartApplicationRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationName"
+        },
+        {
+          "description": "The name of the application."
+        }
+      ]
+    },
+    "RunConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RunConfiguration"
+        },
+        {
+          "description": "Identifies the run configuration (start parameters) of a Kinesis Data Analytics application."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationName"
+  ]
+}

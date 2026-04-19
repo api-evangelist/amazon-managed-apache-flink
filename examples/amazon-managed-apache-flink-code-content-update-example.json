@@ -1,0 +1,5 @@
+{
+  "TextContentUpdate": "example-value",
+  "ZipFileContentUpdate": "example-value",
+  "S3ContentLocationUpdate": "example-value"
+}

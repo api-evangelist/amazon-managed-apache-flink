@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-describe-application-response-structure.json",
+  "name": "DescribeApplicationResponse",
+  "description": "DescribeApplicationResponse schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationDetail": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationDetail"
+        },
+        {
+          "description": "Provides a description of the application, such as the application's Amazon Resource Name (ARN), status, and latest version."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationDetail"
+  ]
+}

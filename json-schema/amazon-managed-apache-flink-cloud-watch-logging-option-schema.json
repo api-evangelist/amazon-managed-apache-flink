@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-cloud-watch-logging-option-schema.json",
+  "title": "CloudWatchLoggingOption",
+  "description": "Provides a description of Amazon CloudWatch logging options, including the log stream Amazon Resource Name (ARN). ",
+  "type": "object",
+  "properties": {
+    "LogStreamARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogStreamARN"
+        },
+        {
+          "description": "The ARN of the CloudWatch log to receive application messages."
+        }
+      ]
+    }
+  },
+  "required": [
+    "LogStreamARN"
+  ]
+}

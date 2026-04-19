@@ -1,0 +1,10 @@
+{
+  "SqlApplicationConfigurationDescription": "Example resource description",
+  "ApplicationCodeConfigurationDescription": "Example resource description",
+  "RunConfigurationDescription": "Example resource description",
+  "FlinkApplicationConfigurationDescription": "Example resource description",
+  "EnvironmentPropertyDescriptions": "Example resource description",
+  "ApplicationSnapshotConfigurationDescription": "Example resource description",
+  "VpcConfigurationDescriptions": "Example resource description",
+  "ZeppelinApplicationConfigurationDescription": "Example resource description"
+}

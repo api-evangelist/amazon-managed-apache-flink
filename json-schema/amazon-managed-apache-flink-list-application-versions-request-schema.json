@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-list-application-versions-request-schema.json",
+  "title": "ListApplicationVersionsRequest",
+  "description": "ListApplicationVersionsRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationName"
+        },
+        {
+          "description": "The name of the application for which you want to list all versions."
+        }
+      ]
+    },
+    "Limit": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ListApplicationVersionsInputLimit"
+        },
+        {
+          "description": "The maximum number of versions to list in this invocation of the operation."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": "If a previous invocation of this operation returned a pagination token, pass it into this value to retrieve the next set of results. For more information about pagination, see <a href=\"https://docs.aws.amazon.com/cli/latest/userguide/pagination.html\">Using the Amazon Command Line Interface's Pagination Options</a>."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationName"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "BucketARN": "arn:aws:service:us-east-1:123456789012:resource/id",
+  "FileKey": "example-value",
+  "ReferenceRoleARN": "arn:aws:service:us-east-1:123456789012:resource/id"
+}

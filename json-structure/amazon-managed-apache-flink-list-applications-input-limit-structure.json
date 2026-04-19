@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-list-applications-input-limit-structure.json",
+  "name": "ListApplicationsInputLimit",
+  "description": "ListApplicationsInputLimit schema from Amazon Managed Service for Apache Flink API",
+  "type": "int32",
+  "minimum": 1,
+  "maximum": 50
+}

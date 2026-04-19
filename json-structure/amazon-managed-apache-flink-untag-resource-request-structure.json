@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-untag-resource-request-structure.json",
+  "name": "UntagResourceRequest",
+  "description": "UntagResourceRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ResourceARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/KinesisAnalyticsARN"
+        },
+        {
+          "description": "The ARN of the Kinesis Data Analytics application from which to remove the tags."
+        }
+      ]
+    },
+    "TagKeys": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TagKeys"
+        },
+        {
+          "description": "A list of keys of tags to remove from the specified application."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceARN",
+    "TagKeys"
+  ]
+}

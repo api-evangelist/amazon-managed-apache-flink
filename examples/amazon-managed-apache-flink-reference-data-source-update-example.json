@@ -1,0 +1,6 @@
+{
+  "ReferenceId": "abc12345",
+  "TableNameUpdate": "my-resource",
+  "S3ReferenceDataSourceUpdate": "example-value",
+  "ReferenceSchemaUpdate": "example-value"
+}

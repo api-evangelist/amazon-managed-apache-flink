@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-cloud-watch-logging-option-descriptions-schema.json",
+  "title": "CloudWatchLoggingOptionDescriptions",
+  "description": "CloudWatchLoggingOptionDescriptions schema from Amazon Managed Service for Apache Flink API",
+  "type": "array",
+  "items": {
+    "$ref": "#/components/schemas/CloudWatchLoggingOptionDescription"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "ConfigurationTypeUpdate": "example-value",
+  "ParallelismUpdate": "example-value",
+  "ParallelismPerKPUUpdate": "example-value",
+  "AutoScalingEnabledUpdate": "example-value"
+}

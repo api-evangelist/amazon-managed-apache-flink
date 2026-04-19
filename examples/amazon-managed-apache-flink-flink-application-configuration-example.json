@@ -1,0 +1,5 @@
+{
+  "CheckpointConfiguration": "example-value",
+  "MonitoringConfiguration": "example-value",
+  "ParallelismConfiguration": "example-value"
+}

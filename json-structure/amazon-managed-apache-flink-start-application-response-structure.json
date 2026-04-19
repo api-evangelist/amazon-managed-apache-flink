@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-start-application-response-structure.json",
+  "name": "StartApplicationResponse",
+  "description": "StartApplicationResponse schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {}
+}

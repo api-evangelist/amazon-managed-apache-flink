@@ -1,0 +1,7 @@
+{
+  "ResourceARN": "arn:aws:service:us-east-1:123456789012:resource/id",
+  "ServiceExecutionRole": "example-value",
+  "InputStartingPositionConfiguration": "example-value",
+  "S3Configuration": "example-value",
+  "InputProcessingConfiguration": "example-value"
+}

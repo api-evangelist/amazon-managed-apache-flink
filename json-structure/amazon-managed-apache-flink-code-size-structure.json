@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-code-size-structure.json",
+  "name": "CodeSize",
+  "description": "CodeSize schema from Amazon Managed Service for Apache Flink API",
+  "type": "int32",
+  "minimum": 0,
+  "maximum": 52428800
+}

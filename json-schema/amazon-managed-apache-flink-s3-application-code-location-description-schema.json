@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-s3-application-code-location-description-schema.json",
+  "title": "S3ApplicationCodeLocationDescription",
+  "description": "Describes the location of an application's code stored in an S3 bucket.",
+  "type": "object",
+  "properties": {
+    "BucketARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BucketARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) for the S3 bucket containing the application code."
+        }
+      ]
+    },
+    "FileKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FileKey"
+        },
+        {
+          "description": "The file key for the object containing the application code."
+        }
+      ]
+    },
+    "ObjectVersion": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ObjectVersion"
+        },
+        {
+          "description": "The version of the object containing the application code."
+        }
+      ]
+    }
+  },
+  "required": [
+    "BucketARN",
+    "FileKey"
+  ]
+}

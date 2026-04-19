@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-tag-resource-request-structure.json",
+  "name": "TagResourceRequest",
+  "description": "TagResourceRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ResourceARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/KinesisAnalyticsARN"
+        },
+        {
+          "description": "The ARN of the application to assign the tags."
+        }
+      ]
+    },
+    "Tags": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Tags"
+        },
+        {
+          "description": "The key-value tags to assign to the application."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceARN",
+    "Tags"
+  ]
+}

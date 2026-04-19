@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-cloud-watch-logging-option-update-schema.json",
+  "title": "CloudWatchLoggingOptionUpdate",
+  "description": "Describes the Amazon CloudWatch logging option updates.",
+  "type": "object",
+  "properties": {
+    "CloudWatchLoggingOptionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Id"
+        },
+        {
+          "description": "The ID of the CloudWatch logging option to update"
+        }
+      ]
+    },
+    "LogStreamARNUpdate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogStreamARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the CloudWatch log to receive application messages."
+        }
+      ]
+    }
+  },
+  "required": [
+    "CloudWatchLoggingOptionId"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-application-status-structure.json",
+  "name": "ApplicationStatus",
+  "description": "ApplicationStatus schema from Amazon Managed Service for Apache Flink API",
+  "type": "string",
+  "enum": [
+    "DELETING",
+    "STARTING",
+    "STOPPING",
+    "READY",
+    "RUNNING",
+    "UPDATING",
+    "AUTOSCALING",
+    "FORCE_STOPPING",
+    "ROLLING_BACK",
+    "MAINTENANCE",
+    "ROLLED_BACK"
+  ]
+}

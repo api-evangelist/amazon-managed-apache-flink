@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-application-maintenance-configuration-description-schema.json",
+  "title": "ApplicationMaintenanceConfigurationDescription",
+  "description": "The details of the maintenance configuration for the application.",
+  "type": "object",
+  "properties": {
+    "ApplicationMaintenanceWindowStartTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationMaintenanceWindowStartTime"
+        },
+        {
+          "description": "The start time for the maintenance window."
+        }
+      ]
+    },
+    "ApplicationMaintenanceWindowEndTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationMaintenanceWindowEndTime"
+        },
+        {
+          "description": "The end time for the maintenance window."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationMaintenanceWindowStartTime",
+    "ApplicationMaintenanceWindowEndTime"
+  ]
+}

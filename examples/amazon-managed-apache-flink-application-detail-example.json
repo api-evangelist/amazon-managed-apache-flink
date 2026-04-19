@@ -1,0 +1,19 @@
+{
+  "ApplicationARN": "arn:aws:service:us-east-1:123456789012:resource/id",
+  "ApplicationDescription": "Example resource description",
+  "ApplicationName": "my-resource",
+  "RuntimeEnvironment": "example-value",
+  "ServiceExecutionRole": "example-value",
+  "ApplicationStatus": "ACTIVE",
+  "ApplicationVersionId": "abc12345",
+  "CreateTimestamp": "example-value",
+  "LastUpdateTimestamp": "example-value",
+  "ApplicationConfigurationDescription": "Example resource description",
+  "CloudWatchLoggingOptionDescriptions": "Example resource description",
+  "ApplicationMaintenanceConfigurationDescription": "Example resource description",
+  "ApplicationVersionUpdatedFrom": "example-value",
+  "ApplicationVersionRolledBackFrom": "example-value",
+  "ConditionalToken": "example-value",
+  "ApplicationVersionRolledBackTo": "example-value",
+  "ApplicationMode": "example-value"
+}

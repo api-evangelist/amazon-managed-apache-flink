@@ -1,0 +1,11 @@
+{
+  "InputId": "abc12345",
+  "NamePrefix": "my-resource",
+  "InAppStreamNames": "my-resource",
+  "InputProcessingConfigurationDescription": "Example resource description",
+  "KinesisStreamsInputDescription": "Example resource description",
+  "KinesisFirehoseInputDescription": "Example resource description",
+  "InputSchema": "example-value",
+  "InputParallelism": "example-value",
+  "InputStartingPositionConfiguration": "example-value"
+}

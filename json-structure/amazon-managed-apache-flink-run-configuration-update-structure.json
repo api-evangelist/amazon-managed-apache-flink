@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-run-configuration-update-structure.json",
+  "name": "RunConfigurationUpdate",
+  "description": "Describes the updates to the starting parameters for a Kinesis Data Analytics application.",
+  "type": "object",
+  "properties": {
+    "FlinkRunConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FlinkRunConfiguration"
+        },
+        {
+          "description": "Describes the starting parameters for a Flink-based Kinesis Data Analytics application."
+        }
+      ]
+    },
+    "ApplicationRestoreConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationRestoreConfiguration"
+        },
+        {
+          "description": "Describes updates to the restore behavior of a restarting application."
+        }
+      ]
+    }
+  }
+}

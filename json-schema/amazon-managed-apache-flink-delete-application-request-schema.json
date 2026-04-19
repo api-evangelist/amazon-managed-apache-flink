@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-delete-application-request-schema.json",
+  "title": "DeleteApplicationRequest",
+  "description": "DeleteApplicationRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationName"
+        },
+        {
+          "description": "The name of the application to delete."
+        }
+      ]
+    },
+    "CreateTimestamp": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "Use the <code>DescribeApplication</code> operation to get this value."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationName",
+    "CreateTimestamp"
+  ]
+}

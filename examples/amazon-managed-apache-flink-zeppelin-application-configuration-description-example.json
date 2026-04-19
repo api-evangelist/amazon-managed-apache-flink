@@ -1,0 +1,6 @@
+{
+  "MonitoringConfigurationDescription": "Example resource description",
+  "CatalogConfigurationDescription": "Example resource description",
+  "DeployAsApplicationConfigurationDescription": "Example resource description",
+  "CustomArtifactsConfigurationDescription": "Example resource description"
+}

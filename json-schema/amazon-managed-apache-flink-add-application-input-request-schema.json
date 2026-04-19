@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-add-application-input-request-schema.json",
+  "title": "AddApplicationInputRequest",
+  "description": "AddApplicationInputRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationName"
+        },
+        {
+          "description": "The name of your existing application to which you want to add the streaming source."
+        }
+      ]
+    },
+    "CurrentApplicationVersionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationVersionId"
+        },
+        {
+          "description": "The current version of your application. You must provide the <code>ApplicationVersionID</code> or the <code>ConditionalToken</code>.You can use the <a>DescribeApplication</a> operation to find the current application version."
+        }
+      ]
+    },
+    "Input": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Input"
+        },
+        {
+          "description": "The <a>Input</a> to add."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationName",
+    "CurrentApplicationVersionId",
+    "Input"
+  ]
+}

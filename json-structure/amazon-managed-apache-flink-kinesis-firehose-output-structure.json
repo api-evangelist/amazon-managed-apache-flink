@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-kinesis-firehose-output-structure.json",
+  "name": "KinesisFirehoseOutput",
+  "description": "For a SQL-based Kinesis Data Analytics application, when configuring application output, identifies a Kinesis Data Firehose delivery stream as the destination. You provide the stream Amazon Resource Name (ARN) of the delivery stream. ",
+  "type": "object",
+  "properties": {
+    "ResourceARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceARN"
+        },
+        {
+          "description": "The ARN of the destination delivery stream to write to."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceARN"
+  ]
+}

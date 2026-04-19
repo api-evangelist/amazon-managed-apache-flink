@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-describe-application-version-request-structure.json",
+  "name": "DescribeApplicationVersionRequest",
+  "description": "DescribeApplicationVersionRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationName"
+        },
+        {
+          "description": "The name of the application for which you want to get the version description."
+        }
+      ]
+    },
+    "ApplicationVersionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationVersionId"
+        },
+        {
+          "description": "The ID of the application version for which you want to get the description."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationName",
+    "ApplicationVersionId"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "CheckpointConfigurationUpdate": "example-value",
+  "MonitoringConfigurationUpdate": "example-value",
+  "ParallelismConfigurationUpdate": "example-value"
+}

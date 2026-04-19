@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-environment-property-updates-structure.json",
+  "name": "EnvironmentPropertyUpdates",
+  "description": "Describes updates to the execution property groups for a Flink-based Kinesis Data Analytics application or a Studio notebook.",
+  "type": "object",
+  "properties": {
+    "PropertyGroups": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PropertyGroups"
+        },
+        {
+          "description": "Describes updates to the execution property groups."
+        }
+      ]
+    }
+  },
+  "required": [
+    "PropertyGroups"
+  ]
+}

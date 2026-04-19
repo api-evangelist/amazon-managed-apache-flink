@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-object-version-structure.json",
+  "name": "ObjectVersion",
+  "description": "ObjectVersion schema from Amazon Managed Service for Apache Flink API",
+  "type": "string"
+}

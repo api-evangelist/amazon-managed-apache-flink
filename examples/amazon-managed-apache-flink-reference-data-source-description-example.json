@@ -1,0 +1,6 @@
+{
+  "ReferenceId": "abc12345",
+  "TableName": "my-resource",
+  "S3ReferenceDataSourceDescription": "Example resource description",
+  "ReferenceSchema": "example-value"
+}

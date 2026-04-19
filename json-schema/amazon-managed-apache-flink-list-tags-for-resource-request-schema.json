@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-list-tags-for-resource-request-schema.json",
+  "title": "ListTagsForResourceRequest",
+  "description": "ListTagsForResourceRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ResourceARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/KinesisAnalyticsARN"
+        },
+        {
+          "description": "The ARN of the application for which to retrieve tags."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceARN"
+  ]
+}

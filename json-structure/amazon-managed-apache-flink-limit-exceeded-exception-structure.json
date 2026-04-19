@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-limit-exceeded-exception-structure.json",
+  "name": "LimitExceededException",
+  "description": "LimitExceededException schema from Amazon Managed Service for Apache Flink API"
+}

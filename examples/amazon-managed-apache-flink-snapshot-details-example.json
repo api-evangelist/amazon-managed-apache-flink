@@ -1,0 +1,6 @@
+{
+  "SnapshotName": "my-resource",
+  "SnapshotStatus": "ACTIVE",
+  "ApplicationVersionId": "abc12345",
+  "SnapshotCreationTimestamp": "example-value"
+}

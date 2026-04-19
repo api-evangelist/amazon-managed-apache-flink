@@ -1,0 +1,5 @@
+{
+  "TableName": "my-resource",
+  "S3ReferenceDataSource": "example-value",
+  "ReferenceSchema": "example-value"
+}

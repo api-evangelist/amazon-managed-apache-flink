@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-delete-application-snapshot-request-schema.json",
+  "title": "DeleteApplicationSnapshotRequest",
+  "description": "DeleteApplicationSnapshotRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationName"
+        },
+        {
+          "description": "The name of an existing application."
+        }
+      ]
+    },
+    "SnapshotName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotName"
+        },
+        {
+          "description": "The identifier for the snapshot delete."
+        }
+      ]
+    },
+    "SnapshotCreationTimestamp": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The creation timestamp of the application snapshot to delete. You can retrieve this value using or ."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationName",
+    "SnapshotName",
+    "SnapshotCreationTimestamp"
+  ]
+}

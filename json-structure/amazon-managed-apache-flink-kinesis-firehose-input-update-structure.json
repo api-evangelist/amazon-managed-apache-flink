@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-kinesis-firehose-input-update-structure.json",
+  "name": "KinesisFirehoseInputUpdate",
+  "description": "For a SQL-based Kinesis Data Analytics application, when updating application input configuration, provides information about a Kinesis Data Firehose delivery stream as the streaming source.",
+  "type": "object",
+  "properties": {
+    "ResourceARNUpdate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the input delivery stream to read."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceARNUpdate"
+  ]
+}

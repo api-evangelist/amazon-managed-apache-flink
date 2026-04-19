@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-delete-application-reference-data-source-request-structure.json",
+  "name": "DeleteApplicationReferenceDataSourceRequest",
+  "description": "DeleteApplicationReferenceDataSourceRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationName"
+        },
+        {
+          "description": "The name of an existing application."
+        }
+      ]
+    },
+    "CurrentApplicationVersionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationVersionId"
+        },
+        {
+          "description": "The current application version. You can use the <a>DescribeApplication</a> operation to get the current application version. If the version specified is not the current version, the <code>ConcurrentModificationException</code> is returned."
+        }
+      ]
+    },
+    "ReferenceId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Id"
+        },
+        {
+          "description": "The ID of the reference data source. When you add a reference data source to your application using the <a>AddApplicationReferenceDataSource</a>, Kinesis Data Analytics assigns an ID. You can use the <a>DescribeApplication</a> operation to get the reference ID. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationName",
+    "CurrentApplicationVersionId",
+    "ReferenceId"
+  ]
+}

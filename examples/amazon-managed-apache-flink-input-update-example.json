@@ -1,0 +1,9 @@
+{
+  "InputId": "abc12345",
+  "NamePrefixUpdate": "my-resource",
+  "InputProcessingConfigurationUpdate": "example-value",
+  "KinesisStreamsInputUpdate": "example-value",
+  "KinesisFirehoseInputUpdate": "example-value",
+  "InputSchemaUpdate": "example-value",
+  "InputParallelismUpdate": "example-value"
+}

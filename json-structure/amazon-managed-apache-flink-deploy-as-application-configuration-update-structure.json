@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-deploy-as-application-configuration-update-structure.json",
+  "name": "DeployAsApplicationConfigurationUpdate",
+  "description": "Updates to the configuration information required to deploy an Amazon Data Analytics Studio notebook as an application with durable state.",
+  "type": "object",
+  "properties": {
+    "S3ContentLocationUpdate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/S3ContentBaseLocationUpdate"
+        },
+        {
+          "description": "Updates to the location that holds the data required to specify an Amazon Data Analytics application."
+        }
+      ]
+    }
+  }
+}

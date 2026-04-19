@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-application-version-summary-structure.json",
+  "name": "ApplicationVersionSummary",
+  "description": "The summary of the application version.",
+  "type": "object",
+  "properties": {
+    "ApplicationVersionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationVersionId"
+        },
+        {
+          "description": "The ID of the application version. Kinesis Data Analytics updates the <code>ApplicationVersionId</code> each time you update the application."
+        }
+      ]
+    },
+    "ApplicationStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationStatus"
+        },
+        {
+          "description": "The status of the application."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationVersionId",
+    "ApplicationStatus"
+  ]
+}

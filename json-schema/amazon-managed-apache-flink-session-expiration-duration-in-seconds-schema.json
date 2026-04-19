@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-session-expiration-duration-in-seconds-schema.json",
+  "title": "SessionExpirationDurationInSeconds",
+  "description": "SessionExpirationDurationInSeconds schema from Amazon Managed Service for Apache Flink API",
+  "type": "integer",
+  "minimum": 1800,
+  "maximum": 43200
+}

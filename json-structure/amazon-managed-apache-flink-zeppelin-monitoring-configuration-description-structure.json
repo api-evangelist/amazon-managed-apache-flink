@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-zeppelin-monitoring-configuration-description-structure.json",
+  "name": "ZeppelinMonitoringConfigurationDescription",
+  "description": "The monitoring configuration for Apache Zeppelin within a Kinesis Data Analytics Studio notebook.",
+  "type": "object",
+  "properties": {
+    "LogLevel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogLevel"
+        },
+        {
+          "description": "Describes the verbosity of the CloudWatch Logs for an application."
+        }
+      ]
+    }
+  }
+}

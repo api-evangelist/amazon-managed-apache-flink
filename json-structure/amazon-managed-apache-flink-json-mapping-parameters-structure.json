@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-json-mapping-parameters-structure.json",
+  "name": "JSONMappingParameters",
+  "description": "For a SQL-based Kinesis Data Analytics application, provides additional mapping information when JSON is the record format on the streaming source.",
+  "type": "object",
+  "properties": {
+    "RecordRowPath": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RecordRowPath"
+        },
+        {
+          "description": "The path to the top-level parent that contains the records."
+        }
+      ]
+    }
+  },
+  "required": [
+    "RecordRowPath"
+  ]
+}

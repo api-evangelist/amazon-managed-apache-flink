@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-kinesis-streams-input-structure.json",
+  "name": "KinesisStreamsInput",
+  "description": " Identifies a Kinesis data stream as the streaming source. You provide the stream's Amazon Resource Name (ARN).",
+  "type": "object",
+  "properties": {
+    "ResourceARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceARN"
+        },
+        {
+          "description": "The ARN of the input Kinesis data stream to read."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceARN"
+  ]
+}

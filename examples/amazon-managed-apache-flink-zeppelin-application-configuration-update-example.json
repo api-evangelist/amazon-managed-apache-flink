@@ -1,0 +1,6 @@
+{
+  "MonitoringConfigurationUpdate": "example-value",
+  "CatalogConfigurationUpdate": "example-value",
+  "DeployAsApplicationConfigurationUpdate": "example-value",
+  "CustomArtifactsConfigurationUpdate": "example-value"
+}

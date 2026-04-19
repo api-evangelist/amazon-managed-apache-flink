@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-describe-application-request-schema.json",
+  "title": "DescribeApplicationRequest",
+  "description": "DescribeApplicationRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationName"
+        },
+        {
+          "description": "The name of the application."
+        }
+      ]
+    },
+    "IncludeAdditionalDetails": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanObject"
+        },
+        {
+          "description": "Displays verbose information about a Kinesis Data Analytics application, including the application's job plan."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationName"
+  ]
+}

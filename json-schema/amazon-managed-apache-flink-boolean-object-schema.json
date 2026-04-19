@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-boolean-object-schema.json",
+  "title": "BooleanObject",
+  "description": "BooleanObject schema from Amazon Managed Service for Apache Flink API",
+  "type": "boolean"
+}

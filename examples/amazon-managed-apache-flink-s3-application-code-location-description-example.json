@@ -1,0 +1,5 @@
+{
+  "BucketARN": "arn:aws:service:us-east-1:123456789012:resource/id",
+  "FileKey": "example-value",
+  "ObjectVersion": "example-value"
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-delete-application-input-processing-configuration-request-structure.json",
+  "name": "DeleteApplicationInputProcessingConfigurationRequest",
+  "description": "DeleteApplicationInputProcessingConfigurationRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationName"
+        },
+        {
+          "description": "The name of the application."
+        }
+      ]
+    },
+    "CurrentApplicationVersionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationVersionId"
+        },
+        {
+          "description": "The application version. You can use the <a>DescribeApplication</a> operation to get the current application version. If the version specified is not the current version, the <code>ConcurrentModificationException</code> is returned. "
+        }
+      ]
+    },
+    "InputId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Id"
+        },
+        {
+          "description": "The ID of the input configuration from which to delete the input processing configuration. You can get a list of the input IDs for an application by using the <a>DescribeApplication</a> operation."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationName",
+    "CurrentApplicationVersionId",
+    "InputId"
+  ]
+}

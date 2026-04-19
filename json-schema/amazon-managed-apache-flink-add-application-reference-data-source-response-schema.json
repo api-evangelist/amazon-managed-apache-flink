@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-add-application-reference-data-source-response-schema.json",
+  "title": "AddApplicationReferenceDataSourceResponse",
+  "description": "AddApplicationReferenceDataSourceResponse schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceARN"
+        },
+        {
+          "description": "The application Amazon Resource Name (ARN)."
+        }
+      ]
+    },
+    "ApplicationVersionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationVersionId"
+        },
+        {
+          "description": "The updated application version ID. Kinesis Data Analytics increments this ID when the application is updated."
+        }
+      ]
+    },
+    "ReferenceDataSourceDescriptions": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReferenceDataSourceDescriptions"
+        },
+        {
+          "description": "Describes reference data sources configured for the application. "
+        }
+      ]
+    }
+  }
+}

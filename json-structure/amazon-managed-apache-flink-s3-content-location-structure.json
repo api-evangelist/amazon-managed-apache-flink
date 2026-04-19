@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-s3-content-location-structure.json",
+  "name": "S3ContentLocation",
+  "description": "For a Kinesis Data Analytics application provides a description of an Amazon S3 object, including the Amazon Resource Name (ARN) of the S3 bucket, the name of the Amazon S3 object that contains the data, and the version number of the Amazon S3 object that contains the data. ",
+  "type": "object",
+  "properties": {
+    "BucketARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BucketARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) for the S3 bucket containing the application code."
+        }
+      ]
+    },
+    "FileKey": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/FileKey"
+        },
+        {
+          "description": "The file key for the object containing the application code."
+        }
+      ]
+    },
+    "ObjectVersion": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ObjectVersion"
+        },
+        {
+          "description": "The version of the object containing the application code."
+        }
+      ]
+    }
+  },
+  "required": [
+    "BucketARN",
+    "FileKey"
+  ]
+}

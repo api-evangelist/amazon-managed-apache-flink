@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-add-application-reference-data-source-request-structure.json",
+  "name": "AddApplicationReferenceDataSourceRequest",
+  "description": "AddApplicationReferenceDataSourceRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationName"
+        },
+        {
+          "description": "The name of an existing application."
+        }
+      ]
+    },
+    "CurrentApplicationVersionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationVersionId"
+        },
+        {
+          "description": "The version of the application for which you are adding the reference data source. You can use the <a>DescribeApplication</a> operation to get the current application version. If the version specified is not the current version, the <code>ConcurrentModificationException</code> is returned."
+        }
+      ]
+    },
+    "ReferenceDataSource": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReferenceDataSource"
+        },
+        {
+          "description": "The reference data source can be an object in your Amazon S3 bucket. Kinesis Data Analytics reads the object and copies the data into the in-application table that is created. You provide an S3 bucket, object key name, and the resulting in-application table that is created. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationName",
+    "CurrentApplicationVersionId",
+    "ReferenceDataSource"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-rollback-application-response-structure.json",
+  "name": "RollbackApplicationResponse",
+  "description": "RollbackApplicationResponse schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationDetail": {
+      "$ref": "#/components/schemas/ApplicationDetail"
+    }
+  },
+  "required": [
+    "ApplicationDetail"
+  ]
+}

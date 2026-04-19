@@ -1,0 +1,7 @@
+{
+  "ConfigurationType": "example-value",
+  "Parallelism": "example-value",
+  "ParallelismPerKPU": "example-value",
+  "CurrentParallelism": "example-value",
+  "AutoScalingEnabled": "example-value"
+}

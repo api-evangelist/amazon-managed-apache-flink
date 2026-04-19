@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-application-restore-type-schema.json",
+  "title": "ApplicationRestoreType",
+  "description": "ApplicationRestoreType schema from Amazon Managed Service for Apache Flink API",
+  "type": "string",
+  "enum": [
+    "SKIP_RESTORE_FROM_SNAPSHOT",
+    "RESTORE_FROM_LATEST_SNAPSHOT",
+    "RESTORE_FROM_CUSTOM_SNAPSHOT"
+  ]
+}

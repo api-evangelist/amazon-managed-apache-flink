@@ -1,0 +1,8 @@
+{
+  "NamePrefix": "my-resource",
+  "InputProcessingConfiguration": "example-value",
+  "KinesisStreamsInput": "example-value",
+  "KinesisFirehoseInput": "example-value",
+  "InputParallelism": "example-value",
+  "InputSchema": "example-value"
+}

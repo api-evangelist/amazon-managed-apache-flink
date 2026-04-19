@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-s3-content-base-location-description-structure.json",
+  "name": "S3ContentBaseLocationDescription",
+  "description": "The description of the S3 base location that holds the application.",
+  "type": "object",
+  "properties": {
+    "BucketARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BucketARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the S3 bucket."
+        }
+      ]
+    },
+    "BasePath": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BasePath"
+        },
+        {
+          "description": "The base path for the S3 bucket."
+        }
+      ]
+    }
+  },
+  "required": [
+    "BucketARN"
+  ]
+}

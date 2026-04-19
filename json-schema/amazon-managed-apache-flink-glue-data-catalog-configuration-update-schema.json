@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-glue-data-catalog-configuration-update-schema.json",
+  "title": "GlueDataCatalogConfigurationUpdate",
+  "description": "Updates to the configuration of the Glue Data Catalog that you use for SQL queries that you write in a Kinesis Data Analytics Studio notebook.",
+  "type": "object",
+  "properties": {
+    "DatabaseARNUpdate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DatabaseARN"
+        },
+        {
+          "description": "The updated Amazon Resource Name (ARN) of the database."
+        }
+      ]
+    }
+  },
+  "required": [
+    "DatabaseARNUpdate"
+  ]
+}

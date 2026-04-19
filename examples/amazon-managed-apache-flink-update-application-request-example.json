@@ -1,0 +1,9 @@
+{
+  "ApplicationName": "my-resource",
+  "CurrentApplicationVersionId": "abc12345",
+  "ApplicationConfigurationUpdate": "example-value",
+  "ServiceExecutionRoleUpdate": "example-value",
+  "RunConfigurationUpdate": "example-value",
+  "CloudWatchLoggingOptionUpdates": "example-value",
+  "ConditionalToken": "example-value"
+}

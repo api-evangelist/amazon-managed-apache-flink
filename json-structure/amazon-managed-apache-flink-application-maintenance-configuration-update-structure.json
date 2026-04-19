@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-application-maintenance-configuration-update-structure.json",
+  "name": "ApplicationMaintenanceConfigurationUpdate",
+  "description": "Describes the updated maintenance configuration for the application.",
+  "type": "object",
+  "properties": {
+    "ApplicationMaintenanceWindowStartTimeUpdate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationMaintenanceWindowStartTime"
+        },
+        {
+          "description": "The updated start time for the maintenance window."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationMaintenanceWindowStartTimeUpdate"
+  ]
+}

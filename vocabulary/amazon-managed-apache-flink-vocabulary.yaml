@@ -1,0 +1,103 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: "Amazon Managed Service for Apache Flink"
+  description: "Vocabulary for Amazon Managed Service for Apache Flink covering streaming application lifecycle, input/output configuration, and analytics workflows."
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - namespace: managed-apache-flink
+      version: "2018-05-23"
+      baseUrl: https://kinesisanalytics.amazonaws.com
+      status: active
+  resources:
+    - name: applications
+      apis: [managed-apache-flink]
+      actions: [create, list, describe, update, delete, start, stop]
+    - name: snapshots
+      apis: [managed-apache-flink]
+      actions: [create, list, describe, delete]
+    - name: inputs
+      apis: [managed-apache-flink]
+      actions: [add, discover-schema]
+    - name: outputs
+      apis: [managed-apache-flink]
+      actions: [add, delete]
+    - name: vpc-configurations
+      apis: [managed-apache-flink]
+      actions: [add, update, delete]
+  actions:
+    - name: create
+      httpMethods: [POST]
+      pattern: write
+    - name: list
+      httpMethods: [POST]
+      pattern: read
+    - name: describe
+      httpMethods: [POST]
+      pattern: read
+    - name: update
+      httpMethods: [POST]
+      pattern: write
+    - name: delete
+      httpMethods: [POST]
+      pattern: destructive
+    - name: start
+      httpMethods: [POST]
+      pattern: write
+    - name: stop
+      httpMethods: [POST]
+      pattern: write
+    - name: add
+      httpMethods: [POST]
+      pattern: write
+  enums:
+    application-status:
+      - DELETING
+      - STARTING
+      - STOPPING
+      - READY
+      - RUNNING
+      - UPDATING
+      - AUTOSCALING
+      - FORCE_STOPPING
+      - ROLLING_BACK
+      - MAINTENANCE
+      - ROLLED_BACK
+  authentication:
+    schemes:
+      - type: aws-sigv4
+        name: AWS Signature Version 4
+        apis: [managed-apache-flink]
+
+capability:
+  workflows:
+    - name: Streaming Analytics Workflow
+      file: capabilities/streaming-analytics-workflow.yaml
+      apisComposed: [managed-apache-flink]
+      toolCount: 5
+      personas: [Data Engineer, Analytics Engineer]
+  personas:
+    - id: data-engineer
+      name: "Data Engineer"
+      workflows: [Streaming Analytics Workflow]
+    - id: analytics-engineer
+      name: "Analytics Engineer"
+      workflows: [Streaming Analytics Workflow]
+  namespaces:
+    - name: managed-apache-flink
+      type: consumed
+    - name: streaming-analytics-api
+      type: rest-exposed
+      port: 8080
+    - name: streaming-analytics-mcp
+      type: mcp-exposed
+      port: 9090
+
+crossReference:
+  - resource: applications
+    operations: [CreateApplication, ListApplications, DescribeApplication, UpdateApplication, DeleteApplication, StartApplication, StopApplication]
+    workflows: [Streaming Analytics Workflow]
+    personas: [Data Engineer, Analytics Engineer]

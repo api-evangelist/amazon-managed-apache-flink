@@ -1,0 +1,6 @@
+{
+  "ApplicationName": "my-resource",
+  "CurrentApplicationVersionId": "abc12345",
+  "CloudWatchLoggingOptionId": "abc12345",
+  "ConditionalToken": "example-value"
+}

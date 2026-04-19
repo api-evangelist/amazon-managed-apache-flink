@@ -1,0 +1,9 @@
+{
+  "SqlApplicationConfigurationUpdate": "example-value",
+  "ApplicationCodeConfigurationUpdate": "example-value",
+  "FlinkApplicationConfigurationUpdate": "example-value",
+  "EnvironmentPropertyUpdates": "example-value",
+  "ApplicationSnapshotConfigurationUpdate": "example-value",
+  "VpcConfigurationUpdates": "example-value",
+  "ZeppelinApplicationConfigurationUpdate": "example-value"
+}

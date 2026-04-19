@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-list-application-snapshots-response-structure.json",
+  "name": "ListApplicationSnapshotsResponse",
+  "description": "ListApplicationSnapshotsResponse schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "SnapshotSummaries": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotSummaries"
+        },
+        {
+          "description": "A collection of objects containing information about the application snapshots."
+        }
+      ]
+    },
+    "NextToken": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/NextToken"
+        },
+        {
+          "description": "The token for the next set of results, or <code>null</code> if there are no additional results."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-destination-schema-structure.json",
+  "name": "DestinationSchema",
+  "description": "Describes the data format when records are written to the destination in a SQL-based Kinesis Data Analytics application. ",
+  "type": "object",
+  "properties": {
+    "RecordFormatType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RecordFormatType"
+        },
+        {
+          "description": "Specifies the format of the records on the output stream."
+        }
+      ]
+    }
+  },
+  "required": [
+    "RecordFormatType"
+  ]
+}

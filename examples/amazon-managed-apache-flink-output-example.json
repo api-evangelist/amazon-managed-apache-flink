@@ -1,0 +1,7 @@
+{
+  "Name": "my-resource",
+  "KinesisStreamsOutput": "example-value",
+  "KinesisFirehoseOutput": "example-value",
+  "LambdaOutput": "example-value",
+  "DestinationSchema": "example-value"
+}

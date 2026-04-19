@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-sql-run-configuration-structure.json",
+  "name": "SqlRunConfiguration",
+  "description": "Describes the starting parameters for a SQL-based Kinesis Data Analytics application.",
+  "type": "object",
+  "properties": {
+    "InputId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Id"
+        },
+        {
+          "description": "The input source ID. You can get this ID by calling the <a>DescribeApplication</a> operation. "
+        }
+      ]
+    },
+    "InputStartingPositionConfiguration": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputStartingPositionConfiguration"
+        },
+        {
+          "description": "The point at which you want the application to start processing records from the streaming source. "
+        }
+      ]
+    }
+  },
+  "required": [
+    "InputId",
+    "InputStartingPositionConfiguration"
+  ]
+}

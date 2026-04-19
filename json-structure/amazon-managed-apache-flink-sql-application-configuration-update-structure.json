@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-sql-application-configuration-update-structure.json",
+  "name": "SqlApplicationConfigurationUpdate",
+  "description": "Describes updates to the input streams, destination streams, and reference data sources for a SQL-based Kinesis Data Analytics application.",
+  "type": "object",
+  "properties": {
+    "InputUpdates": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputUpdates"
+        },
+        {
+          "description": "The array of <a>InputUpdate</a> objects describing the new input streams used by the application."
+        }
+      ]
+    },
+    "OutputUpdates": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OutputUpdates"
+        },
+        {
+          "description": "The array of <a>OutputUpdate</a> objects describing the new destination streams used by the application."
+        }
+      ]
+    },
+    "ReferenceDataSourceUpdates": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReferenceDataSourceUpdates"
+        },
+        {
+          "description": "The array of <a>ReferenceDataSourceUpdate</a> objects describing the new reference data sources used by the application."
+        }
+      ]
+    }
+  }
+}

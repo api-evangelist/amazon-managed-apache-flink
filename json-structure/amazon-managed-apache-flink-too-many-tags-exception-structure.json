@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-too-many-tags-exception-structure.json",
+  "name": "TooManyTagsException",
+  "description": "TooManyTagsException schema from Amazon Managed Service for Apache Flink API"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-kinesis-streams-input-update-structure.json",
+  "name": "KinesisStreamsInputUpdate",
+  "description": "When you update the input configuration for a SQL-based Kinesis Data Analytics application, provides information about a Kinesis stream as the streaming source.",
+  "type": "object",
+  "properties": {
+    "ResourceARNUpdate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the input Kinesis data stream to read."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceARNUpdate"
+  ]
+}

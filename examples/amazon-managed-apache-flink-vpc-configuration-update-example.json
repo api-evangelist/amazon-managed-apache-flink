@@ -1,0 +1,5 @@
+{
+  "VpcConfigurationId": "abc12345",
+  "SubnetIdUpdates": "abc12345",
+  "SecurityGroupIdUpdates": "abc12345"
+}

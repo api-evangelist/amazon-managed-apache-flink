@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-create-application-snapshot-request-structure.json",
+  "name": "CreateApplicationSnapshotRequest",
+  "description": "CreateApplicationSnapshotRequest schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationName"
+        },
+        {
+          "description": "The name of an existing application"
+        }
+      ]
+    },
+    "SnapshotName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotName"
+        },
+        {
+          "description": "An identifier for the application snapshot."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationName",
+    "SnapshotName"
+  ]
+}

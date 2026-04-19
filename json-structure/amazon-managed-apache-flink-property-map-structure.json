@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-property-map-structure.json",
+  "name": "PropertyMap",
+  "description": "PropertyMap schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/components/schemas/PropertyValue"
+  }
+}

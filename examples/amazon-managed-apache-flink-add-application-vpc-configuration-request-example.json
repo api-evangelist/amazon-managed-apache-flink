@@ -1,0 +1,6 @@
+{
+  "ApplicationName": "my-resource",
+  "CurrentApplicationVersionId": "abc12345",
+  "VpcConfiguration": "example-value",
+  "ConditionalToken": "example-value"
+}

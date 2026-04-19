@@ -1,0 +1,10 @@
+{
+  "ApplicationName": "my-resource",
+  "ApplicationDescription": "Example resource description",
+  "RuntimeEnvironment": "example-value",
+  "ServiceExecutionRole": "example-value",
+  "ApplicationConfiguration": "example-value",
+  "CloudWatchLoggingOptions": "example-value",
+  "Tags": "example-value",
+  "ApplicationMode": "example-value"
+}

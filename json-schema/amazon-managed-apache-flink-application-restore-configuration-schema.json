@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-application-restore-configuration-schema.json",
+  "title": "ApplicationRestoreConfiguration",
+  "description": "Specifies the method and snapshot to use when restarting an application using previously saved application state.",
+  "type": "object",
+  "properties": {
+    "ApplicationRestoreType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationRestoreType"
+        },
+        {
+          "description": "Specifies how the application should be restored."
+        }
+      ]
+    },
+    "SnapshotName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotName"
+        },
+        {
+          "description": "The identifier of an existing snapshot of application state to use to restart an application. The application uses this value if <code>RESTORE_FROM_CUSTOM_SNAPSHOT</code> is specified for the <code>ApplicationRestoreType</code>."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ApplicationRestoreType"
+  ]
+}

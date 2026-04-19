@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-input-processing-configuration-description-structure.json",
+  "name": "InputProcessingConfigurationDescription",
+  "description": "For a SQL-based Kinesis Data Analytics application, provides the configuration information about an input processor. Currently, the only input processor available is <a href=\"https://docs.aws.amazon.com/lambda/\">Amazon Lambda</a>.",
+  "type": "object",
+  "properties": {
+    "InputLambdaProcessorDescription": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputLambdaProcessorDescription"
+        },
+        {
+          "description": "Provides configuration information about the associated <a>InputLambdaProcessorDescription</a> "
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "ConfigurationType": "example-value",
+  "CheckpointingEnabled": "example-value",
+  "CheckpointInterval": "example-value",
+  "MinPauseBetweenCheckpoints": "example-value"
+}

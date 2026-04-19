@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-url-type-structure.json",
+  "name": "UrlType",
+  "description": "UrlType schema from Amazon Managed Service for Apache Flink API",
+  "type": "string",
+  "enum": [
+    "FLINK_DASHBOARD_URL",
+    "ZEPPELIN_UI_URL"
+  ]
+}

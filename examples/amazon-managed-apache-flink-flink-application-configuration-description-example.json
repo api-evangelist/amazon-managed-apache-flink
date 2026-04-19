@@ -1,0 +1,6 @@
+{
+  "CheckpointConfigurationDescription": "Example resource description",
+  "MonitoringConfigurationDescription": "Example resource description",
+  "ParallelismConfigurationDescription": "Example resource description",
+  "JobPlanDescription": "Example resource description"
+}

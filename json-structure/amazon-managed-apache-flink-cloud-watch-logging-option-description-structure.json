@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-cloud-watch-logging-option-description-structure.json",
+  "name": "CloudWatchLoggingOptionDescription",
+  "description": "Describes the Amazon CloudWatch logging option.",
+  "type": "object",
+  "properties": {
+    "CloudWatchLoggingOptionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Id"
+        },
+        {
+          "description": "The ID of the CloudWatch logging option description."
+        }
+      ]
+    },
+    "LogStreamARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogStreamARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the CloudWatch log to receive application messages."
+        }
+      ]
+    },
+    "RoleARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RoleARN"
+        },
+        {
+          "description": "<p>The IAM ARN of the role to use to send application messages. </p> <note> <p>Provided for backward compatibility. Applications created with the current API version have an application-level service execution role rather than a resource-level role.</p> </note>"
+        }
+      ]
+    }
+  },
+  "required": [
+    "LogStreamARN"
+  ]
+}

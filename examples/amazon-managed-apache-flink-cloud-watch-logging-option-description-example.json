@@ -1,0 +1,5 @@
+{
+  "CloudWatchLoggingOptionId": "abc12345",
+  "LogStreamARN": "arn:aws:service:us-east-1:123456789012:resource/id",
+  "RoleARN": "arn:aws:service:us-east-1:123456789012:resource/id"
+}

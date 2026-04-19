@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-glue-data-catalog-configuration-description-structure.json",
+  "name": "GlueDataCatalogConfigurationDescription",
+  "description": "The configuration of the Glue Data Catalog that you use for Apache Flink SQL queries and table API transforms that you write in an application.",
+  "type": "object",
+  "properties": {
+    "DatabaseARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DatabaseARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the database."
+        }
+      ]
+    }
+  },
+  "required": [
+    "DatabaseARN"
+  ]
+}

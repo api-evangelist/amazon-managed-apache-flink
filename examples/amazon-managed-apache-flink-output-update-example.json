@@ -1,0 +1,8 @@
+{
+  "OutputId": "abc12345",
+  "NameUpdate": "my-resource",
+  "KinesisStreamsOutputUpdate": "example-value",
+  "KinesisFirehoseOutputUpdate": "example-value",
+  "LambdaOutputUpdate": "example-value",
+  "DestinationSchemaUpdate": "example-value"
+}

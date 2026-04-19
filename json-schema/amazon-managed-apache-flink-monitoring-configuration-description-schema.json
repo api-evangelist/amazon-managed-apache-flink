@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-monitoring-configuration-description-schema.json",
+  "title": "MonitoringConfigurationDescription",
+  "description": "Describes configuration parameters for CloudWatch logging for an application.",
+  "type": "object",
+  "properties": {
+    "ConfigurationType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConfigurationType"
+        },
+        {
+          "description": "Describes whether to use the default CloudWatch logging configuration for an application."
+        }
+      ]
+    },
+    "MetricsLevel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/MetricsLevel"
+        },
+        {
+          "description": "Describes the granularity of the CloudWatch Logs for an application."
+        }
+      ]
+    },
+    "LogLevel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogLevel"
+        },
+        {
+          "description": "Describes the verbosity of the CloudWatch Logs for an application."
+        }
+      ]
+    }
+  }
+}

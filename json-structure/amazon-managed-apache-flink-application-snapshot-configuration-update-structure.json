@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-application-snapshot-configuration-update-structure.json",
+  "name": "ApplicationSnapshotConfigurationUpdate",
+  "description": "Describes updates to whether snapshots are enabled for a Flink-based Kinesis Data Analytics application.",
+  "type": "object",
+  "properties": {
+    "SnapshotsEnabledUpdate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/BooleanObject"
+        },
+        {
+          "description": "Describes updates to whether snapshots are enabled for an application."
+        }
+      ]
+    }
+  },
+  "required": [
+    "SnapshotsEnabledUpdate"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-kinesis-streams-output-update-structure.json",
+  "name": "KinesisStreamsOutputUpdate",
+  "description": "When you update a SQL-based Kinesis Data Analytics application's output configuration using the <a>UpdateApplication</a> operation, provides information about a Kinesis data stream that is configured as the destination.",
+  "type": "object",
+  "properties": {
+    "ResourceARNUpdate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the Kinesis data stream where you want to write the output."
+        }
+      ]
+    }
+  },
+  "required": [
+    "ResourceARNUpdate"
+  ]
+}

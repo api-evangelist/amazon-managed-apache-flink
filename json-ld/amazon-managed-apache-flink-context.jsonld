@@ -1,0 +1,649 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "amsaf": "https://amsaf.amazonaws.com/schema/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "AddApplicationCloudWatchLoggingOptionRequest": "amsaf:AddApplicationCloudWatchLoggingOptionRequest",
+    "AddApplicationCloudWatchLoggingOptionResponse": "amsaf:AddApplicationCloudWatchLoggingOptionResponse",
+    "AddApplicationInputProcessingConfigurationRequest": "amsaf:AddApplicationInputProcessingConfigurationRequest",
+    "AddApplicationInputProcessingConfigurationResponse": "amsaf:AddApplicationInputProcessingConfigurationResponse",
+    "AddApplicationInputRequest": "amsaf:AddApplicationInputRequest",
+    "AddApplicationInputResponse": "amsaf:AddApplicationInputResponse",
+    "AddApplicationOutputRequest": "amsaf:AddApplicationOutputRequest",
+    "AddApplicationOutputResponse": "amsaf:AddApplicationOutputResponse",
+    "AddApplicationReferenceDataSourceRequest": "amsaf:AddApplicationReferenceDataSourceRequest",
+    "AddApplicationReferenceDataSourceResponse": "amsaf:AddApplicationReferenceDataSourceResponse",
+    "AddApplicationVpcConfigurationRequest": "amsaf:AddApplicationVpcConfigurationRequest",
+    "AddApplicationVpcConfigurationResponse": "amsaf:AddApplicationVpcConfigurationResponse",
+    "ApplicationCodeConfiguration": "amsaf:ApplicationCodeConfiguration",
+    "ApplicationCodeConfigurationDescription": "amsaf:ApplicationCodeConfigurationDescription",
+    "ApplicationCodeConfigurationUpdate": "amsaf:ApplicationCodeConfigurationUpdate",
+    "ApplicationConfiguration": "amsaf:ApplicationConfiguration",
+    "ApplicationConfigurationDescription": "amsaf:ApplicationConfigurationDescription",
+    "ApplicationConfigurationUpdate": "amsaf:ApplicationConfigurationUpdate",
+    "ApplicationDetail": "amsaf:ApplicationDetail",
+    "ApplicationMaintenanceConfigurationDescription": "amsaf:ApplicationMaintenanceConfigurationDescription",
+    "ApplicationMaintenanceConfigurationUpdate": "amsaf:ApplicationMaintenanceConfigurationUpdate",
+    "ApplicationRestoreConfiguration": "amsaf:ApplicationRestoreConfiguration",
+    "ApplicationSnapshotConfiguration": "amsaf:ApplicationSnapshotConfiguration",
+    "ApplicationSnapshotConfigurationDescription": "amsaf:ApplicationSnapshotConfigurationDescription",
+    "ApplicationSnapshotConfigurationUpdate": "amsaf:ApplicationSnapshotConfigurationUpdate",
+    "ApplicationSummary": "amsaf:ApplicationSummary",
+    "ApplicationVersionSummary": "amsaf:ApplicationVersionSummary",
+    "CSVMappingParameters": "amsaf:CSVMappingParameters",
+    "CatalogConfiguration": "amsaf:CatalogConfiguration",
+    "CatalogConfigurationDescription": "amsaf:CatalogConfigurationDescription",
+    "CatalogConfigurationUpdate": "amsaf:CatalogConfigurationUpdate",
+    "CheckpointConfiguration": "amsaf:CheckpointConfiguration",
+    "CheckpointConfigurationDescription": "amsaf:CheckpointConfigurationDescription",
+    "CheckpointConfigurationUpdate": "amsaf:CheckpointConfigurationUpdate",
+    "CloudWatchLoggingOption": "amsaf:CloudWatchLoggingOption",
+    "CloudWatchLoggingOptionDescription": "amsaf:CloudWatchLoggingOptionDescription",
+    "CloudWatchLoggingOptionUpdate": "amsaf:CloudWatchLoggingOptionUpdate",
+    "CodeContent": "amsaf:CodeContent",
+    "CodeContentDescription": "amsaf:CodeContentDescription",
+    "CodeContentUpdate": "amsaf:CodeContentUpdate",
+    "CreateApplicationPresignedUrlRequest": "amsaf:CreateApplicationPresignedUrlRequest",
+    "CreateApplicationPresignedUrlResponse": "amsaf:CreateApplicationPresignedUrlResponse",
+    "CreateApplicationRequest": "amsaf:CreateApplicationRequest",
+    "CreateApplicationResponse": "amsaf:CreateApplicationResponse",
+    "CreateApplicationSnapshotRequest": "amsaf:CreateApplicationSnapshotRequest",
+    "CreateApplicationSnapshotResponse": "amsaf:CreateApplicationSnapshotResponse",
+    "CustomArtifactConfiguration": "amsaf:CustomArtifactConfiguration",
+    "CustomArtifactConfigurationDescription": "amsaf:CustomArtifactConfigurationDescription",
+    "DeleteApplicationCloudWatchLoggingOptionRequest": "amsaf:DeleteApplicationCloudWatchLoggingOptionRequest",
+    "DeleteApplicationCloudWatchLoggingOptionResponse": "amsaf:DeleteApplicationCloudWatchLoggingOptionResponse",
+    "DeleteApplicationInputProcessingConfigurationRequest": "amsaf:DeleteApplicationInputProcessingConfigurationRequest",
+    "DeleteApplicationInputProcessingConfigurationResponse": "amsaf:DeleteApplicationInputProcessingConfigurationResponse",
+    "DeleteApplicationOutputRequest": "amsaf:DeleteApplicationOutputRequest",
+    "DeleteApplicationOutputResponse": "amsaf:DeleteApplicationOutputResponse",
+    "DeleteApplicationReferenceDataSourceRequest": "amsaf:DeleteApplicationReferenceDataSourceRequest",
+    "DeleteApplicationReferenceDataSourceResponse": "amsaf:DeleteApplicationReferenceDataSourceResponse",
+    "DeleteApplicationRequest": "amsaf:DeleteApplicationRequest",
+    "DeleteApplicationResponse": "amsaf:DeleteApplicationResponse",
+    "DeleteApplicationSnapshotRequest": "amsaf:DeleteApplicationSnapshotRequest",
+    "DeleteApplicationSnapshotResponse": "amsaf:DeleteApplicationSnapshotResponse",
+    "DeleteApplicationVpcConfigurationRequest": "amsaf:DeleteApplicationVpcConfigurationRequest",
+    "DeleteApplicationVpcConfigurationResponse": "amsaf:DeleteApplicationVpcConfigurationResponse",
+    "DeployAsApplicationConfiguration": "amsaf:DeployAsApplicationConfiguration",
+    "DeployAsApplicationConfigurationDescription": "amsaf:DeployAsApplicationConfigurationDescription",
+    "DeployAsApplicationConfigurationUpdate": "amsaf:DeployAsApplicationConfigurationUpdate",
+    "DescribeApplicationRequest": "amsaf:DescribeApplicationRequest",
+    "DescribeApplicationResponse": "amsaf:DescribeApplicationResponse",
+    "DescribeApplicationSnapshotRequest": "amsaf:DescribeApplicationSnapshotRequest",
+    "DescribeApplicationSnapshotResponse": "amsaf:DescribeApplicationSnapshotResponse",
+    "DescribeApplicationVersionRequest": "amsaf:DescribeApplicationVersionRequest",
+    "DescribeApplicationVersionResponse": "amsaf:DescribeApplicationVersionResponse",
+    "DestinationSchema": "amsaf:DestinationSchema",
+    "DiscoverInputSchemaRequest": "amsaf:DiscoverInputSchemaRequest",
+    "DiscoverInputSchemaResponse": "amsaf:DiscoverInputSchemaResponse",
+    "EnvironmentProperties": "amsaf:EnvironmentProperties",
+    "EnvironmentPropertyDescriptions": "amsaf:EnvironmentPropertyDescriptions",
+    "EnvironmentPropertyUpdates": "amsaf:EnvironmentPropertyUpdates",
+    "FlinkApplicationConfiguration": "amsaf:FlinkApplicationConfiguration",
+    "FlinkApplicationConfigurationDescription": "amsaf:FlinkApplicationConfigurationDescription",
+    "FlinkApplicationConfigurationUpdate": "amsaf:FlinkApplicationConfigurationUpdate",
+    "FlinkRunConfiguration": "amsaf:FlinkRunConfiguration",
+    "GlueDataCatalogConfiguration": "amsaf:GlueDataCatalogConfiguration",
+    "GlueDataCatalogConfigurationDescription": "amsaf:GlueDataCatalogConfigurationDescription",
+    "GlueDataCatalogConfigurationUpdate": "amsaf:GlueDataCatalogConfigurationUpdate",
+    "Input": "amsaf:Input",
+    "InputDescription": "amsaf:InputDescription",
+    "InputLambdaProcessor": "amsaf:InputLambdaProcessor",
+    "InputLambdaProcessorDescription": "amsaf:InputLambdaProcessorDescription",
+    "InputLambdaProcessorUpdate": "amsaf:InputLambdaProcessorUpdate",
+    "InputParallelism": "amsaf:InputParallelism",
+    "InputParallelismUpdate": "amsaf:InputParallelismUpdate",
+    "InputProcessingConfiguration": "amsaf:InputProcessingConfiguration",
+    "InputProcessingConfigurationDescription": "amsaf:InputProcessingConfigurationDescription",
+    "InputProcessingConfigurationUpdate": "amsaf:InputProcessingConfigurationUpdate",
+    "InputSchemaUpdate": "amsaf:InputSchemaUpdate",
+    "InputStartingPositionConfiguration": "amsaf:InputStartingPositionConfiguration",
+    "InputUpdate": "amsaf:InputUpdate",
+    "JSONMappingParameters": "amsaf:JSONMappingParameters",
+    "KinesisFirehoseInput": "amsaf:KinesisFirehoseInput",
+    "KinesisFirehoseInputDescription": "amsaf:KinesisFirehoseInputDescription",
+    "KinesisFirehoseInputUpdate": "amsaf:KinesisFirehoseInputUpdate",
+    "KinesisFirehoseOutput": "amsaf:KinesisFirehoseOutput",
+    "KinesisFirehoseOutputDescription": "amsaf:KinesisFirehoseOutputDescription",
+    "KinesisFirehoseOutputUpdate": "amsaf:KinesisFirehoseOutputUpdate",
+    "KinesisStreamsInput": "amsaf:KinesisStreamsInput",
+    "KinesisStreamsInputDescription": "amsaf:KinesisStreamsInputDescription",
+    "KinesisStreamsInputUpdate": "amsaf:KinesisStreamsInputUpdate",
+    "KinesisStreamsOutput": "amsaf:KinesisStreamsOutput",
+    "KinesisStreamsOutputDescription": "amsaf:KinesisStreamsOutputDescription",
+    "KinesisStreamsOutputUpdate": "amsaf:KinesisStreamsOutputUpdate",
+    "LambdaOutput": "amsaf:LambdaOutput",
+    "LambdaOutputDescription": "amsaf:LambdaOutputDescription",
+    "LambdaOutputUpdate": "amsaf:LambdaOutputUpdate",
+    "ListApplicationSnapshotsRequest": "amsaf:ListApplicationSnapshotsRequest",
+    "ListApplicationSnapshotsResponse": "amsaf:ListApplicationSnapshotsResponse",
+    "ListApplicationVersionsRequest": "amsaf:ListApplicationVersionsRequest",
+    "ListApplicationVersionsResponse": "amsaf:ListApplicationVersionsResponse",
+    "ListApplicationsRequest": "amsaf:ListApplicationsRequest",
+    "ListApplicationsResponse": "amsaf:ListApplicationsResponse",
+    "ListTagsForResourceRequest": "amsaf:ListTagsForResourceRequest",
+    "ListTagsForResourceResponse": "amsaf:ListTagsForResourceResponse",
+    "MappingParameters": "amsaf:MappingParameters",
+    "MavenReference": "amsaf:MavenReference",
+    "MonitoringConfiguration": "amsaf:MonitoringConfiguration",
+    "MonitoringConfigurationDescription": "amsaf:MonitoringConfigurationDescription",
+    "MonitoringConfigurationUpdate": "amsaf:MonitoringConfigurationUpdate",
+    "Output": "amsaf:Output",
+    "OutputDescription": "amsaf:OutputDescription",
+    "OutputUpdate": "amsaf:OutputUpdate",
+    "ParallelismConfiguration": "amsaf:ParallelismConfiguration",
+    "ParallelismConfigurationDescription": "amsaf:ParallelismConfigurationDescription",
+    "ParallelismConfigurationUpdate": "amsaf:ParallelismConfigurationUpdate",
+    "PropertyGroup": "amsaf:PropertyGroup",
+    "PropertyMap": "amsaf:PropertyMap",
+    "RecordColumn": "amsaf:RecordColumn",
+    "RecordFormat": "amsaf:RecordFormat",
+    "ReferenceDataSource": "amsaf:ReferenceDataSource",
+    "ReferenceDataSourceDescription": "amsaf:ReferenceDataSourceDescription",
+    "ReferenceDataSourceUpdate": "amsaf:ReferenceDataSourceUpdate",
+    "RollbackApplicationRequest": "amsaf:RollbackApplicationRequest",
+    "RollbackApplicationResponse": "amsaf:RollbackApplicationResponse",
+    "RunConfiguration": "amsaf:RunConfiguration",
+    "RunConfigurationDescription": "amsaf:RunConfigurationDescription",
+    "RunConfigurationUpdate": "amsaf:RunConfigurationUpdate",
+    "S3ApplicationCodeLocationDescription": "amsaf:S3ApplicationCodeLocationDescription",
+    "S3Configuration": "amsaf:S3Configuration",
+    "S3ContentBaseLocation": "amsaf:S3ContentBaseLocation",
+    "S3ContentBaseLocationDescription": "amsaf:S3ContentBaseLocationDescription",
+    "S3ContentBaseLocationUpdate": "amsaf:S3ContentBaseLocationUpdate",
+    "S3ContentLocation": "amsaf:S3ContentLocation",
+    "S3ContentLocationUpdate": "amsaf:S3ContentLocationUpdate",
+    "S3ReferenceDataSource": "amsaf:S3ReferenceDataSource",
+    "S3ReferenceDataSourceDescription": "amsaf:S3ReferenceDataSourceDescription",
+    "S3ReferenceDataSourceUpdate": "amsaf:S3ReferenceDataSourceUpdate",
+    "SnapshotDetails": "amsaf:SnapshotDetails",
+    "SourceSchema": "amsaf:SourceSchema",
+    "SqlApplicationConfiguration": "amsaf:SqlApplicationConfiguration",
+    "SqlApplicationConfigurationDescription": "amsaf:SqlApplicationConfigurationDescription",
+    "SqlApplicationConfigurationUpdate": "amsaf:SqlApplicationConfigurationUpdate",
+    "SqlRunConfiguration": "amsaf:SqlRunConfiguration",
+    "StartApplicationRequest": "amsaf:StartApplicationRequest",
+    "StartApplicationResponse": "amsaf:StartApplicationResponse",
+    "StopApplicationRequest": "amsaf:StopApplicationRequest",
+    "StopApplicationResponse": "amsaf:StopApplicationResponse",
+    "Tag": "amsaf:Tag",
+    "TagResourceRequest": "amsaf:TagResourceRequest",
+    "TagResourceResponse": "amsaf:TagResourceResponse",
+    "UntagResourceRequest": "amsaf:UntagResourceRequest",
+    "UntagResourceResponse": "amsaf:UntagResourceResponse",
+    "UpdateApplicationMaintenanceConfigurationRequest": "amsaf:UpdateApplicationMaintenanceConfigurationRequest",
+    "UpdateApplicationMaintenanceConfigurationResponse": "amsaf:UpdateApplicationMaintenanceConfigurationResponse",
+    "UpdateApplicationRequest": "amsaf:UpdateApplicationRequest",
+    "UpdateApplicationResponse": "amsaf:UpdateApplicationResponse",
+    "VpcConfiguration": "amsaf:VpcConfiguration",
+    "VpcConfigurationDescription": "amsaf:VpcConfigurationDescription",
+    "VpcConfigurationUpdate": "amsaf:VpcConfigurationUpdate",
+    "ZeppelinApplicationConfiguration": "amsaf:ZeppelinApplicationConfiguration",
+    "ZeppelinApplicationConfigurationDescription": "amsaf:ZeppelinApplicationConfigurationDescription",
+    "ZeppelinApplicationConfigurationUpdate": "amsaf:ZeppelinApplicationConfigurationUpdate",
+    "ZeppelinMonitoringConfiguration": "amsaf:ZeppelinMonitoringConfiguration",
+    "ZeppelinMonitoringConfigurationDescription": "amsaf:ZeppelinMonitoringConfigurationDescription",
+    "ZeppelinMonitoringConfigurationUpdate": "amsaf:ZeppelinMonitoringConfigurationUpdate",
+    "AllowNonRestoredState": {
+      "@id": "amsaf:AllowNonRestoredState"
+    },
+    "ApplicationARN": {
+      "@id": "amsaf:ApplicationARN"
+    },
+    "ApplicationDescription": {
+      "@id": "amsaf:ApplicationDescription"
+    },
+    "ApplicationMaintenanceWindowEndTime": {
+      "@id": "amsaf:ApplicationMaintenanceWindowEndTime"
+    },
+    "ApplicationMaintenanceWindowStartTime": {
+      "@id": "amsaf:ApplicationMaintenanceWindowStartTime"
+    },
+    "ApplicationMaintenanceWindowStartTimeUpdate": {
+      "@id": "amsaf:ApplicationMaintenanceWindowStartTimeUpdate"
+    },
+    "ApplicationMode": {
+      "@id": "amsaf:ApplicationMode"
+    },
+    "ApplicationName": {
+      "@id": "amsaf:ApplicationName"
+    },
+    "ApplicationRestoreConfigurationDescription": {
+      "@id": "amsaf:ApplicationRestoreConfigurationDescription"
+    },
+    "ApplicationRestoreType": {
+      "@id": "amsaf:ApplicationRestoreType"
+    },
+    "ApplicationStatus": {
+      "@id": "amsaf:ApplicationStatus"
+    },
+    "ApplicationSummaries": {
+      "@id": "amsaf:ApplicationSummaries"
+    },
+    "ApplicationVersionDetail": {
+      "@id": "amsaf:ApplicationVersionDetail"
+    },
+    "ApplicationVersionId": {
+      "@id": "amsaf:ApplicationVersionId"
+    },
+    "ApplicationVersionRolledBackFrom": {
+      "@id": "amsaf:ApplicationVersionRolledBackFrom"
+    },
+    "ApplicationVersionRolledBackTo": {
+      "@id": "amsaf:ApplicationVersionRolledBackTo"
+    },
+    "ApplicationVersionSummaries": {
+      "@id": "amsaf:ApplicationVersionSummaries"
+    },
+    "ApplicationVersionUpdatedFrom": {
+      "@id": "amsaf:ApplicationVersionUpdatedFrom"
+    },
+    "ArtifactId": {
+      "@id": "amsaf:ArtifactId"
+    },
+    "ArtifactType": {
+      "@id": "amsaf:ArtifactType"
+    },
+    "AuthorizedUrl": {
+      "@id": "amsaf:AuthorizedUrl"
+    },
+    "AutoScalingEnabled": {
+      "@id": "amsaf:AutoScalingEnabled"
+    },
+    "AutoScalingEnabledUpdate": {
+      "@id": "amsaf:AutoScalingEnabledUpdate"
+    },
+    "BasePath": {
+      "@id": "amsaf:BasePath"
+    },
+    "BasePathUpdate": {
+      "@id": "amsaf:BasePathUpdate"
+    },
+    "BucketARN": {
+      "@id": "amsaf:BucketARN"
+    },
+    "BucketARNUpdate": {
+      "@id": "amsaf:BucketARNUpdate"
+    },
+    "CheckpointInterval": {
+      "@id": "amsaf:CheckpointInterval"
+    },
+    "CheckpointIntervalUpdate": {
+      "@id": "amsaf:CheckpointIntervalUpdate"
+    },
+    "CheckpointingEnabled": {
+      "@id": "amsaf:CheckpointingEnabled"
+    },
+    "CheckpointingEnabledUpdate": {
+      "@id": "amsaf:CheckpointingEnabledUpdate"
+    },
+    "CloudWatchLoggingOptionDescriptions": {
+      "@id": "amsaf:CloudWatchLoggingOptionDescriptions"
+    },
+    "CloudWatchLoggingOptionId": {
+      "@id": "amsaf:CloudWatchLoggingOptionId"
+    },
+    "CloudWatchLoggingOptionUpdates": {
+      "@id": "amsaf:CloudWatchLoggingOptionUpdates"
+    },
+    "CloudWatchLoggingOptions": {
+      "@id": "amsaf:CloudWatchLoggingOptions"
+    },
+    "CodeContentType": {
+      "@id": "amsaf:CodeContentType"
+    },
+    "CodeContentTypeUpdate": {
+      "@id": "amsaf:CodeContentTypeUpdate"
+    },
+    "CodeMD5": {
+      "@id": "amsaf:CodeMD5"
+    },
+    "CodeSize": {
+      "@id": "amsaf:CodeSize"
+    },
+    "ConditionalToken": {
+      "@id": "amsaf:ConditionalToken"
+    },
+    "ConfigurationType": {
+      "@id": "amsaf:ConfigurationType"
+    },
+    "ConfigurationTypeUpdate": {
+      "@id": "amsaf:ConfigurationTypeUpdate"
+    },
+    "Count": {
+      "@id": "amsaf:Count"
+    },
+    "CountUpdate": {
+      "@id": "amsaf:CountUpdate"
+    },
+    "CreateTimestamp": {
+      "@id": "amsaf:CreateTimestamp"
+    },
+    "CurrentApplicationVersionId": {
+      "@id": "amsaf:CurrentApplicationVersionId"
+    },
+    "CurrentParallelism": {
+      "@id": "amsaf:CurrentParallelism"
+    },
+    "CustomArtifactsConfiguration": {
+      "@id": "amsaf:CustomArtifactsConfiguration"
+    },
+    "CustomArtifactsConfigurationDescription": {
+      "@id": "amsaf:CustomArtifactsConfigurationDescription"
+    },
+    "CustomArtifactsConfigurationUpdate": {
+      "@id": "amsaf:CustomArtifactsConfigurationUpdate"
+    },
+    "DatabaseARN": {
+      "@id": "amsaf:DatabaseARN"
+    },
+    "DatabaseARNUpdate": {
+      "@id": "amsaf:DatabaseARNUpdate"
+    },
+    "DestinationSchemaUpdate": {
+      "@id": "amsaf:DestinationSchemaUpdate"
+    },
+    "FileKey": {
+      "@id": "amsaf:FileKey"
+    },
+    "FileKeyUpdate": {
+      "@id": "amsaf:FileKeyUpdate"
+    },
+    "FlinkRunConfigurationDescription": {
+      "@id": "amsaf:FlinkRunConfigurationDescription"
+    },
+    "Force": {
+      "@id": "amsaf:Force"
+    },
+    "GroupId": {
+      "@id": "amsaf:GroupId"
+    },
+    "InAppStreamNames": {
+      "@id": "amsaf:InAppStreamNames"
+    },
+    "IncludeAdditionalDetails": {
+      "@id": "amsaf:IncludeAdditionalDetails"
+    },
+    "InputDescriptions": {
+      "@id": "amsaf:InputDescriptions"
+    },
+    "InputId": {
+      "@id": "amsaf:InputId"
+    },
+    "InputSchema": {
+      "@id": "amsaf:InputSchema"
+    },
+    "InputStartingPosition": {
+      "@id": "amsaf:InputStartingPosition"
+    },
+    "InputUpdates": {
+      "@id": "amsaf:InputUpdates"
+    },
+    "Inputs": {
+      "@id": "amsaf:Inputs"
+    },
+    "JobPlanDescription": {
+      "@id": "amsaf:JobPlanDescription"
+    },
+    "Key": {
+      "@id": "amsaf:Key"
+    },
+    "LastUpdateTimestamp": {
+      "@id": "amsaf:LastUpdateTimestamp"
+    },
+    "Limit": {
+      "@id": "amsaf:Limit"
+    },
+    "LogLevel": {
+      "@id": "amsaf:LogLevel"
+    },
+    "LogLevelUpdate": {
+      "@id": "amsaf:LogLevelUpdate"
+    },
+    "LogStreamARN": {
+      "@id": "amsaf:LogStreamARN"
+    },
+    "LogStreamARNUpdate": {
+      "@id": "amsaf:LogStreamARNUpdate"
+    },
+    "Mapping": {
+      "@id": "amsaf:Mapping"
+    },
+    "MavenReferenceDescription": {
+      "@id": "amsaf:MavenReferenceDescription"
+    },
+    "MetricsLevel": {
+      "@id": "amsaf:MetricsLevel"
+    },
+    "MetricsLevelUpdate": {
+      "@id": "amsaf:MetricsLevelUpdate"
+    },
+    "MinPauseBetweenCheckpoints": {
+      "@id": "amsaf:MinPauseBetweenCheckpoints"
+    },
+    "MinPauseBetweenCheckpointsUpdate": {
+      "@id": "amsaf:MinPauseBetweenCheckpointsUpdate"
+    },
+    "Name": {
+      "@id": "amsaf:Name"
+    },
+    "NamePrefix": {
+      "@id": "amsaf:NamePrefix"
+    },
+    "NamePrefixUpdate": {
+      "@id": "amsaf:NamePrefixUpdate"
+    },
+    "NameUpdate": {
+      "@id": "amsaf:NameUpdate"
+    },
+    "NextToken": {
+      "@id": "amsaf:NextToken"
+    },
+    "ObjectVersion": {
+      "@id": "amsaf:ObjectVersion"
+    },
+    "ObjectVersionUpdate": {
+      "@id": "amsaf:ObjectVersionUpdate"
+    },
+    "OutputDescriptions": {
+      "@id": "amsaf:OutputDescriptions"
+    },
+    "OutputId": {
+      "@id": "amsaf:OutputId"
+    },
+    "OutputUpdates": {
+      "@id": "amsaf:OutputUpdates"
+    },
+    "Outputs": {
+      "@id": "amsaf:Outputs"
+    },
+    "Parallelism": {
+      "@id": "amsaf:Parallelism"
+    },
+    "ParallelismPerKPU": {
+      "@id": "amsaf:ParallelismPerKPU"
+    },
+    "ParallelismPerKPUUpdate": {
+      "@id": "amsaf:ParallelismPerKPUUpdate"
+    },
+    "ParallelismUpdate": {
+      "@id": "amsaf:ParallelismUpdate"
+    },
+    "ParsedInputRecords": {
+      "@id": "amsaf:ParsedInputRecords"
+    },
+    "ProcessedInputRecords": {
+      "@id": "amsaf:ProcessedInputRecords"
+    },
+    "PropertyGroupDescriptions": {
+      "@id": "amsaf:PropertyGroupDescriptions"
+    },
+    "PropertyGroupId": {
+      "@id": "amsaf:PropertyGroupId"
+    },
+    "PropertyGroups": {
+      "@id": "amsaf:PropertyGroups"
+    },
+    "RawInputRecords": {
+      "@id": "amsaf:RawInputRecords"
+    },
+    "RecordColumnDelimiter": {
+      "@id": "amsaf:RecordColumnDelimiter"
+    },
+    "RecordColumnUpdates": {
+      "@id": "amsaf:RecordColumnUpdates"
+    },
+    "RecordColumns": {
+      "@id": "amsaf:RecordColumns"
+    },
+    "RecordEncoding": {
+      "@id": "amsaf:RecordEncoding"
+    },
+    "RecordEncodingUpdate": {
+      "@id": "amsaf:RecordEncodingUpdate"
+    },
+    "RecordFormatType": {
+      "@id": "amsaf:RecordFormatType"
+    },
+    "RecordFormatUpdate": {
+      "@id": "amsaf:RecordFormatUpdate"
+    },
+    "RecordRowDelimiter": {
+      "@id": "amsaf:RecordRowDelimiter"
+    },
+    "RecordRowPath": {
+      "@id": "amsaf:RecordRowPath"
+    },
+    "ReferenceDataSourceDescriptions": {
+      "@id": "amsaf:ReferenceDataSourceDescriptions"
+    },
+    "ReferenceDataSourceUpdates": {
+      "@id": "amsaf:ReferenceDataSourceUpdates"
+    },
+    "ReferenceDataSources": {
+      "@id": "amsaf:ReferenceDataSources"
+    },
+    "ReferenceId": {
+      "@id": "amsaf:ReferenceId"
+    },
+    "ReferenceRoleARN": {
+      "@id": "amsaf:ReferenceRoleARN"
+    },
+    "ReferenceSchema": {
+      "@id": "amsaf:ReferenceSchema"
+    },
+    "ReferenceSchemaUpdate": {
+      "@id": "amsaf:ReferenceSchemaUpdate"
+    },
+    "ResourceARN": {
+      "@id": "amsaf:ResourceARN"
+    },
+    "ResourceARNUpdate": {
+      "@id": "amsaf:ResourceARNUpdate"
+    },
+    "RoleARN": {
+      "@id": "amsaf:RoleARN"
+    },
+    "RuntimeEnvironment": {
+      "@id": "amsaf:RuntimeEnvironment"
+    },
+    "S3ContentLocationDescription": {
+      "@id": "amsaf:S3ContentLocationDescription"
+    },
+    "SecurityGroupIdUpdates": {
+      "@id": "amsaf:SecurityGroupIdUpdates"
+    },
+    "SecurityGroupIds": {
+      "@id": "amsaf:SecurityGroupIds"
+    },
+    "ServiceExecutionRole": {
+      "@id": "amsaf:ServiceExecutionRole"
+    },
+    "ServiceExecutionRoleUpdate": {
+      "@id": "amsaf:ServiceExecutionRoleUpdate"
+    },
+    "SessionExpirationDurationInSeconds": {
+      "@id": "amsaf:SessionExpirationDurationInSeconds"
+    },
+    "SnapshotCreationTimestamp": {
+      "@id": "amsaf:SnapshotCreationTimestamp"
+    },
+    "SnapshotName": {
+      "@id": "amsaf:SnapshotName"
+    },
+    "SnapshotStatus": {
+      "@id": "amsaf:SnapshotStatus"
+    },
+    "SnapshotSummaries": {
+      "@id": "amsaf:SnapshotSummaries"
+    },
+    "SnapshotsEnabled": {
+      "@id": "amsaf:SnapshotsEnabled"
+    },
+    "SnapshotsEnabledUpdate": {
+      "@id": "amsaf:SnapshotsEnabledUpdate"
+    },
+    "SqlRunConfigurations": {
+      "@id": "amsaf:SqlRunConfigurations"
+    },
+    "SqlType": {
+      "@id": "amsaf:SqlType"
+    },
+    "SubnetIdUpdates": {
+      "@id": "amsaf:SubnetIdUpdates"
+    },
+    "SubnetIds": {
+      "@id": "amsaf:SubnetIds"
+    },
+    "TableName": {
+      "@id": "amsaf:TableName"
+    },
+    "TableNameUpdate": {
+      "@id": "amsaf:TableNameUpdate"
+    },
+    "TagKeys": {
+      "@id": "amsaf:TagKeys"
+    },
+    "Tags": {
+      "@id": "amsaf:Tags"
+    },
+    "TextContent": {
+      "@id": "amsaf:TextContent"
+    },
+    "TextContentUpdate": {
+      "@id": "amsaf:TextContentUpdate"
+    },
+    "UrlType": {
+      "@id": "amsaf:UrlType"
+    },
+    "Value": {
+      "@id": "amsaf:Value"
+    },
+    "Version": {
+      "@id": "amsaf:Version"
+    },
+    "VpcConfigurationDescriptions": {
+      "@id": "amsaf:VpcConfigurationDescriptions"
+    },
+    "VpcConfigurationId": {
+      "@id": "amsaf:VpcConfigurationId"
+    },
+    "VpcConfigurationUpdates": {
+      "@id": "amsaf:VpcConfigurationUpdates"
+    },
+    "VpcConfigurations": {
+      "@id": "amsaf:VpcConfigurations"
+    },
+    "VpcId": {
+      "@id": "amsaf:VpcId"
+    },
+    "ZipFileContent": {
+      "@id": "amsaf:ZipFileContent"
+    },
+    "ZipFileContentUpdate": {
+      "@id": "amsaf:ZipFileContentUpdate"
+    }
+  }
+}

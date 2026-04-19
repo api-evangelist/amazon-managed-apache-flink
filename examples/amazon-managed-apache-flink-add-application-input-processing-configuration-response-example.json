@@ -1,0 +1,6 @@
+{
+  "ApplicationARN": "arn:aws:service:us-east-1:123456789012:resource/id",
+  "ApplicationVersionId": "abc12345",
+  "InputId": "abc12345",
+  "InputProcessingConfigurationDescription": "Example resource description"
+}

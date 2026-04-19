@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-catalog-configuration-description-structure.json",
+  "name": "CatalogConfigurationDescription",
+  "description": "The configuration parameters for the default Amazon Glue database. You use this database for Apache Flink SQL queries and table API transforms that you write in a Kinesis Data Analytics Studio notebook.",
+  "type": "object",
+  "properties": {
+    "GlueDataCatalogConfigurationDescription": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/GlueDataCatalogConfigurationDescription"
+        },
+        {
+          "description": "The configuration parameters for the default Amazon Glue database. You use this database for SQL queries that you write in a Kinesis Data Analytics Studio notebook."
+        }
+      ]
+    }
+  },
+  "required": [
+    "GlueDataCatalogConfigurationDescription"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-delete-application-input-processing-configuration-response-schema.json",
+  "title": "DeleteApplicationInputProcessingConfigurationResponse",
+  "description": "DeleteApplicationInputProcessingConfigurationResponse schema from Amazon Managed Service for Apache Flink API",
+  "type": "object",
+  "properties": {
+    "ApplicationARN": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ResourceARN"
+        },
+        {
+          "description": "The Amazon Resource Name (ARN) of the application."
+        }
+      ]
+    },
+    "ApplicationVersionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationVersionId"
+        },
+        {
+          "description": "The current application version ID."
+        }
+      ]
+    }
+  }
+}

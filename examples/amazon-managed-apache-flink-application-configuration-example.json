@@ -1,0 +1,9 @@
+{
+  "SqlApplicationConfiguration": "example-value",
+  "FlinkApplicationConfiguration": "example-value",
+  "EnvironmentProperties": "example-value",
+  "ApplicationCodeConfiguration": "example-value",
+  "ApplicationSnapshotConfiguration": "example-value",
+  "VpcConfigurations": "example-value",
+  "ZeppelinApplicationConfiguration": "example-value"
+}

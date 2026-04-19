@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-zeppelin-monitoring-configuration-update-structure.json",
+  "name": "ZeppelinMonitoringConfigurationUpdate",
+  "description": "Updates to the monitoring configuration for Apache Zeppelin within a Kinesis Data Analytics Studio notebook.",
+  "type": "object",
+  "properties": {
+    "LogLevelUpdate": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogLevel"
+        },
+        {
+          "description": "Updates to the logging level for Apache Zeppelin within a Kinesis Data Analytics Studio notebook."
+        }
+      ]
+    }
+  },
+  "required": [
+    "LogLevelUpdate"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-schema/amazon-managed-apache-flink-record-row-path-schema.json",
+  "title": "RecordRowPath",
+  "description": "RecordRowPath schema from Amazon Managed Service for Apache Flink API",
+  "type": "string",
+  "pattern": "^(?=^\\$)(?=^\\S+$).*$"
+}

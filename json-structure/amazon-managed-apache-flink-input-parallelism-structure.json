@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-input-parallelism-structure.json",
+  "name": "InputParallelism",
+  "description": "For a SQL-based Kinesis Data Analytics application, describes the number of in-application streams to create for a given streaming source. ",
+  "type": "object",
+  "properties": {
+    "Count": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/InputParallelismCount"
+        },
+        {
+          "description": "The number of in-application streams to create."
+        }
+      ]
+    }
+  }
+}

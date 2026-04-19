@@ -1,0 +1,8 @@
+{
+  "ApplicationName": "my-resource",
+  "ApplicationARN": "arn:aws:service:us-east-1:123456789012:resource/id",
+  "ApplicationStatus": "ACTIVE",
+  "ApplicationVersionId": "abc12345",
+  "RuntimeEnvironment": "example-value",
+  "ApplicationMode": "example-value"
+}

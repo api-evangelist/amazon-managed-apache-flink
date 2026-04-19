@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/json-structure/amazon-managed-apache-flink-snapshot-details-structure.json",
+  "name": "SnapshotDetails",
+  "description": "Provides details about a snapshot of application state.",
+  "type": "object",
+  "properties": {
+    "SnapshotName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotName"
+        },
+        {
+          "description": "The identifier for the application snapshot."
+        }
+      ]
+    },
+    "SnapshotStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotStatus"
+        },
+        {
+          "description": "The status of the application snapshot."
+        }
+      ]
+    },
+    "ApplicationVersionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ApplicationVersionId"
+        },
+        {
+          "description": "The current application version ID when the snapshot was created."
+        }
+      ]
+    },
+    "SnapshotCreationTimestamp": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Timestamp"
+        },
+        {
+          "description": "The timestamp of the application snapshot."
+        }
+      ]
+    }
+  },
+  "required": [
+    "SnapshotName",
+    "SnapshotStatus",
+    "ApplicationVersionId"
+  ]
+}
