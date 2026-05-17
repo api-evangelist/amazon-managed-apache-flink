@@ -45,7 +45,7 @@ apis:
         url: https://aws.amazon.com/managed-service-apache-flink/faqs/
       - type: JSONSchema
         url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
-      - type: JSON-LD
+      - type: JSONLD
         url: json-ld/amazon-managed-apache-flink-context.jsonld
 common:
   - type: Portal
