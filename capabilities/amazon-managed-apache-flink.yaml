@@ -1,0 +1,1528 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Amazon Kinesis Analytics
+  description: 'Amazon Kinesis Analytics. 31 operations. Lead operation: Amazon Managed Service for Apache Flink Add Application
+    Cloud Watch Logging Option. Self-contained Naftiko capability covering one Amazon Managed Apache Flink business surface.'
+  tags:
+  - Amazon Managed Apache Flink
+  - Amazon Kinesis Analytics
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    AMAZON_MANAGED_APACHE_FLINK_API_KEY: AMAZON_MANAGED_APACHE_FLINK_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: amazon-managed-apache-flink
+    baseUri: http://kinesisanalytics.{region}.amazonaws.com
+    description: Amazon Kinesis Analytics business capability. Self-contained, no shared references.
+    resources:
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationCloudWatchLoggingOption'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationCloudWatchLoggingOption
+      operations:
+      - name: addapplicationcloudwatchloggingoption
+        method: POST
+        description: Amazon Managed Service for Apache Flink Add Application Cloud Watch Logging Option
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationInput'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationInput
+      operations:
+      - name: addapplicationinput
+        method: POST
+        description: Amazon Managed Service for Apache Flink Add Application Input
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationInputProcessingConfigurati'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationInputProcessingConfiguration
+      operations:
+      - name: addapplicationinputprocessingconfiguration
+        method: POST
+        description: Amazon Managed Service for Apache Flink Add Application Input Processing Configuration
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationOutput'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationOutput
+      operations:
+      - name: addapplicationoutput
+        method: POST
+        description: Amazon Managed Service for Apache Flink Add Application Output
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource
+      operations:
+      - name: addapplicationreferencedatasource
+        method: POST
+        description: Amazon Managed Service for Apache Flink Add Application Reference Data Source
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationVpcConfiguration'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationVpcConfiguration
+      operations:
+      - name: addapplicationvpcconfiguration
+        method: POST
+        description: Amazon Managed Service for Apache Flink Add Application Vpc Configuration
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication
+      operations:
+      - name: createapplication
+        method: POST
+        description: Amazon Managed Service for Apache Flink Create Application
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.CreateApplicationPresignedUrl'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.CreateApplicationPresignedUrl
+      operations:
+      - name: createapplicationpresignedurl
+        method: POST
+        description: Amazon Managed Service for Apache Flink Create Application Presigned Url
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.CreateApplicationSnapshot'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.CreateApplicationSnapshot
+      operations:
+      - name: createapplicationsnapshot
+        method: POST
+        description: Amazon Managed Service for Apache Flink Create Application Snapshot
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplication'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplication
+      operations:
+      - name: deleteapplication
+        method: POST
+        description: Amazon Managed Service for Apache Flink Delete Application
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationCloudWatchLoggingOption'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationCloudWatchLoggingOption
+      operations:
+      - name: deleteapplicationcloudwatchloggingoption
+        method: POST
+        description: Amazon Managed Service for Apache Flink Delete Application Cloud Watch Logging Option
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationInputProcessingConfigur'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationInputProcessingConfiguration
+      operations:
+      - name: deleteapplicationinputprocessingconfiguration
+        method: POST
+        description: Amazon Managed Service for Apache Flink Delete Application Input Processing Configuration
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationOutput'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationOutput
+      operations:
+      - name: deleteapplicationoutput
+        method: POST
+        description: Amazon Managed Service for Apache Flink Delete Application Output
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationReferenceDataSource'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationReferenceDataSource
+      operations:
+      - name: deleteapplicationreferencedatasource
+        method: POST
+        description: Amazon Managed Service for Apache Flink Delete Application Reference Data Source
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationSnapshot'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationSnapshot
+      operations:
+      - name: deleteapplicationsnapshot
+        method: POST
+        description: Amazon Managed Service for Apache Flink Delete Application Snapshot
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationVpcConfiguration'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationVpcConfiguration
+      operations:
+      - name: deleteapplicationvpcconfiguration
+        method: POST
+        description: Amazon Managed Service for Apache Flink Delete Application Vpc Configuration
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication
+      operations:
+      - name: describeapplication
+        method: POST
+        description: Amazon Managed Service for Apache Flink Describe Application
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationSnapshot'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationSnapshot
+      operations:
+      - name: describeapplicationsnapshot
+        method: POST
+        description: Amazon Managed Service for Apache Flink Describe Application Snapshot
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion
+      operations:
+      - name: describeapplicationversion
+        method: POST
+        description: Amazon Managed Service for Apache Flink Describe Application Version
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.DiscoverInputSchema'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.DiscoverInputSchema
+      operations:
+      - name: discoverinputschema
+        method: POST
+        description: Amazon Managed Service for Apache Flink Discover Input Schema
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.ListApplicationSnapshots'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.ListApplicationSnapshots
+      operations:
+      - name: listapplicationsnapshots
+        method: POST
+        description: Amazon Managed Service for Apache Flink List Application Snapshots
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.ListApplicationVersions'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.ListApplicationVersions
+      operations:
+      - name: listapplicationversions
+        method: POST
+        description: Amazon Managed Service for Apache Flink List Application Versions
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.ListApplications'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.ListApplications
+      operations:
+      - name: listapplications
+        method: POST
+        description: Amazon Managed Service for Apache Flink List Applications
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.ListTagsForResource'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.ListTagsForResource
+      operations:
+      - name: listtagsforresource
+        method: POST
+        description: Amazon Managed Service for Apache Flink List Tags for Resource
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication
+      operations:
+      - name: rollbackapplication
+        method: POST
+        description: Amazon Managed Service for Apache Flink Rollback Application
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.StartApplication'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.StartApplication
+      operations:
+      - name: startapplication
+        method: POST
+        description: Amazon Managed Service for Apache Flink Start Application
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.StopApplication'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.StopApplication
+      operations:
+      - name: stopapplication
+        method: POST
+        description: Amazon Managed Service for Apache Flink Stop Application
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.TagResource'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.TagResource
+      operations:
+      - name: tagresource
+        method: POST
+        description: Amazon Managed Service for Apache Flink Tag Resource
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.UntagResource'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.UntagResource
+      operations:
+      - name: untagresource
+        method: POST
+        description: Amazon Managed Service for Apache Flink Untag Resource
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.UpdateApplication'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.UpdateApplication
+      operations:
+      - name: updateapplication
+        method: POST
+        description: Amazon Managed Service for Apache Flink Update Application
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=KinesisAnalytics_20180523.UpdateApplicationMaintenanceConfiguratio'
+      path: /#X-Amz-Target=KinesisAnalytics_20180523.UpdateApplicationMaintenanceConfiguration
+      operations:
+      - name: updateapplicationmaintenanceconfiguration
+        method: POST
+        description: Amazon Managed Service for Apache Flink Update Application Maintenance Configuration
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{env.AMAZON_MANAGED_APACHE_FLINK_API_KEY}}'
+      placement: header
+  exposes:
+  - type: rest
+    namespace: amazon-managed-apache-flink-rest
+    port: 8080
+    description: REST adapter for Amazon Kinesis Analytics. One Spectral-compliant resource per consumed operation, prefixed
+      with /v1.
+    resources:
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-addapplicationcloudwatchloggingoption
+      name: x-amz-target-kinesisanalytics-20180523-addapplicationcloudwatchloggingoption
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.AddApplicationCloudWatchLoggingOption.'
+      operations:
+      - method: POST
+        name: addapplicationcloudwatchloggingoption
+        description: Amazon Managed Service for Apache Flink Add Application Cloud Watch Logging Option
+        call: amazon-managed-apache-flink.addapplicationcloudwatchloggingoption
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-addapplicationinput
+      name: x-amz-target-kinesisanalytics-20180523-addapplicationinput
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.AddApplicationInput.'
+      operations:
+      - method: POST
+        name: addapplicationinput
+        description: Amazon Managed Service for Apache Flink Add Application Input
+        call: amazon-managed-apache-flink.addapplicationinput
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-addapplicationinputprocessingconfiguration
+      name: x-amz-target-kinesisanalytics-20180523-addapplicationinputprocessingconfigurati
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.AddApplicationInputProcessingConfigurati.'
+      operations:
+      - method: POST
+        name: addapplicationinputprocessingconfiguration
+        description: Amazon Managed Service for Apache Flink Add Application Input Processing Configuration
+        call: amazon-managed-apache-flink.addapplicationinputprocessingconfiguration
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-addapplicationoutput
+      name: x-amz-target-kinesisanalytics-20180523-addapplicationoutput
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.AddApplicationOutput.'
+      operations:
+      - method: POST
+        name: addapplicationoutput
+        description: Amazon Managed Service for Apache Flink Add Application Output
+        call: amazon-managed-apache-flink.addapplicationoutput
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-addapplicationreferencedatasource
+      name: x-amz-target-kinesisanalytics-20180523-addapplicationreferencedatasource
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource.'
+      operations:
+      - method: POST
+        name: addapplicationreferencedatasource
+        description: Amazon Managed Service for Apache Flink Add Application Reference Data Source
+        call: amazon-managed-apache-flink.addapplicationreferencedatasource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-addapplicationvpcconfiguration
+      name: x-amz-target-kinesisanalytics-20180523-addapplicationvpcconfiguration
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.AddApplicationVpcConfiguration.'
+      operations:
+      - method: POST
+        name: addapplicationvpcconfiguration
+        description: Amazon Managed Service for Apache Flink Add Application Vpc Configuration
+        call: amazon-managed-apache-flink.addapplicationvpcconfiguration
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-createapplication
+      name: x-amz-target-kinesisanalytics-20180523-createapplication
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.CreateApplication.'
+      operations:
+      - method: POST
+        name: createapplication
+        description: Amazon Managed Service for Apache Flink Create Application
+        call: amazon-managed-apache-flink.createapplication
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-createapplicationpresignedurl
+      name: x-amz-target-kinesisanalytics-20180523-createapplicationpresignedurl
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.CreateApplicationPresignedUrl.'
+      operations:
+      - method: POST
+        name: createapplicationpresignedurl
+        description: Amazon Managed Service for Apache Flink Create Application Presigned Url
+        call: amazon-managed-apache-flink.createapplicationpresignedurl
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-createapplicationsnapshot
+      name: x-amz-target-kinesisanalytics-20180523-createapplicationsnapshot
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.CreateApplicationSnapshot.'
+      operations:
+      - method: POST
+        name: createapplicationsnapshot
+        description: Amazon Managed Service for Apache Flink Create Application Snapshot
+        call: amazon-managed-apache-flink.createapplicationsnapshot
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-deleteapplication
+      name: x-amz-target-kinesisanalytics-20180523-deleteapplication
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.DeleteApplication.'
+      operations:
+      - method: POST
+        name: deleteapplication
+        description: Amazon Managed Service for Apache Flink Delete Application
+        call: amazon-managed-apache-flink.deleteapplication
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-deleteapplicationcloudwatchloggingoption
+      name: x-amz-target-kinesisanalytics-20180523-deleteapplicationcloudwatchloggingoption
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationCloudWatchLoggingOption.'
+      operations:
+      - method: POST
+        name: deleteapplicationcloudwatchloggingoption
+        description: Amazon Managed Service for Apache Flink Delete Application Cloud Watch Logging Option
+        call: amazon-managed-apache-flink.deleteapplicationcloudwatchloggingoption
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-deleteapplicationinputprocessingconfiguration
+      name: x-amz-target-kinesisanalytics-20180523-deleteapplicationinputprocessingconfigur
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationInputProcessingConfigur.'
+      operations:
+      - method: POST
+        name: deleteapplicationinputprocessingconfiguration
+        description: Amazon Managed Service for Apache Flink Delete Application Input Processing Configuration
+        call: amazon-managed-apache-flink.deleteapplicationinputprocessingconfiguration
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-deleteapplicationoutput
+      name: x-amz-target-kinesisanalytics-20180523-deleteapplicationoutput
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationOutput.'
+      operations:
+      - method: POST
+        name: deleteapplicationoutput
+        description: Amazon Managed Service for Apache Flink Delete Application Output
+        call: amazon-managed-apache-flink.deleteapplicationoutput
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-deleteapplicationreferencedatasource
+      name: x-amz-target-kinesisanalytics-20180523-deleteapplicationreferencedatasource
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationReferenceDataSource.'
+      operations:
+      - method: POST
+        name: deleteapplicationreferencedatasource
+        description: Amazon Managed Service for Apache Flink Delete Application Reference Data Source
+        call: amazon-managed-apache-flink.deleteapplicationreferencedatasource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-deleteapplicationsnapshot
+      name: x-amz-target-kinesisanalytics-20180523-deleteapplicationsnapshot
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationSnapshot.'
+      operations:
+      - method: POST
+        name: deleteapplicationsnapshot
+        description: Amazon Managed Service for Apache Flink Delete Application Snapshot
+        call: amazon-managed-apache-flink.deleteapplicationsnapshot
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-deleteapplicationvpcconfiguration
+      name: x-amz-target-kinesisanalytics-20180523-deleteapplicationvpcconfiguration
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.DeleteApplicationVpcConfiguration.'
+      operations:
+      - method: POST
+        name: deleteapplicationvpcconfiguration
+        description: Amazon Managed Service for Apache Flink Delete Application Vpc Configuration
+        call: amazon-managed-apache-flink.deleteapplicationvpcconfiguration
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-describeapplication
+      name: x-amz-target-kinesisanalytics-20180523-describeapplication
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication.'
+      operations:
+      - method: POST
+        name: describeapplication
+        description: Amazon Managed Service for Apache Flink Describe Application
+        call: amazon-managed-apache-flink.describeapplication
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-describeapplicationsnapshot
+      name: x-amz-target-kinesisanalytics-20180523-describeapplicationsnapshot
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationSnapshot.'
+      operations:
+      - method: POST
+        name: describeapplicationsnapshot
+        description: Amazon Managed Service for Apache Flink Describe Application Snapshot
+        call: amazon-managed-apache-flink.describeapplicationsnapshot
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-describeapplicationversion
+      name: x-amz-target-kinesisanalytics-20180523-describeapplicationversion
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion.'
+      operations:
+      - method: POST
+        name: describeapplicationversion
+        description: Amazon Managed Service for Apache Flink Describe Application Version
+        call: amazon-managed-apache-flink.describeapplicationversion
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-discoverinputschema
+      name: x-amz-target-kinesisanalytics-20180523-discoverinputschema
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.DiscoverInputSchema.'
+      operations:
+      - method: POST
+        name: discoverinputschema
+        description: Amazon Managed Service for Apache Flink Discover Input Schema
+        call: amazon-managed-apache-flink.discoverinputschema
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-listapplicationsnapshots
+      name: x-amz-target-kinesisanalytics-20180523-listapplicationsnapshots
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.ListApplicationSnapshots.'
+      operations:
+      - method: POST
+        name: listapplicationsnapshots
+        description: Amazon Managed Service for Apache Flink List Application Snapshots
+        call: amazon-managed-apache-flink.listapplicationsnapshots
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-listapplicationversions
+      name: x-amz-target-kinesisanalytics-20180523-listapplicationversions
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.ListApplicationVersions.'
+      operations:
+      - method: POST
+        name: listapplicationversions
+        description: Amazon Managed Service for Apache Flink List Application Versions
+        call: amazon-managed-apache-flink.listapplicationversions
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-listapplications
+      name: x-amz-target-kinesisanalytics-20180523-listapplications
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.ListApplications.'
+      operations:
+      - method: POST
+        name: listapplications
+        description: Amazon Managed Service for Apache Flink List Applications
+        call: amazon-managed-apache-flink.listapplications
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-listtagsforresource
+      name: x-amz-target-kinesisanalytics-20180523-listtagsforresource
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.ListTagsForResource.'
+      operations:
+      - method: POST
+        name: listtagsforresource
+        description: Amazon Managed Service for Apache Flink List Tags for Resource
+        call: amazon-managed-apache-flink.listtagsforresource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-rollbackapplication
+      name: x-amz-target-kinesisanalytics-20180523-rollbackapplication
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication.'
+      operations:
+      - method: POST
+        name: rollbackapplication
+        description: Amazon Managed Service for Apache Flink Rollback Application
+        call: amazon-managed-apache-flink.rollbackapplication
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-startapplication
+      name: x-amz-target-kinesisanalytics-20180523-startapplication
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.StartApplication.'
+      operations:
+      - method: POST
+        name: startapplication
+        description: Amazon Managed Service for Apache Flink Start Application
+        call: amazon-managed-apache-flink.startapplication
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-stopapplication
+      name: x-amz-target-kinesisanalytics-20180523-stopapplication
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.StopApplication.'
+      operations:
+      - method: POST
+        name: stopapplication
+        description: Amazon Managed Service for Apache Flink Stop Application
+        call: amazon-managed-apache-flink.stopapplication
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-tagresource
+      name: x-amz-target-kinesisanalytics-20180523-tagresource
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.TagResource.'
+      operations:
+      - method: POST
+        name: tagresource
+        description: Amazon Managed Service for Apache Flink Tag Resource
+        call: amazon-managed-apache-flink.tagresource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-untagresource
+      name: x-amz-target-kinesisanalytics-20180523-untagresource
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.UntagResource.'
+      operations:
+      - method: POST
+        name: untagresource
+        description: Amazon Managed Service for Apache Flink Untag Resource
+        call: amazon-managed-apache-flink.untagresource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-updateapplication
+      name: x-amz-target-kinesisanalytics-20180523-updateapplication
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.UpdateApplication.'
+      operations:
+      - method: POST
+        name: updateapplication
+        description: Amazon Managed Service for Apache Flink Update Application
+        call: amazon-managed-apache-flink.updateapplication
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-kinesisanalytics-20180523-updateapplicationmaintenanceconfiguration
+      name: x-amz-target-kinesisanalytics-20180523-updateapplicationmaintenanceconfiguratio
+      description: 'REST surface for #X-Amz-Target=KinesisAnalytics_20180523.UpdateApplicationMaintenanceConfiguratio.'
+      operations:
+      - method: POST
+        name: updateapplicationmaintenanceconfiguration
+        description: Amazon Managed Service for Apache Flink Update Application Maintenance Configuration
+        call: amazon-managed-apache-flink.updateapplicationmaintenanceconfiguration
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: amazon-managed-apache-flink-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Amazon Kinesis Analytics. One tool per consumed operation, routed inline through this capability's
+      consumes block.
+    tools:
+    - name: amazon-managed-service-apache-flink
+      description: Amazon Managed Service for Apache Flink Add Application Cloud Watch Logging Option
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.addapplicationcloudwatchloggingoption
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-2
+      description: Amazon Managed Service for Apache Flink Add Application Input
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.addapplicationinput
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-3
+      description: Amazon Managed Service for Apache Flink Add Application Input Processing Configuration
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.addapplicationinputprocessingconfiguration
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-4
+      description: Amazon Managed Service for Apache Flink Add Application Output
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.addapplicationoutput
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-5
+      description: Amazon Managed Service for Apache Flink Add Application Reference Data Source
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.addapplicationreferencedatasource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-6
+      description: Amazon Managed Service for Apache Flink Add Application Vpc Configuration
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.addapplicationvpcconfiguration
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-7
+      description: Amazon Managed Service for Apache Flink Create Application
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.createapplication
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-8
+      description: Amazon Managed Service for Apache Flink Create Application Presigned Url
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.createapplicationpresignedurl
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-9
+      description: Amazon Managed Service for Apache Flink Create Application Snapshot
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.createapplicationsnapshot
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-10
+      description: Amazon Managed Service for Apache Flink Delete Application
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.deleteapplication
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-11
+      description: Amazon Managed Service for Apache Flink Delete Application Cloud Watch Logging Option
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.deleteapplicationcloudwatchloggingoption
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-12
+      description: Amazon Managed Service for Apache Flink Delete Application Input Processing Configuration
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.deleteapplicationinputprocessingconfiguration
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-13
+      description: Amazon Managed Service for Apache Flink Delete Application Output
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.deleteapplicationoutput
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-14
+      description: Amazon Managed Service for Apache Flink Delete Application Reference Data Source
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.deleteapplicationreferencedatasource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-15
+      description: Amazon Managed Service for Apache Flink Delete Application Snapshot
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.deleteapplicationsnapshot
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-16
+      description: Amazon Managed Service for Apache Flink Delete Application Vpc Configuration
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.deleteapplicationvpcconfiguration
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-17
+      description: Amazon Managed Service for Apache Flink Describe Application
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.describeapplication
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-18
+      description: Amazon Managed Service for Apache Flink Describe Application Snapshot
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.describeapplicationsnapshot
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-19
+      description: Amazon Managed Service for Apache Flink Describe Application Version
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.describeapplicationversion
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-20
+      description: Amazon Managed Service for Apache Flink Discover Input Schema
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.discoverinputschema
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-21
+      description: Amazon Managed Service for Apache Flink List Application Snapshots
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.listapplicationsnapshots
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-22
+      description: Amazon Managed Service for Apache Flink List Application Versions
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.listapplicationversions
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-23
+      description: Amazon Managed Service for Apache Flink List Applications
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.listapplications
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-24
+      description: Amazon Managed Service for Apache Flink List Tags for Resource
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.listtagsforresource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-25
+      description: Amazon Managed Service for Apache Flink Rollback Application
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.rollbackapplication
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-26
+      description: Amazon Managed Service for Apache Flink Start Application
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.startapplication
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-27
+      description: Amazon Managed Service for Apache Flink Stop Application
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.stopapplication
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-28
+      description: Amazon Managed Service for Apache Flink Tag Resource
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.tagresource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-29
+      description: Amazon Managed Service for Apache Flink Untag Resource
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.untagresource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-30
+      description: Amazon Managed Service for Apache Flink Update Application
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.updateapplication
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: amazon-managed-service-apache-flink-31
+      description: Amazon Managed Service for Apache Flink Update Application Maintenance Configuration
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-managed-apache-flink.updateapplicationmaintenanceconfiguration
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
