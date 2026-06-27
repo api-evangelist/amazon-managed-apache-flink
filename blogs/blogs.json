@@ -2,8 +2,11 @@
   "repo": "amazon-managed-apache-flink",
   "feeds": [
     {
-      "source": "https://aws.amazon.com/blogs/big-data/tag/amazon-managed-service-for-apache-flink/",
-      "error": "HTTPError"
+      "source": "https://aws.amazon.com/blogs/big-data/category/analytics/amazon-managed-service-for-apache-flink/feed/",
+      "feed_url": "https://aws.amazon.com/blogs/big-data/category/analytics/amazon-managed-service-for-apache-flink/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     },
     {
       "source": "https://aws.amazon.com/premiumsupport/",
@@ -14,5 +17,5 @@
     }
   ],
   "post_count": 159,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z"
 }
