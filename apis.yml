@@ -45,6 +45,14 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-managed-apache-flink.yaml
 common:
+- type: TrustCenter
+  url: security/amazon-managed-apache-flink-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/amazon-managed-apache-flink-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amazon-managed-apache-flink-domain-security.yml
+- type: Authentication
+  url: authentication/amazon-managed-apache-flink-authentication.yml
 - type: Portal
   url: https://aws.amazon.com/managed-service-apache-flink/
 - type: Documentation
