@@ -45,6 +45,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-managed-apache-flink.yaml
 common:
+- type: AgenticAccess
+  url: agentic-access/amazon-managed-apache-flink-agentic-access.yml
 - type: TrustCenter
   url: security/amazon-managed-apache-flink-trust-center.yml
 - type: VulnerabilityDisclosure
