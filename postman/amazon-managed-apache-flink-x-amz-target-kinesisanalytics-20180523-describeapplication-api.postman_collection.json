@@ -1,0 +1,486 @@
+{
+  "info": {
+    "_postman_id": "770ff673-7e1e-4fc9-bf9b-b0efa766f2f0",
+    "name": "Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DescribeApplication API",
+    "description": "Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:37:52.000Z",
+    "updatedAt": "2026-07-28T10:37:52.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-770ff673-7e1e-4fc9-bf9b-b0efa766f2f0"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication",
+      "item": [
+        {
+          "name": "Amazon Managed Service for Apache Flink Describe Application",
+          "id": "45cd3aa9-f9e4-4c66-952e-039c4b67ba41",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "KinesisAnalytics_20180523.DescribeApplication"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ApplicationName\": \"f2Ixv6hrr\",\n  \"IncludeAdditionalDetails\": \"<boolean>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication"
+            },
+            "description": "<p>Returns information about a specific Kinesis Data Analytics application.</p> <p>If you want to retrieve a list of all applications in your account, use the <a>ListApplications</a> operation.</p>"
+          },
+          "response": [
+            {
+              "id": "235128f1-877d-48bb-bd85-842b305bba63",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.DescribeApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"f2Ixv6hrr\",\n  \"IncludeAdditionalDetails\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"ApplicationDetail\": {\n    \"ApplicationARN\": \"arn:\",\n    \"ApplicationName\": \"ckXi\",\n    \"RuntimeEnvironment\": \"FLINK-1_11\",\n    \"ApplicationStatus\": \"AUTOSCALING\",\n    \"ApplicationVersionId\": \"<integer>\",\n    \"ApplicationDescription\": \"<string>\",\n    \"ServiceExecutionRole\": \"arn:yOo\",\n    \"CreateTimestamp\": \"<dateTime>\",\n    \"LastUpdateTimestamp\": \"<dateTime>\",\n    \"ApplicationConfigurationDescription\": {\n      \"SqlApplicationConfigurationDescription\": {\n        \"InputDescriptions\": [\n          {\n            \"InputId\": \"x\",\n            \"NamePrefix\": \"53gGpu\",\n            \"InAppStreamNames\": [\n              \"2niH\",\n              \"x1cX_p3\"\n            ],\n            \"InputProcessingConfigurationDescription\": {\n              \"InputLambdaProcessorDescription\": {\n                \"ResourceARN\": \"arn:{\",\n                \"RoleARN\": \"arn:E!G]a]\"\n              }\n            },\n            \"KinesisStreamsInputDescription\": {\n              \"ResourceARN\": \"arn:l<6c%\",\n              \"RoleARN\": \"arn:ZJKrK}Qj\"\n            },\n            \"KinesisFirehoseInputDescription\": {\n              \"ResourceARN\": \"arn:;= I`|(l\",\n              \"RoleARN\": \"arn:l\"\n            },\n            \"InputSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"JSON\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The path to the top-level parent that contains the records.\"\n                    }\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The row delimiter. For example, in a CSV format, <i>'\\\\n'</i> is the typical row delimiter.\"\n                    },\n                    \"RecordColumnDelimiter\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The column delimiter. For example, in a CSV format, a comma (\\\",\\\") is the typical column delimiter.\"\n                    }\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"B~\\\\?K\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            },\n            \"InputParallelism\": {\n              \"Count\": \"<integer>\"\n            },\n            \"InputStartingPositionConfiguration\": {\n              \"InputStartingPosition\": \"NOW\"\n            }\n          },\n          {\n            \"InputId\": \"i\",\n            \"NamePrefix\": \"'H\",\n            \"InAppStreamNames\": [\n              \"EJ,5G1P\",\n              \"V^J|,\"\n            ],\n            \"InputProcessingConfigurationDescription\": {\n              \"InputLambdaProcessorDescription\": {\n                \"ResourceARN\": \"arn:!h d\",\n                \"RoleARN\": \"arn:T8P\"\n              }\n            },\n            \"KinesisStreamsInputDescription\": {\n              \"ResourceARN\": \"arn:rQAVYk*,Gd\",\n              \"RoleARN\": \"arn:F\"\n            },\n            \"KinesisFirehoseInputDescription\": {\n              \"ResourceARN\": \"arn:-k\",\n              \"RoleARN\": \"arn:O;#\"\n            },\n            \"InputSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"CSV\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The path to the top-level parent that contains the records.\"\n                    }\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The row delimiter. For example, in a CSV format, <i>'\\\\n'</i> is the typical row delimiter.\"\n                    },\n                    \"RecordColumnDelimiter\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The column delimiter. For example, in a CSV format, a comma (\\\",\\\") is the typical column delimiter.\"\n                    }\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"n{3B=j\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            },\n            \"InputParallelism\": {\n              \"Count\": \"<integer>\"\n            },\n            \"InputStartingPositionConfiguration\": {\n              \"InputStartingPosition\": \"TRIM_HORIZON\"\n            }\n          }\n        ],\n        \"OutputDescriptions\": [\n          {\n            \"OutputId\": \"MwwUj6gw4R\",\n            \"Name\": \")6G:,NEH\",\n            \"KinesisStreamsOutputDescription\": {\n              \"ResourceARN\": \"arn:<,})= #as\",\n              \"RoleARN\": \"arn:!|D+Y/U#zX\"\n            },\n            \"KinesisFirehoseOutputDescription\": {\n              \"ResourceARN\": \"arn:\",\n              \"RoleARN\": \"arn:v|<+Y3<?\"\n            },\n            \"LambdaOutputDescription\": {\n              \"ResourceARN\": \"arn:C}:oRq\",\n              \"RoleARN\": \"arn:?VO['\"\n            },\n            \"DestinationSchema\": {\n              \"RecordFormatType\": \"CSV\"\n            }\n          },\n          {\n            \"OutputId\": \"2mYckRE\",\n            \"Name\": \"4GE\",\n            \"KinesisStreamsOutputDescription\": {\n              \"ResourceARN\": \"arn:7\",\n              \"RoleARN\": \"arn:i7e^\"\n            },\n            \"KinesisFirehoseOutputDescription\": {\n              \"ResourceARN\": \"arn:x!;Q\",\n              \"RoleARN\": \"arn:V^K+499\"\n            },\n            \"LambdaOutputDescription\": {\n              \"ResourceARN\": \"arn:xXA(O-(J\",\n              \"RoleARN\": \"arn:5CZ\"\n            },\n            \"DestinationSchema\": {\n              \"RecordFormatType\": \"CSV\"\n            }\n          }\n        ],\n        \"ReferenceDataSourceDescriptions\": [\n          {\n            \"ReferenceId\": \"1tCSAk2-\",\n            \"TableName\": \"<string>\",\n            \"S3ReferenceDataSourceDescription\": {\n              \"BucketARN\": \"arn:U\",\n              \"FileKey\": \"<string>\",\n              \"ReferenceRoleARN\": \"arn:}1c\"\n            },\n            \"ReferenceSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"CSV\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The path to the top-level parent that contains the records.\"\n                    }\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The row delimiter. For example, in a CSV format, <i>'\\\\n'</i> is the typical row delimiter.\"\n                    },\n                    \"RecordColumnDelimiter\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The column delimiter. For example, in a CSV format, a comma (\\\",\\\") is the typical column delimiter.\"\n                    }\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"|})]\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            }\n          },\n          {\n            \"ReferenceId\": \"OUVO7FRW\",\n            \"TableName\": \"<string>\",\n            \"S3ReferenceDataSourceDescription\": {\n              \"BucketARN\": \"arn:&LHu*\",\n              \"FileKey\": \"<string>\",\n              \"ReferenceRoleARN\": \"arn:o?s3+I]E\"\n            },\n            \"ReferenceSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"CSV\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The path to the top-level parent that contains the records.\"\n                    }\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The row delimiter. For example, in a CSV format, <i>'\\\\n'</i> is the typical row delimiter.\"\n                    },\n                    \"RecordColumnDelimiter\": {\n                      \"value\": \"<Error: Too many levels of nesting to fake this schema>\",\n                      \"description\": \"The column delimiter. For example, in a CSV format, a comma (\\\",\\\") is the typical column delimiter.\"\n                    }\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \",7m\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            }\n          }\n        ]\n      },\n      \"ApplicationCodeConfigurationDescription\": {\n        \"CodeContentType\": \"PLAINTEXT\",\n        \"CodeContentDescription\": {\n          \"TextContent\": \"<string>\",\n          \"CodeMD5\": \"<string>\",\n          \"CodeSize\": \"<integer>\",\n          \"S3ApplicationCodeLocationDescription\": {\n            \"BucketARN\": \"arn:\\\"ZH\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          }\n        }\n      },\n      \"RunConfigurationDescription\": {\n        \"ApplicationRestoreConfigurationDescription\": {\n          \"ApplicationRestoreType\": \"SKIP_RESTORE_FROM_SNAPSHOT\",\n          \"SnapshotName\": \"0tNBpNK\"\n        },\n        \"FlinkRunConfigurationDescription\": {\n          \"AllowNonRestoredState\": \"<boolean>\"\n        }\n      },\n      \"FlinkApplicationConfigurationDescription\": {\n        \"CheckpointConfigurationDescription\": {\n          \"ConfigurationType\": \"CUSTOM\",\n          \"CheckpointingEnabled\": \"<boolean>\",\n          \"CheckpointInterval\": \"<integer>\",\n          \"MinPauseBetweenCheckpoints\": \"<integer>\"\n        },\n        \"MonitoringConfigurationDescription\": {\n          \"ConfigurationType\": \"DEFAULT\",\n          \"MetricsLevel\": \"PARALLELISM\",\n          \"LogLevel\": \"ERROR\"\n        },\n        \"ParallelismConfigurationDescription\": {\n          \"ConfigurationType\": \"DEFAULT\",\n          \"Parallelism\": \"<integer>\",\n          \"ParallelismPerKPU\": \"<integer>\",\n          \"CurrentParallelism\": \"<integer>\",\n          \"AutoScalingEnabled\": \"<boolean>\"\n        },\n        \"JobPlanDescription\": \"<string>\"\n      },\n      \"EnvironmentPropertyDescriptions\": {\n        \"PropertyGroupDescriptions\": [\n          {\n            \"PropertyGroupId\": \"vQ\",\n            \"PropertyMap\": {\n              \"in8\": \"<string>\",\n              \"etb9\": \"<string>\",\n              \"adipisicing7d1\": \"<string>\",\n              \"dolore_d3\": \"<string>\",\n              \"deserunt1e3\": \"<string>\",\n              \"dolor_cf\": \"<string>\",\n              \"commodo1\": \"<string>\",\n              \"ipsum_ac\": \"<string>\",\n              \"ea65\": \"<string>\",\n              \"ut_7e\": \"<string>\"\n            }\n          },\n          {\n            \"PropertyGroupId\": \"Iyfx9U\",\n            \"PropertyMap\": {\n              \"deserunt_97\": \"<string>\",\n              \"minim_1d\": \"<string>\",\n              \"do1d\": \"<string>\",\n              \"cupidatat_f\": \"<string>\",\n              \"dolor4_b\": \"<string>\",\n              \"ipsum_44\": \"<string>\",\n              \"sit76\": \"<string>\",\n              \"nisi_33\": \"<string>\",\n              \"dolore2_\": \"<string>\",\n              \"exercitation519\": \"<string>\",\n              \"commodo5\": \"<string>\",\n              \"Duis1\": \"<string>\",\n              \"laborum_860\": \"<string>\",\n              \"qui_e\": \"<string>\",\n              \"cupidatat_6c\": \"<string>\",\n              \"commodod6\": \"<string>\",\n              \"proident408\": \"<string>\",\n              \"est_e\": \"<string>\",\n              \"ea_0__\": \"<string>\",\n              \"officiab\": \"<string>\",\n              \"nisi_e\": \"<string>\",\n              \"mollit_27\": \"<string>\",\n              \"consequat_43\": \"<string>\",\n              \"aute_b3\": \"<string>\",\n              \"et69f\": \"<string>\",\n              \"fugiat_21\": \"<string>\",\n              \"dolor_450\": \"<string>\",\n              \"dolored\": \"<string>\",\n              \"amet_c\": \"<string>\",\n              \"nostrud_f\": \"<string>\",\n              \"dolore\": \"<string>\",\n              \"dolor_2\": \"<string>\",\n              \"magna_86b\": \"<string>\",\n              \"ut_4ef\": \"<string>\",\n              \"ullamco_7\": \"<string>\",\n              \"eu0\": \"<string>\",\n              \"temporef\": \"<string>\",\n              \"incididunt_628\": \"<string>\",\n              \"esse2c\": \"<string>\",\n              \"ad_9\": \"<string>\",\n              \"eiusmod_2\": \"<string>\",\n              \"veniam_6\": \"<string>\",\n              \"occaecat__6\": \"<string>\",\n              \"esse47\": \"<string>\",\n              \"occaecat_67\": \"<string>\",\n              \"commodo_d98\": \"<string>\"\n            }\n          }\n        ]\n      },\n      \"ApplicationSnapshotConfigurationDescription\": {\n        \"SnapshotsEnabled\": \"<boolean>\"\n      },\n      \"VpcConfigurationDescriptions\": [\n        {\n          \"VpcConfigurationId\": \"410\",\n          \"VpcId\": \"<string>\",\n          \"SubnetIds\": [\n            \"<string>\"\n          ],\n          \"SecurityGroupIds\": [\n            \"<string>\"\n          ]\n        },\n        {\n          \"VpcConfigurationId\": \"Sj13\",\n          \"VpcId\": \"<string>\",\n          \"SubnetIds\": [\n            \"<string>\"\n          ],\n          \"SecurityGroupIds\": [\n            \"<string>\"\n          ]\n        }\n      ],\n      \"ZeppelinApplicationConfigurationDescription\": {\n        \"MonitoringConfigurationDescription\": {\n          \"LogLevel\": \"ERROR\"\n        },\n        \"CatalogConfigurationDescription\": {\n          \"GlueDataCatalogConfigurationDescription\": {\n            \"DatabaseARN\": \"arn:mO@*-\"\n          }\n        },\n        \"DeployAsApplicationConfigurationDescription\": {\n          \"S3ContentLocationDescription\": {\n            \"BucketARN\": \"arn:{5\",\n            \"BasePath\": \"yd1i5ytv>\"\n          }\n        },\n        \"CustomArtifactsConfigurationDescription\": [\n          {\n            \"ArtifactType\": \"DEPENDENCY_JAR\",\n            \"S3ContentLocationDescription\": {\n              \"BucketARN\": \"arn:98\\\"\",\n              \"FileKey\": \"<string>\",\n              \"ObjectVersion\": \"<string>\"\n            },\n            \"MavenReferenceDescription\": {\n              \"GroupId\": \"3\",\n              \"ArtifactId\": \"5tGVr52_p\",\n              \"Version\": \"mwHFM\"\n            }\n          },\n          {\n            \"ArtifactType\": \"DEPENDENCY_JAR\",\n            \"S3ContentLocationDescription\": {\n              \"BucketARN\": \"arn:Y>\",\n              \"FileKey\": \"<string>\",\n              \"ObjectVersion\": \"<string>\"\n            },\n            \"MavenReferenceDescription\": {\n              \"GroupId\": \"Ay\",\n              \"ArtifactId\": \"Ys\",\n              \"Version\": \"3\"\n            }\n          }\n        ]\n      }\n    },\n    \"CloudWatchLoggingOptionDescriptions\": [\n      {\n        \"LogStreamARN\": \"arn:F\",\n        \"CloudWatchLoggingOptionId\": \"uoHw.s\",\n        \"RoleARN\": \"arn:DXmg!Iiv.0\"\n      },\n      {\n        \"LogStreamARN\": \"arn:Rm|]\",\n        \"CloudWatchLoggingOptionId\": \"Cjp7TdcvqDS\",\n        \"RoleARN\": \"arn:k\"\n      }\n    ],\n    \"ApplicationMaintenanceConfigurationDescription\": {\n      \"ApplicationMaintenanceWindowStartTime\": \"23:22\",\n      \"ApplicationMaintenanceWindowEndTime\": \"13:43\"\n    },\n    \"ApplicationVersionUpdatedFrom\": \"<integer>\",\n    \"ApplicationVersionRolledBackFrom\": \"<integer>\",\n    \"ConditionalToken\": \"6+p7T=/HssB\",\n    \"ApplicationVersionRolledBackTo\": \"<integer>\",\n    \"ApplicationMode\": \"STREAMING\"\n  }\n}",
+              "createdAt": "2026-07-28T10:37:52.000Z",
+              "updatedAt": "2026-07-28T10:37:52.000Z",
+              "uid": "35240-235128f1-877d-48bb-bd85-842b305bba63"
+            },
+            {
+              "id": "ae3e7df8-6bb8-4447-bf41-b7e8b84a82ce",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.DescribeApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"f2Ixv6hrr\",\n  \"IncludeAdditionalDetails\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:52.000Z",
+              "updatedAt": "2026-07-28T10:37:52.000Z",
+              "uid": "35240-ae3e7df8-6bb8-4447-bf41-b7e8b84a82ce"
+            },
+            {
+              "id": "d4d53bcf-0c4b-4092-a9dc-3fd7bd6a2e1f",
+              "name": "InvalidArgumentException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.DescribeApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"f2Ixv6hrr\",\n  \"IncludeAdditionalDetails\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:52.000Z",
+              "updatedAt": "2026-07-28T10:37:52.000Z",
+              "uid": "35240-d4d53bcf-0c4b-4092-a9dc-3fd7bd6a2e1f"
+            },
+            {
+              "id": "6392f662-b9a2-462a-9434-a8ed637a896a",
+              "name": "InvalidRequestException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.DescribeApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"f2Ixv6hrr\",\n  \"IncludeAdditionalDetails\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.DescribeApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:52.000Z",
+              "updatedAt": "2026-07-28T10:37:52.000Z",
+              "uid": "35240-6392f662-b9a2-462a-9434-a8ed637a896a"
+            }
+          ],
+          "createdAt": "2026-07-28T10:37:52.000Z",
+          "updatedAt": "2026-07-28T10:37:52.000Z",
+          "uid": "35240-45cd3aa9-f9e4-4c66-952e-039c4b67ba41"
+        }
+      ],
+      "id": "be4f6598-8e12-4248-a7c7-495f3e88c1f0",
+      "createdAt": "2026-07-28T10:37:52.000Z",
+      "updatedAt": "2026-07-28T10:37:52.000Z",
+      "uid": "35240-be4f6598-8e12-4248-a7c7-495f3e88c1f0"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://kinesisanalytics.{{region}}.amazonaws.com"
+    }
+  ]
+}

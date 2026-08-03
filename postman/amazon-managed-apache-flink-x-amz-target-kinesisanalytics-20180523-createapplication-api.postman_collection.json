@@ -1,0 +1,926 @@
+{
+  "info": {
+    "_postman_id": "e5af1cf2-3f21-4b22-82a5-83e13c5e5bce",
+    "name": "Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.CreateApplication API",
+    "description": "Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:37:38.000Z",
+    "updatedAt": "2026-07-28T10:37:39.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-e5af1cf2-3f21-4b22-82a5-83e13c5e5bce"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication",
+      "item": [
+        {
+          "name": "Amazon Managed Service for Apache Flink Create Application",
+          "id": "5a1ac594-64ea-42d6-9a55-c3d77b874a56",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "KinesisAnalytics_20180523.CreateApplication"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ApplicationName\": \"qHiah0e10c1\",\n  \"RuntimeEnvironment\": \"FLINK-1_8\",\n  \"ServiceExecutionRole\": \"arn:[>c6Sa\\\"P\",\n  \"ApplicationDescription\": \"<string>\",\n  \"ApplicationConfiguration\": {\n    \"SqlApplicationConfiguration\": {\n      \"Inputs\": [\n        {\n          \"NamePrefix\": \"7fwA0|[/Ck\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"[\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"25Rh6\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:^OQzbP5\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:uWA?>rC@\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:_\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        },\n        {\n          \"NamePrefix\": \"[3=X\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"L(\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"N{]zE)\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:ZgD+_t&\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:(9q{H*Mg\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:L4X+g&53\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        }\n      ],\n      \"Outputs\": [\n        {\n          \"Name\": \"%HHf_z[A7\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"JSON\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:i/v\\\\'}74`H\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:rY885\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:1/LqRl%|\"\n          }\n        },\n        {\n          \"Name\": \"uE\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"CSV\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:X71ino\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:r4Cr\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:F1ko2?P4)\"\n          }\n        }\n      ],\n      \"ReferenceDataSources\": [\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \" \"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"8.,c.z\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:R{\\\")\",\n            \"FileKey\": \"<string>\"\n          }\n        },\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"iY|\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"!HY]pC~5dL\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:k9Ec7qn&gM\",\n            \"FileKey\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"FlinkApplicationConfiguration\": {\n      \"CheckpointConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"CheckpointingEnabled\": \"<boolean>\",\n        \"CheckpointInterval\": \"<integer>\",\n        \"MinPauseBetweenCheckpoints\": \"<integer>\"\n      },\n      \"MonitoringConfiguration\": {\n        \"ConfigurationType\": \"CUSTOM\",\n        \"MetricsLevel\": \"PARALLELISM\",\n        \"LogLevel\": \"DEBUG\"\n      },\n      \"ParallelismConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"Parallelism\": \"<integer>\",\n        \"ParallelismPerKPU\": \"<integer>\",\n        \"AutoScalingEnabled\": \"<boolean>\"\n      }\n    },\n    \"EnvironmentProperties\": {\n      \"PropertyGroups\": [\n        {\n          \"PropertyGroupId\": \"H8Wc2qVzMm\",\n          \"PropertyMap\": {\n            \"nisi_a\": \"<string>\",\n            \"laborum_1\": \"<string>\",\n            \"laborea7\": \"<string>\",\n            \"laborum_8\": \"<string>\",\n            \"anim_b\": \"<string>\",\n            \"elit_2\": \"<string>\",\n            \"non_d5f\": \"<string>\",\n            \"laborum44b\": \"<string>\",\n            \"voluptate02\": \"<string>\",\n            \"aute_94\": \"<string>\",\n            \"sitdd\": \"<string>\",\n            \"sunt_9_8\": \"<string>\",\n            \"aute_db2\": \"<string>\",\n            \"cillum_63\": \"<string>\",\n            \"Excepteur264\": \"<string>\",\n            \"sit_6ee\": \"<string>\",\n            \"sed6_\": \"<string>\",\n            \"quis_95\": \"<string>\",\n            \"utf\": \"<string>\"\n          }\n        },\n        {\n          \"PropertyGroupId\": \"v\",\n          \"PropertyMap\": {\n            \"cillum07\": \"<string>\",\n            \"quis_2b8\": \"<string>\",\n            \"eiusmod_4\": \"<string>\",\n            \"ullamco_12\": \"<string>\",\n            \"exercitationea_\": \"<string>\",\n            \"doef7\": \"<string>\",\n            \"do042\": \"<string>\",\n            \"officia_cd9\": \"<string>\",\n            \"eiusmod_1d7\": \"<string>\",\n            \"id5\": \"<string>\",\n            \"magnaf2\": \"<string>\",\n            \"cupidatatb\": \"<string>\",\n            \"cillum_6\": \"<string>\",\n            \"elitada\": \"<string>\",\n            \"ullamco3c\": \"<string>\",\n            \"sit_c\": \"<string>\",\n            \"voluptate__\": \"<string>\",\n            \"amet_2e\": \"<string>\",\n            \"Ut_3f3\": \"<string>\",\n            \"ex_53\": \"<string>\",\n            \"ine5\": \"<string>\",\n            \"ut_4\": \"<string>\",\n            \"sint_35\": \"<string>\",\n            \"elitf5\": \"<string>\",\n            \"proident_92f\": \"<string>\",\n            \"mollit9\": \"<string>\",\n            \"anim_e7\": \"<string>\",\n            \"est96e\": \"<string>\",\n            \"et974\": \"<string>\",\n            \"ut_418\": \"<string>\",\n            \"sitd0\": \"<string>\",\n            \"velitfe\": \"<string>\",\n            \"occaecat_0b6\": \"<string>\",\n            \"ullamco_c\": \"<string>\",\n            \"eue3\": \"<string>\",\n            \"commodo_a1\": \"<string>\",\n            \"fugiat_9d\": \"<string>\",\n            \"adipisicing_eac\": \"<string>\",\n            \"id7d\": \"<string>\",\n            \"sit989\": \"<string>\",\n            \"dolorec13\": \"<string>\",\n            \"Excepteurc3b\": \"<string>\",\n            \"in_bbf\": \"<string>\",\n            \"dolor_1d\": \"<string>\",\n            \"nostrud_01\": \"<string>\",\n            \"Excepteur58\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"ApplicationCodeConfiguration\": {\n      \"CodeContentType\": \"PLAINTEXT\",\n      \"CodeContent\": {\n        \"TextContent\": \"<string>\",\n        \"ZipFileContent\": \"<string>\",\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:JRVk6r d(\",\n          \"FileKey\": \"<string>\",\n          \"ObjectVersion\": \"<string>\"\n        }\n      }\n    },\n    \"ApplicationSnapshotConfiguration\": {\n      \"SnapshotsEnabled\": \"<boolean>\"\n    },\n    \"VpcConfigurations\": [\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      },\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      }\n    ],\n    \"ZeppelinApplicationConfiguration\": {\n      \"MonitoringConfiguration\": {\n        \"LogLevel\": \"WARN\"\n      },\n      \"CatalogConfiguration\": {\n        \"GlueDataCatalogConfiguration\": {\n          \"DatabaseARN\": \"arn:y4X1RX\"\n        }\n      },\n      \"DeployAsApplicationConfiguration\": {\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:gs('[VX2@!\",\n          \"BasePath\": \"n-0bA@y9s\"\n        }\n      },\n      \"CustomArtifactsConfiguration\": [\n        {\n          \"ArtifactType\": \"DEPENDENCY_JAR\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:u,wQYo%D\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"3dP-0bNaDw\",\n            \"ArtifactId\": \"t5ggOA.uD5\",\n            \"Version\": \"j5jT\"\n          }\n        },\n        {\n          \"ArtifactType\": \"UDF\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:\\\\R2YQrnVnU\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"_dNoQ39\",\n            \"ArtifactId\": \"Z_eOeAec\",\n            \"Version\": \"-eAPLaq5L7\"\n          }\n        }\n      ]\n    }\n  },\n  \"CloudWatchLoggingOptions\": [\n    {\n      \"LogStreamARN\": \"arn:+\\\\:_.B %4\"\n    },\n    {\n      \"LogStreamARN\": \"arn:g6%f:)bD)f\"\n    }\n  ],\n  \"Tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"ApplicationMode\": \"STREAMING\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=KinesisAnalytics_20180523.CreateApplication"
+            },
+            "description": "Creates a Kinesis Data Analytics application. For information about creating a Kinesis Data Analytics application, see <a href=\"https://docs.aws.amazon.com/kinesisanalytics/latest/java/getting-started.html\">Creating an Application</a>."
+          },
+          "response": [
+            {
+              "id": "5685eb25-b868-4dbb-8884-f1522f7d40e3",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.CreateApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"qHiah0e10c1\",\n  \"RuntimeEnvironment\": \"FLINK-1_8\",\n  \"ServiceExecutionRole\": \"arn:[>c6Sa\\\"P\",\n  \"ApplicationDescription\": \"<string>\",\n  \"ApplicationConfiguration\": {\n    \"SqlApplicationConfiguration\": {\n      \"Inputs\": [\n        {\n          \"NamePrefix\": \"7fwA0|[/Ck\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"[\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"25Rh6\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:^OQzbP5\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:uWA?>rC@\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:_\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        },\n        {\n          \"NamePrefix\": \"[3=X\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"L(\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"N{]zE)\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:ZgD+_t&\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:(9q{H*Mg\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:L4X+g&53\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        }\n      ],\n      \"Outputs\": [\n        {\n          \"Name\": \"%HHf_z[A7\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"JSON\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:i/v\\\\'}74`H\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:rY885\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:1/LqRl%|\"\n          }\n        },\n        {\n          \"Name\": \"uE\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"CSV\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:X71ino\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:r4Cr\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:F1ko2?P4)\"\n          }\n        }\n      ],\n      \"ReferenceDataSources\": [\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \" \"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"8.,c.z\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:R{\\\")\",\n            \"FileKey\": \"<string>\"\n          }\n        },\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"iY|\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"!HY]pC~5dL\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:k9Ec7qn&gM\",\n            \"FileKey\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"FlinkApplicationConfiguration\": {\n      \"CheckpointConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"CheckpointingEnabled\": \"<boolean>\",\n        \"CheckpointInterval\": \"<integer>\",\n        \"MinPauseBetweenCheckpoints\": \"<integer>\"\n      },\n      \"MonitoringConfiguration\": {\n        \"ConfigurationType\": \"CUSTOM\",\n        \"MetricsLevel\": \"PARALLELISM\",\n        \"LogLevel\": \"DEBUG\"\n      },\n      \"ParallelismConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"Parallelism\": \"<integer>\",\n        \"ParallelismPerKPU\": \"<integer>\",\n        \"AutoScalingEnabled\": \"<boolean>\"\n      }\n    },\n    \"EnvironmentProperties\": {\n      \"PropertyGroups\": [\n        {\n          \"PropertyGroupId\": \"H8Wc2qVzMm\",\n          \"PropertyMap\": {\n            \"nisi_a\": \"<string>\",\n            \"laborum_1\": \"<string>\",\n            \"laborea7\": \"<string>\",\n            \"laborum_8\": \"<string>\",\n            \"anim_b\": \"<string>\",\n            \"elit_2\": \"<string>\",\n            \"non_d5f\": \"<string>\",\n            \"laborum44b\": \"<string>\",\n            \"voluptate02\": \"<string>\",\n            \"aute_94\": \"<string>\",\n            \"sitdd\": \"<string>\",\n            \"sunt_9_8\": \"<string>\",\n            \"aute_db2\": \"<string>\",\n            \"cillum_63\": \"<string>\",\n            \"Excepteur264\": \"<string>\",\n            \"sit_6ee\": \"<string>\",\n            \"sed6_\": \"<string>\",\n            \"quis_95\": \"<string>\",\n            \"utf\": \"<string>\"\n          }\n        },\n        {\n          \"PropertyGroupId\": \"v\",\n          \"PropertyMap\": {\n            \"cillum07\": \"<string>\",\n            \"quis_2b8\": \"<string>\",\n            \"eiusmod_4\": \"<string>\",\n            \"ullamco_12\": \"<string>\",\n            \"exercitationea_\": \"<string>\",\n            \"doef7\": \"<string>\",\n            \"do042\": \"<string>\",\n            \"officia_cd9\": \"<string>\",\n            \"eiusmod_1d7\": \"<string>\",\n            \"id5\": \"<string>\",\n            \"magnaf2\": \"<string>\",\n            \"cupidatatb\": \"<string>\",\n            \"cillum_6\": \"<string>\",\n            \"elitada\": \"<string>\",\n            \"ullamco3c\": \"<string>\",\n            \"sit_c\": \"<string>\",\n            \"voluptate__\": \"<string>\",\n            \"amet_2e\": \"<string>\",\n            \"Ut_3f3\": \"<string>\",\n            \"ex_53\": \"<string>\",\n            \"ine5\": \"<string>\",\n            \"ut_4\": \"<string>\",\n            \"sint_35\": \"<string>\",\n            \"elitf5\": \"<string>\",\n            \"proident_92f\": \"<string>\",\n            \"mollit9\": \"<string>\",\n            \"anim_e7\": \"<string>\",\n            \"est96e\": \"<string>\",\n            \"et974\": \"<string>\",\n            \"ut_418\": \"<string>\",\n            \"sitd0\": \"<string>\",\n            \"velitfe\": \"<string>\",\n            \"occaecat_0b6\": \"<string>\",\n            \"ullamco_c\": \"<string>\",\n            \"eue3\": \"<string>\",\n            \"commodo_a1\": \"<string>\",\n            \"fugiat_9d\": \"<string>\",\n            \"adipisicing_eac\": \"<string>\",\n            \"id7d\": \"<string>\",\n            \"sit989\": \"<string>\",\n            \"dolorec13\": \"<string>\",\n            \"Excepteurc3b\": \"<string>\",\n            \"in_bbf\": \"<string>\",\n            \"dolor_1d\": \"<string>\",\n            \"nostrud_01\": \"<string>\",\n            \"Excepteur58\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"ApplicationCodeConfiguration\": {\n      \"CodeContentType\": \"PLAINTEXT\",\n      \"CodeContent\": {\n        \"TextContent\": \"<string>\",\n        \"ZipFileContent\": \"<string>\",\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:JRVk6r d(\",\n          \"FileKey\": \"<string>\",\n          \"ObjectVersion\": \"<string>\"\n        }\n      }\n    },\n    \"ApplicationSnapshotConfiguration\": {\n      \"SnapshotsEnabled\": \"<boolean>\"\n    },\n    \"VpcConfigurations\": [\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      },\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      }\n    ],\n    \"ZeppelinApplicationConfiguration\": {\n      \"MonitoringConfiguration\": {\n        \"LogLevel\": \"WARN\"\n      },\n      \"CatalogConfiguration\": {\n        \"GlueDataCatalogConfiguration\": {\n          \"DatabaseARN\": \"arn:y4X1RX\"\n        }\n      },\n      \"DeployAsApplicationConfiguration\": {\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:gs('[VX2@!\",\n          \"BasePath\": \"n-0bA@y9s\"\n        }\n      },\n      \"CustomArtifactsConfiguration\": [\n        {\n          \"ArtifactType\": \"DEPENDENCY_JAR\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:u,wQYo%D\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"3dP-0bNaDw\",\n            \"ArtifactId\": \"t5ggOA.uD5\",\n            \"Version\": \"j5jT\"\n          }\n        },\n        {\n          \"ArtifactType\": \"UDF\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:\\\\R2YQrnVnU\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"_dNoQ39\",\n            \"ArtifactId\": \"Z_eOeAec\",\n            \"Version\": \"-eAPLaq5L7\"\n          }\n        }\n      ]\n    }\n  },\n  \"CloudWatchLoggingOptions\": [\n    {\n      \"LogStreamARN\": \"arn:+\\\\:_.B %4\"\n    },\n    {\n      \"LogStreamARN\": \"arn:g6%f:)bD)f\"\n    }\n  ],\n  \"Tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"ApplicationMode\": \"STREAMING\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.CreateApplication"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"ApplicationDetail\": {\n    \"ApplicationARN\": \"arn:= _sXKJ\",\n    \"ApplicationName\": \"kM9Qpockwo8\",\n    \"RuntimeEnvironment\": \"FLINK-1_6\",\n    \"ApplicationStatus\": \"UPDATING\",\n    \"ApplicationVersionId\": \"<integer>\",\n    \"ApplicationDescription\": \"<string>\",\n    \"ServiceExecutionRole\": \"arn:~so\",\n    \"CreateTimestamp\": \"<dateTime>\",\n    \"LastUpdateTimestamp\": \"<dateTime>\",\n    \"ApplicationConfigurationDescription\": {\n      \"SqlApplicationConfigurationDescription\": {\n        \"InputDescriptions\": [\n          {\n            \"InputId\": \"ep\",\n            \"NamePrefix\": \"PB\\\\rz9%{\",\n            \"InAppStreamNames\": [\n              \" \",\n              \")sOY!I];B~\"\n            ],\n            \"InputProcessingConfigurationDescription\": {\n              \"InputLambdaProcessorDescription\": {\n                \"ResourceARN\": \"arn:MT#8JN(4y\",\n                \"RoleARN\": \"arn:*#D1w\"\n              }\n            },\n            \"KinesisStreamsInputDescription\": {\n              \"ResourceARN\": \"arn:q\",\n              \"RoleARN\": \"arn:\\\\[%\"\n            },\n            \"KinesisFirehoseInputDescription\": {\n              \"ResourceARN\": \"arn:u$\",\n              \"RoleARN\": \"arn:}\"\n            },\n            \"InputSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"CSV\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"#az?1C)fJx\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"#=IAnGI\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            },\n            \"InputParallelism\": {\n              \"Count\": \"<integer>\"\n            },\n            \"InputStartingPositionConfiguration\": {\n              \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n            }\n          },\n          {\n            \"InputId\": \"I\",\n            \"NamePrefix\": \";?:s4\",\n            \"InAppStreamNames\": [\n              \")nE\",\n              \"W],A'}I[R\"\n            ],\n            \"InputProcessingConfigurationDescription\": {\n              \"InputLambdaProcessorDescription\": {\n                \"ResourceARN\": \"arn:g[c?7Lp=9}\",\n                \"RoleARN\": \"arn:ou sd(?c\"\n              }\n            },\n            \"KinesisStreamsInputDescription\": {\n              \"ResourceARN\": \"arn:px)=,\",\n              \"RoleARN\": \"arn:zZ!\"\n            },\n            \"KinesisFirehoseInputDescription\": {\n              \"ResourceARN\": \"arn:)f#\",\n              \"RoleARN\": \"arn:NL\"\n            },\n            \"InputSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"JSON\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"@pGSZm.\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"@?\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            },\n            \"InputParallelism\": {\n              \"Count\": \"<integer>\"\n            },\n            \"InputStartingPositionConfiguration\": {\n              \"InputStartingPosition\": \"NOW\"\n            }\n          }\n        ],\n        \"OutputDescriptions\": [\n          {\n            \"OutputId\": \"iSd\",\n            \"Name\": \"X\",\n            \"KinesisStreamsOutputDescription\": {\n              \"ResourceARN\": \"arn:b<D3!c\",\n              \"RoleARN\": \"arn:DLKg\"\n            },\n            \"KinesisFirehoseOutputDescription\": {\n              \"ResourceARN\": \"arn:Wpi#shqSv[\",\n              \"RoleARN\": \"arn:k53fOxl\"\n            },\n            \"LambdaOutputDescription\": {\n              \"ResourceARN\": \"arn:qNa{7fHVN{\",\n              \"RoleARN\": \"arn:O-hCcM5$\\\\\"\n            },\n            \"DestinationSchema\": {\n              \"RecordFormatType\": \"JSON\"\n            }\n          },\n          {\n            \"OutputId\": \"RQSHU1Wc\",\n            \"Name\": \"1X'$\",\n            \"KinesisStreamsOutputDescription\": {\n              \"ResourceARN\": \"arn:R>b\\\"cNd\",\n              \"RoleARN\": \"arn:\"\n            },\n            \"KinesisFirehoseOutputDescription\": {\n              \"ResourceARN\": \"arn:lalmh\",\n              \"RoleARN\": \"arn:9dm\"\n            },\n            \"LambdaOutputDescription\": {\n              \"ResourceARN\": \"arn:6[9\\\"UM*<Hl\",\n              \"RoleARN\": \"arn:\"\n            },\n            \"DestinationSchema\": {\n              \"RecordFormatType\": \"CSV\"\n            }\n          }\n        ],\n        \"ReferenceDataSourceDescriptions\": [\n          {\n            \"ReferenceId\": \"k3GOFq-2t54\",\n            \"TableName\": \"<string>\",\n            \"S3ReferenceDataSourceDescription\": {\n              \"BucketARN\": \"arn:{yF`5d\",\n              \"FileKey\": \"<string>\",\n              \"ReferenceRoleARN\": \"arn:]\"\n            },\n            \"ReferenceSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"JSON\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"$+DrF(;\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"X/\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            }\n          },\n          {\n            \"ReferenceId\": \"Ku1XgiZ\",\n            \"TableName\": \"<string>\",\n            \"S3ReferenceDataSourceDescription\": {\n              \"BucketARN\": \"arn:`x{;w*E\",\n              \"FileKey\": \"<string>\",\n              \"ReferenceRoleARN\": \"arn:1\"\n            },\n            \"ReferenceSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"CSV\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"TJ=FFA,\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"yLBz04\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            }\n          }\n        ]\n      },\n      \"ApplicationCodeConfigurationDescription\": {\n        \"CodeContentType\": \"ZIPFILE\",\n        \"CodeContentDescription\": {\n          \"TextContent\": \"<string>\",\n          \"CodeMD5\": \"<string>\",\n          \"CodeSize\": \"<integer>\",\n          \"S3ApplicationCodeLocationDescription\": {\n            \"BucketARN\": \"arn:\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          }\n        }\n      },\n      \"RunConfigurationDescription\": {\n        \"ApplicationRestoreConfigurationDescription\": {\n          \"ApplicationRestoreType\": \"RESTORE_FROM_LATEST_SNAPSHOT\",\n          \"SnapshotName\": \"Oj\"\n        },\n        \"FlinkRunConfigurationDescription\": {\n          \"AllowNonRestoredState\": \"<boolean>\"\n        }\n      },\n      \"FlinkApplicationConfigurationDescription\": {\n        \"CheckpointConfigurationDescription\": {\n          \"ConfigurationType\": \"DEFAULT\",\n          \"CheckpointingEnabled\": \"<boolean>\",\n          \"CheckpointInterval\": \"<integer>\",\n          \"MinPauseBetweenCheckpoints\": \"<integer>\"\n        },\n        \"MonitoringConfigurationDescription\": {\n          \"ConfigurationType\": \"DEFAULT\",\n          \"MetricsLevel\": \"TASK\",\n          \"LogLevel\": \"INFO\"\n        },\n        \"ParallelismConfigurationDescription\": {\n          \"ConfigurationType\": \"CUSTOM\",\n          \"Parallelism\": \"<integer>\",\n          \"ParallelismPerKPU\": \"<integer>\",\n          \"CurrentParallelism\": \"<integer>\",\n          \"AutoScalingEnabled\": \"<boolean>\"\n        },\n        \"JobPlanDescription\": \"<string>\"\n      },\n      \"EnvironmentPropertyDescriptions\": {\n        \"PropertyGroupDescriptions\": [\n          {\n            \"PropertyGroupId\": \"Kg4KQuQ\",\n            \"PropertyMap\": {\n              \"voluptate23\": \"<string>\",\n              \"laboris7\": \"<string>\",\n              \"sed_\": \"<string>\",\n              \"Utaa\": \"<string>\",\n              \"ipsum31\": \"<string>\",\n              \"eu0d\": \"<string>\",\n              \"non_49a\": \"<string>\",\n              \"laborum_a47\": \"<string>\",\n              \"labore_b_\": \"<string>\",\n              \"ut_5e\": \"<string>\",\n              \"dolor_a8\": \"<string>\",\n              \"sunt0\": \"<string>\",\n              \"aliquipd\": \"<string>\",\n              \"nostrud_4b\": \"<string>\",\n              \"dolor_d99\": \"<string>\",\n              \"proident8\": \"<string>\",\n              \"quis5c0\": \"<string>\",\n              \"reprehenderit_3e\": \"<string>\",\n              \"Lorem_3\": \"<string>\",\n              \"ipsum_7fc\": \"<string>\",\n              \"in0\": \"<string>\",\n              \"est_0a9\": \"<string>\",\n              \"deserunt_81\": \"<string>\",\n              \"in2ef\": \"<string>\",\n              \"in_f3\": \"<string>\",\n              \"laborum88a\": \"<string>\",\n              \"reprehenderitd66\": \"<string>\",\n              \"et4\": \"<string>\",\n              \"in_e\": \"<string>\",\n              \"dolore7\": \"<string>\",\n              \"quis_b1\": \"<string>\",\n              \"sit_e3\": \"<string>\",\n              \"exercitation_36\": \"<string>\",\n              \"esse_0e\": \"<string>\",\n              \"dolor_9e\": \"<string>\",\n              \"in_02b\": \"<string>\",\n              \"in_154\": \"<string>\",\n              \"aliqua_9e\": \"<string>\",\n              \"aliquip_c2b\": \"<string>\",\n              \"sed_a29\": \"<string>\",\n              \"idbf8\": \"<string>\",\n              \"amet1ce\": \"<string>\",\n              \"Lorem03\": \"<string>\",\n              \"nisi3\": \"<string>\",\n              \"utd0\": \"<string>\",\n              \"ut_33c\": \"<string>\",\n              \"uta\": \"<string>\",\n              \"in__8\": \"<string>\"\n            }\n          },\n          {\n            \"PropertyGroupId\": \"5.l7WHNHOBj\",\n            \"PropertyMap\": {\n              \"eiusmod_c5\": \"<string>\",\n              \"tempora9\": \"<string>\",\n              \"non2d9\": \"<string>\",\n              \"quis5cb\": \"<string>\",\n              \"sunt_d\": \"<string>\",\n              \"veniam_d4\": \"<string>\",\n              \"esse__\": \"<string>\",\n              \"qui_50\": \"<string>\",\n              \"consequat_906\": \"<string>\",\n              \"in_40\": \"<string>\",\n              \"qui_56c\": \"<string>\",\n              \"sint_3\": \"<string>\",\n              \"do_efc\": \"<string>\",\n              \"laboris_d09\": \"<string>\",\n              \"in_0_\": \"<string>\",\n              \"voluptate74\": \"<string>\",\n              \"irure__\": \"<string>\",\n              \"Ut4\": \"<string>\",\n              \"in8\": \"<string>\",\n              \"ad_8\": \"<string>\",\n              \"Excepteur35\": \"<string>\",\n              \"veniam_e2\": \"<string>\",\n              \"dolore_c2\": \"<string>\",\n              \"tempor_b7\": \"<string>\"\n            }\n          }\n        ]\n      },\n      \"ApplicationSnapshotConfigurationDescription\": {\n        \"SnapshotsEnabled\": \"<boolean>\"\n      },\n      \"VpcConfigurationDescriptions\": [\n        {\n          \"VpcConfigurationId\": \"H4-R9w9ZN\",\n          \"VpcId\": \"<string>\",\n          \"SubnetIds\": [\n            \"<string>\"\n          ],\n          \"SecurityGroupIds\": [\n            \"<string>\"\n          ]\n        },\n        {\n          \"VpcConfigurationId\": \"qU\",\n          \"VpcId\": \"<string>\",\n          \"SubnetIds\": [\n            \"<string>\"\n          ],\n          \"SecurityGroupIds\": [\n            \"<string>\"\n          ]\n        }\n      ],\n      \"ZeppelinApplicationConfigurationDescription\": {\n        \"MonitoringConfigurationDescription\": {\n          \"LogLevel\": \"WARN\"\n        },\n        \"CatalogConfigurationDescription\": {\n          \"GlueDataCatalogConfigurationDescription\": {\n            \"DatabaseARN\": \"arn:WH\"\n          }\n        },\n        \"DeployAsApplicationConfigurationDescription\": {\n          \"S3ContentLocationDescription\": {\n            \"BucketARN\": \"arn:E-+SP=J \",\n            \"BasePath\": \"LyO>NCP!FzX\"\n          }\n        },\n        \"CustomArtifactsConfigurationDescription\": [\n          {\n            \"ArtifactType\": \"DEPENDENCY_JAR\",\n            \"S3ContentLocationDescription\": {\n              \"BucketARN\": \"arn: Fl\\\"jLSz\",\n              \"FileKey\": \"<string>\",\n              \"ObjectVersion\": \"<string>\"\n            },\n            \"MavenReferenceDescription\": {\n              \"GroupId\": \"0Lt\",\n              \"ArtifactId\": \"YnvVWW\",\n              \"Version\": \"aa7BYM4HOq\"\n            }\n          },\n          {\n            \"ArtifactType\": \"UDF\",\n            \"S3ContentLocationDescription\": {\n              \"BucketARN\": \"arn:%TJ\",\n              \"FileKey\": \"<string>\",\n              \"ObjectVersion\": \"<string>\"\n            },\n            \"MavenReferenceDescription\": {\n              \"GroupId\": \"Mn46bT\",\n              \"ArtifactId\": \"1bEchN69o\",\n              \"Version\": \".a7E1\"\n            }\n          }\n        ]\n      }\n    },\n    \"CloudWatchLoggingOptionDescriptions\": [\n      {\n        \"LogStreamARN\": \"arn:A~,\",\n        \"CloudWatchLoggingOptionId\": \"t0XZ2fT\",\n        \"RoleARN\": \"arn:W\"\n      },\n      {\n        \"LogStreamARN\": \"arn:LQGY_Lv6+]\",\n        \"CloudWatchLoggingOptionId\": \"4QLLuos\",\n        \"RoleARN\": \"arn:v8,\\\"dFx=\"\n      }\n    ],\n    \"ApplicationMaintenanceConfigurationDescription\": {\n      \"ApplicationMaintenanceWindowStartTime\": \"04:53\",\n      \"ApplicationMaintenanceWindowEndTime\": \"23:34\"\n    },\n    \"ApplicationVersionUpdatedFrom\": \"<integer>\",\n    \"ApplicationVersionRolledBackFrom\": \"<integer>\",\n    \"ConditionalToken\": \"qzQmnRH=bFm\",\n    \"ApplicationVersionRolledBackTo\": \"<integer>\",\n    \"ApplicationMode\": \"STREAMING\"\n  }\n}",
+              "createdAt": "2026-07-28T10:37:39.000Z",
+              "updatedAt": "2026-07-28T10:37:39.000Z",
+              "uid": "35240-5685eb25-b868-4dbb-8884-f1522f7d40e3"
+            },
+            {
+              "id": "a27d09b6-1053-48e7-9c4e-1a5e25406341",
+              "name": "CodeValidationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.CreateApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"qHiah0e10c1\",\n  \"RuntimeEnvironment\": \"FLINK-1_8\",\n  \"ServiceExecutionRole\": \"arn:[>c6Sa\\\"P\",\n  \"ApplicationDescription\": \"<string>\",\n  \"ApplicationConfiguration\": {\n    \"SqlApplicationConfiguration\": {\n      \"Inputs\": [\n        {\n          \"NamePrefix\": \"7fwA0|[/Ck\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"[\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"25Rh6\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:^OQzbP5\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:uWA?>rC@\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:_\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        },\n        {\n          \"NamePrefix\": \"[3=X\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"L(\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"N{]zE)\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:ZgD+_t&\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:(9q{H*Mg\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:L4X+g&53\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        }\n      ],\n      \"Outputs\": [\n        {\n          \"Name\": \"%HHf_z[A7\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"JSON\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:i/v\\\\'}74`H\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:rY885\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:1/LqRl%|\"\n          }\n        },\n        {\n          \"Name\": \"uE\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"CSV\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:X71ino\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:r4Cr\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:F1ko2?P4)\"\n          }\n        }\n      ],\n      \"ReferenceDataSources\": [\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \" \"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"8.,c.z\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:R{\\\")\",\n            \"FileKey\": \"<string>\"\n          }\n        },\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"iY|\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"!HY]pC~5dL\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:k9Ec7qn&gM\",\n            \"FileKey\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"FlinkApplicationConfiguration\": {\n      \"CheckpointConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"CheckpointingEnabled\": \"<boolean>\",\n        \"CheckpointInterval\": \"<integer>\",\n        \"MinPauseBetweenCheckpoints\": \"<integer>\"\n      },\n      \"MonitoringConfiguration\": {\n        \"ConfigurationType\": \"CUSTOM\",\n        \"MetricsLevel\": \"PARALLELISM\",\n        \"LogLevel\": \"DEBUG\"\n      },\n      \"ParallelismConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"Parallelism\": \"<integer>\",\n        \"ParallelismPerKPU\": \"<integer>\",\n        \"AutoScalingEnabled\": \"<boolean>\"\n      }\n    },\n    \"EnvironmentProperties\": {\n      \"PropertyGroups\": [\n        {\n          \"PropertyGroupId\": \"H8Wc2qVzMm\",\n          \"PropertyMap\": {\n            \"nisi_a\": \"<string>\",\n            \"laborum_1\": \"<string>\",\n            \"laborea7\": \"<string>\",\n            \"laborum_8\": \"<string>\",\n            \"anim_b\": \"<string>\",\n            \"elit_2\": \"<string>\",\n            \"non_d5f\": \"<string>\",\n            \"laborum44b\": \"<string>\",\n            \"voluptate02\": \"<string>\",\n            \"aute_94\": \"<string>\",\n            \"sitdd\": \"<string>\",\n            \"sunt_9_8\": \"<string>\",\n            \"aute_db2\": \"<string>\",\n            \"cillum_63\": \"<string>\",\n            \"Excepteur264\": \"<string>\",\n            \"sit_6ee\": \"<string>\",\n            \"sed6_\": \"<string>\",\n            \"quis_95\": \"<string>\",\n            \"utf\": \"<string>\"\n          }\n        },\n        {\n          \"PropertyGroupId\": \"v\",\n          \"PropertyMap\": {\n            \"cillum07\": \"<string>\",\n            \"quis_2b8\": \"<string>\",\n            \"eiusmod_4\": \"<string>\",\n            \"ullamco_12\": \"<string>\",\n            \"exercitationea_\": \"<string>\",\n            \"doef7\": \"<string>\",\n            \"do042\": \"<string>\",\n            \"officia_cd9\": \"<string>\",\n            \"eiusmod_1d7\": \"<string>\",\n            \"id5\": \"<string>\",\n            \"magnaf2\": \"<string>\",\n            \"cupidatatb\": \"<string>\",\n            \"cillum_6\": \"<string>\",\n            \"elitada\": \"<string>\",\n            \"ullamco3c\": \"<string>\",\n            \"sit_c\": \"<string>\",\n            \"voluptate__\": \"<string>\",\n            \"amet_2e\": \"<string>\",\n            \"Ut_3f3\": \"<string>\",\n            \"ex_53\": \"<string>\",\n            \"ine5\": \"<string>\",\n            \"ut_4\": \"<string>\",\n            \"sint_35\": \"<string>\",\n            \"elitf5\": \"<string>\",\n            \"proident_92f\": \"<string>\",\n            \"mollit9\": \"<string>\",\n            \"anim_e7\": \"<string>\",\n            \"est96e\": \"<string>\",\n            \"et974\": \"<string>\",\n            \"ut_418\": \"<string>\",\n            \"sitd0\": \"<string>\",\n            \"velitfe\": \"<string>\",\n            \"occaecat_0b6\": \"<string>\",\n            \"ullamco_c\": \"<string>\",\n            \"eue3\": \"<string>\",\n            \"commodo_a1\": \"<string>\",\n            \"fugiat_9d\": \"<string>\",\n            \"adipisicing_eac\": \"<string>\",\n            \"id7d\": \"<string>\",\n            \"sit989\": \"<string>\",\n            \"dolorec13\": \"<string>\",\n            \"Excepteurc3b\": \"<string>\",\n            \"in_bbf\": \"<string>\",\n            \"dolor_1d\": \"<string>\",\n            \"nostrud_01\": \"<string>\",\n            \"Excepteur58\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"ApplicationCodeConfiguration\": {\n      \"CodeContentType\": \"PLAINTEXT\",\n      \"CodeContent\": {\n        \"TextContent\": \"<string>\",\n        \"ZipFileContent\": \"<string>\",\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:JRVk6r d(\",\n          \"FileKey\": \"<string>\",\n          \"ObjectVersion\": \"<string>\"\n        }\n      }\n    },\n    \"ApplicationSnapshotConfiguration\": {\n      \"SnapshotsEnabled\": \"<boolean>\"\n    },\n    \"VpcConfigurations\": [\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      },\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      }\n    ],\n    \"ZeppelinApplicationConfiguration\": {\n      \"MonitoringConfiguration\": {\n        \"LogLevel\": \"WARN\"\n      },\n      \"CatalogConfiguration\": {\n        \"GlueDataCatalogConfiguration\": {\n          \"DatabaseARN\": \"arn:y4X1RX\"\n        }\n      },\n      \"DeployAsApplicationConfiguration\": {\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:gs('[VX2@!\",\n          \"BasePath\": \"n-0bA@y9s\"\n        }\n      },\n      \"CustomArtifactsConfiguration\": [\n        {\n          \"ArtifactType\": \"DEPENDENCY_JAR\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:u,wQYo%D\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"3dP-0bNaDw\",\n            \"ArtifactId\": \"t5ggOA.uD5\",\n            \"Version\": \"j5jT\"\n          }\n        },\n        {\n          \"ArtifactType\": \"UDF\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:\\\\R2YQrnVnU\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"_dNoQ39\",\n            \"ArtifactId\": \"Z_eOeAec\",\n            \"Version\": \"-eAPLaq5L7\"\n          }\n        }\n      ]\n    }\n  },\n  \"CloudWatchLoggingOptions\": [\n    {\n      \"LogStreamARN\": \"arn:+\\\\:_.B %4\"\n    },\n    {\n      \"LogStreamARN\": \"arn:g6%f:)bD)f\"\n    }\n  ],\n  \"Tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"ApplicationMode\": \"STREAMING\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.CreateApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:39.000Z",
+              "updatedAt": "2026-07-28T10:37:39.000Z",
+              "uid": "35240-a27d09b6-1053-48e7-9c4e-1a5e25406341"
+            },
+            {
+              "id": "f0c3e89a-3b1a-4222-9692-86eaf9399c4a",
+              "name": "ResourceInUseException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.CreateApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"qHiah0e10c1\",\n  \"RuntimeEnvironment\": \"FLINK-1_8\",\n  \"ServiceExecutionRole\": \"arn:[>c6Sa\\\"P\",\n  \"ApplicationDescription\": \"<string>\",\n  \"ApplicationConfiguration\": {\n    \"SqlApplicationConfiguration\": {\n      \"Inputs\": [\n        {\n          \"NamePrefix\": \"7fwA0|[/Ck\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"[\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"25Rh6\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:^OQzbP5\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:uWA?>rC@\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:_\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        },\n        {\n          \"NamePrefix\": \"[3=X\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"L(\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"N{]zE)\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:ZgD+_t&\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:(9q{H*Mg\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:L4X+g&53\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        }\n      ],\n      \"Outputs\": [\n        {\n          \"Name\": \"%HHf_z[A7\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"JSON\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:i/v\\\\'}74`H\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:rY885\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:1/LqRl%|\"\n          }\n        },\n        {\n          \"Name\": \"uE\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"CSV\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:X71ino\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:r4Cr\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:F1ko2?P4)\"\n          }\n        }\n      ],\n      \"ReferenceDataSources\": [\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \" \"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"8.,c.z\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:R{\\\")\",\n            \"FileKey\": \"<string>\"\n          }\n        },\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"iY|\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"!HY]pC~5dL\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:k9Ec7qn&gM\",\n            \"FileKey\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"FlinkApplicationConfiguration\": {\n      \"CheckpointConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"CheckpointingEnabled\": \"<boolean>\",\n        \"CheckpointInterval\": \"<integer>\",\n        \"MinPauseBetweenCheckpoints\": \"<integer>\"\n      },\n      \"MonitoringConfiguration\": {\n        \"ConfigurationType\": \"CUSTOM\",\n        \"MetricsLevel\": \"PARALLELISM\",\n        \"LogLevel\": \"DEBUG\"\n      },\n      \"ParallelismConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"Parallelism\": \"<integer>\",\n        \"ParallelismPerKPU\": \"<integer>\",\n        \"AutoScalingEnabled\": \"<boolean>\"\n      }\n    },\n    \"EnvironmentProperties\": {\n      \"PropertyGroups\": [\n        {\n          \"PropertyGroupId\": \"H8Wc2qVzMm\",\n          \"PropertyMap\": {\n            \"nisi_a\": \"<string>\",\n            \"laborum_1\": \"<string>\",\n            \"laborea7\": \"<string>\",\n            \"laborum_8\": \"<string>\",\n            \"anim_b\": \"<string>\",\n            \"elit_2\": \"<string>\",\n            \"non_d5f\": \"<string>\",\n            \"laborum44b\": \"<string>\",\n            \"voluptate02\": \"<string>\",\n            \"aute_94\": \"<string>\",\n            \"sitdd\": \"<string>\",\n            \"sunt_9_8\": \"<string>\",\n            \"aute_db2\": \"<string>\",\n            \"cillum_63\": \"<string>\",\n            \"Excepteur264\": \"<string>\",\n            \"sit_6ee\": \"<string>\",\n            \"sed6_\": \"<string>\",\n            \"quis_95\": \"<string>\",\n            \"utf\": \"<string>\"\n          }\n        },\n        {\n          \"PropertyGroupId\": \"v\",\n          \"PropertyMap\": {\n            \"cillum07\": \"<string>\",\n            \"quis_2b8\": \"<string>\",\n            \"eiusmod_4\": \"<string>\",\n            \"ullamco_12\": \"<string>\",\n            \"exercitationea_\": \"<string>\",\n            \"doef7\": \"<string>\",\n            \"do042\": \"<string>\",\n            \"officia_cd9\": \"<string>\",\n            \"eiusmod_1d7\": \"<string>\",\n            \"id5\": \"<string>\",\n            \"magnaf2\": \"<string>\",\n            \"cupidatatb\": \"<string>\",\n            \"cillum_6\": \"<string>\",\n            \"elitada\": \"<string>\",\n            \"ullamco3c\": \"<string>\",\n            \"sit_c\": \"<string>\",\n            \"voluptate__\": \"<string>\",\n            \"amet_2e\": \"<string>\",\n            \"Ut_3f3\": \"<string>\",\n            \"ex_53\": \"<string>\",\n            \"ine5\": \"<string>\",\n            \"ut_4\": \"<string>\",\n            \"sint_35\": \"<string>\",\n            \"elitf5\": \"<string>\",\n            \"proident_92f\": \"<string>\",\n            \"mollit9\": \"<string>\",\n            \"anim_e7\": \"<string>\",\n            \"est96e\": \"<string>\",\n            \"et974\": \"<string>\",\n            \"ut_418\": \"<string>\",\n            \"sitd0\": \"<string>\",\n            \"velitfe\": \"<string>\",\n            \"occaecat_0b6\": \"<string>\",\n            \"ullamco_c\": \"<string>\",\n            \"eue3\": \"<string>\",\n            \"commodo_a1\": \"<string>\",\n            \"fugiat_9d\": \"<string>\",\n            \"adipisicing_eac\": \"<string>\",\n            \"id7d\": \"<string>\",\n            \"sit989\": \"<string>\",\n            \"dolorec13\": \"<string>\",\n            \"Excepteurc3b\": \"<string>\",\n            \"in_bbf\": \"<string>\",\n            \"dolor_1d\": \"<string>\",\n            \"nostrud_01\": \"<string>\",\n            \"Excepteur58\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"ApplicationCodeConfiguration\": {\n      \"CodeContentType\": \"PLAINTEXT\",\n      \"CodeContent\": {\n        \"TextContent\": \"<string>\",\n        \"ZipFileContent\": \"<string>\",\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:JRVk6r d(\",\n          \"FileKey\": \"<string>\",\n          \"ObjectVersion\": \"<string>\"\n        }\n      }\n    },\n    \"ApplicationSnapshotConfiguration\": {\n      \"SnapshotsEnabled\": \"<boolean>\"\n    },\n    \"VpcConfigurations\": [\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      },\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      }\n    ],\n    \"ZeppelinApplicationConfiguration\": {\n      \"MonitoringConfiguration\": {\n        \"LogLevel\": \"WARN\"\n      },\n      \"CatalogConfiguration\": {\n        \"GlueDataCatalogConfiguration\": {\n          \"DatabaseARN\": \"arn:y4X1RX\"\n        }\n      },\n      \"DeployAsApplicationConfiguration\": {\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:gs('[VX2@!\",\n          \"BasePath\": \"n-0bA@y9s\"\n        }\n      },\n      \"CustomArtifactsConfiguration\": [\n        {\n          \"ArtifactType\": \"DEPENDENCY_JAR\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:u,wQYo%D\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"3dP-0bNaDw\",\n            \"ArtifactId\": \"t5ggOA.uD5\",\n            \"Version\": \"j5jT\"\n          }\n        },\n        {\n          \"ArtifactType\": \"UDF\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:\\\\R2YQrnVnU\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"_dNoQ39\",\n            \"ArtifactId\": \"Z_eOeAec\",\n            \"Version\": \"-eAPLaq5L7\"\n          }\n        }\n      ]\n    }\n  },\n  \"CloudWatchLoggingOptions\": [\n    {\n      \"LogStreamARN\": \"arn:+\\\\:_.B %4\"\n    },\n    {\n      \"LogStreamARN\": \"arn:g6%f:)bD)f\"\n    }\n  ],\n  \"Tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"ApplicationMode\": \"STREAMING\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.CreateApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:39.000Z",
+              "updatedAt": "2026-07-28T10:37:39.000Z",
+              "uid": "35240-f0c3e89a-3b1a-4222-9692-86eaf9399c4a"
+            },
+            {
+              "id": "a448914e-a749-4115-867a-b4ba2eade440",
+              "name": "LimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.CreateApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"qHiah0e10c1\",\n  \"RuntimeEnvironment\": \"FLINK-1_8\",\n  \"ServiceExecutionRole\": \"arn:[>c6Sa\\\"P\",\n  \"ApplicationDescription\": \"<string>\",\n  \"ApplicationConfiguration\": {\n    \"SqlApplicationConfiguration\": {\n      \"Inputs\": [\n        {\n          \"NamePrefix\": \"7fwA0|[/Ck\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"[\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"25Rh6\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:^OQzbP5\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:uWA?>rC@\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:_\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        },\n        {\n          \"NamePrefix\": \"[3=X\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"L(\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"N{]zE)\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:ZgD+_t&\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:(9q{H*Mg\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:L4X+g&53\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        }\n      ],\n      \"Outputs\": [\n        {\n          \"Name\": \"%HHf_z[A7\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"JSON\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:i/v\\\\'}74`H\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:rY885\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:1/LqRl%|\"\n          }\n        },\n        {\n          \"Name\": \"uE\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"CSV\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:X71ino\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:r4Cr\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:F1ko2?P4)\"\n          }\n        }\n      ],\n      \"ReferenceDataSources\": [\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \" \"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"8.,c.z\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:R{\\\")\",\n            \"FileKey\": \"<string>\"\n          }\n        },\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"iY|\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"!HY]pC~5dL\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:k9Ec7qn&gM\",\n            \"FileKey\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"FlinkApplicationConfiguration\": {\n      \"CheckpointConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"CheckpointingEnabled\": \"<boolean>\",\n        \"CheckpointInterval\": \"<integer>\",\n        \"MinPauseBetweenCheckpoints\": \"<integer>\"\n      },\n      \"MonitoringConfiguration\": {\n        \"ConfigurationType\": \"CUSTOM\",\n        \"MetricsLevel\": \"PARALLELISM\",\n        \"LogLevel\": \"DEBUG\"\n      },\n      \"ParallelismConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"Parallelism\": \"<integer>\",\n        \"ParallelismPerKPU\": \"<integer>\",\n        \"AutoScalingEnabled\": \"<boolean>\"\n      }\n    },\n    \"EnvironmentProperties\": {\n      \"PropertyGroups\": [\n        {\n          \"PropertyGroupId\": \"H8Wc2qVzMm\",\n          \"PropertyMap\": {\n            \"nisi_a\": \"<string>\",\n            \"laborum_1\": \"<string>\",\n            \"laborea7\": \"<string>\",\n            \"laborum_8\": \"<string>\",\n            \"anim_b\": \"<string>\",\n            \"elit_2\": \"<string>\",\n            \"non_d5f\": \"<string>\",\n            \"laborum44b\": \"<string>\",\n            \"voluptate02\": \"<string>\",\n            \"aute_94\": \"<string>\",\n            \"sitdd\": \"<string>\",\n            \"sunt_9_8\": \"<string>\",\n            \"aute_db2\": \"<string>\",\n            \"cillum_63\": \"<string>\",\n            \"Excepteur264\": \"<string>\",\n            \"sit_6ee\": \"<string>\",\n            \"sed6_\": \"<string>\",\n            \"quis_95\": \"<string>\",\n            \"utf\": \"<string>\"\n          }\n        },\n        {\n          \"PropertyGroupId\": \"v\",\n          \"PropertyMap\": {\n            \"cillum07\": \"<string>\",\n            \"quis_2b8\": \"<string>\",\n            \"eiusmod_4\": \"<string>\",\n            \"ullamco_12\": \"<string>\",\n            \"exercitationea_\": \"<string>\",\n            \"doef7\": \"<string>\",\n            \"do042\": \"<string>\",\n            \"officia_cd9\": \"<string>\",\n            \"eiusmod_1d7\": \"<string>\",\n            \"id5\": \"<string>\",\n            \"magnaf2\": \"<string>\",\n            \"cupidatatb\": \"<string>\",\n            \"cillum_6\": \"<string>\",\n            \"elitada\": \"<string>\",\n            \"ullamco3c\": \"<string>\",\n            \"sit_c\": \"<string>\",\n            \"voluptate__\": \"<string>\",\n            \"amet_2e\": \"<string>\",\n            \"Ut_3f3\": \"<string>\",\n            \"ex_53\": \"<string>\",\n            \"ine5\": \"<string>\",\n            \"ut_4\": \"<string>\",\n            \"sint_35\": \"<string>\",\n            \"elitf5\": \"<string>\",\n            \"proident_92f\": \"<string>\",\n            \"mollit9\": \"<string>\",\n            \"anim_e7\": \"<string>\",\n            \"est96e\": \"<string>\",\n            \"et974\": \"<string>\",\n            \"ut_418\": \"<string>\",\n            \"sitd0\": \"<string>\",\n            \"velitfe\": \"<string>\",\n            \"occaecat_0b6\": \"<string>\",\n            \"ullamco_c\": \"<string>\",\n            \"eue3\": \"<string>\",\n            \"commodo_a1\": \"<string>\",\n            \"fugiat_9d\": \"<string>\",\n            \"adipisicing_eac\": \"<string>\",\n            \"id7d\": \"<string>\",\n            \"sit989\": \"<string>\",\n            \"dolorec13\": \"<string>\",\n            \"Excepteurc3b\": \"<string>\",\n            \"in_bbf\": \"<string>\",\n            \"dolor_1d\": \"<string>\",\n            \"nostrud_01\": \"<string>\",\n            \"Excepteur58\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"ApplicationCodeConfiguration\": {\n      \"CodeContentType\": \"PLAINTEXT\",\n      \"CodeContent\": {\n        \"TextContent\": \"<string>\",\n        \"ZipFileContent\": \"<string>\",\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:JRVk6r d(\",\n          \"FileKey\": \"<string>\",\n          \"ObjectVersion\": \"<string>\"\n        }\n      }\n    },\n    \"ApplicationSnapshotConfiguration\": {\n      \"SnapshotsEnabled\": \"<boolean>\"\n    },\n    \"VpcConfigurations\": [\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      },\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      }\n    ],\n    \"ZeppelinApplicationConfiguration\": {\n      \"MonitoringConfiguration\": {\n        \"LogLevel\": \"WARN\"\n      },\n      \"CatalogConfiguration\": {\n        \"GlueDataCatalogConfiguration\": {\n          \"DatabaseARN\": \"arn:y4X1RX\"\n        }\n      },\n      \"DeployAsApplicationConfiguration\": {\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:gs('[VX2@!\",\n          \"BasePath\": \"n-0bA@y9s\"\n        }\n      },\n      \"CustomArtifactsConfiguration\": [\n        {\n          \"ArtifactType\": \"DEPENDENCY_JAR\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:u,wQYo%D\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"3dP-0bNaDw\",\n            \"ArtifactId\": \"t5ggOA.uD5\",\n            \"Version\": \"j5jT\"\n          }\n        },\n        {\n          \"ArtifactType\": \"UDF\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:\\\\R2YQrnVnU\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"_dNoQ39\",\n            \"ArtifactId\": \"Z_eOeAec\",\n            \"Version\": \"-eAPLaq5L7\"\n          }\n        }\n      ]\n    }\n  },\n  \"CloudWatchLoggingOptions\": [\n    {\n      \"LogStreamARN\": \"arn:+\\\\:_.B %4\"\n    },\n    {\n      \"LogStreamARN\": \"arn:g6%f:)bD)f\"\n    }\n  ],\n  \"Tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"ApplicationMode\": \"STREAMING\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.CreateApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:39.000Z",
+              "updatedAt": "2026-07-28T10:37:39.000Z",
+              "uid": "35240-a448914e-a749-4115-867a-b4ba2eade440"
+            },
+            {
+              "id": "538e5b90-478a-4c21-b0fb-f19d01ba8880",
+              "name": "InvalidArgumentException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.CreateApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"qHiah0e10c1\",\n  \"RuntimeEnvironment\": \"FLINK-1_8\",\n  \"ServiceExecutionRole\": \"arn:[>c6Sa\\\"P\",\n  \"ApplicationDescription\": \"<string>\",\n  \"ApplicationConfiguration\": {\n    \"SqlApplicationConfiguration\": {\n      \"Inputs\": [\n        {\n          \"NamePrefix\": \"7fwA0|[/Ck\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"[\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"25Rh6\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:^OQzbP5\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:uWA?>rC@\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:_\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        },\n        {\n          \"NamePrefix\": \"[3=X\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"L(\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"N{]zE)\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:ZgD+_t&\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:(9q{H*Mg\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:L4X+g&53\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        }\n      ],\n      \"Outputs\": [\n        {\n          \"Name\": \"%HHf_z[A7\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"JSON\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:i/v\\\\'}74`H\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:rY885\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:1/LqRl%|\"\n          }\n        },\n        {\n          \"Name\": \"uE\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"CSV\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:X71ino\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:r4Cr\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:F1ko2?P4)\"\n          }\n        }\n      ],\n      \"ReferenceDataSources\": [\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \" \"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"8.,c.z\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:R{\\\")\",\n            \"FileKey\": \"<string>\"\n          }\n        },\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"iY|\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"!HY]pC~5dL\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:k9Ec7qn&gM\",\n            \"FileKey\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"FlinkApplicationConfiguration\": {\n      \"CheckpointConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"CheckpointingEnabled\": \"<boolean>\",\n        \"CheckpointInterval\": \"<integer>\",\n        \"MinPauseBetweenCheckpoints\": \"<integer>\"\n      },\n      \"MonitoringConfiguration\": {\n        \"ConfigurationType\": \"CUSTOM\",\n        \"MetricsLevel\": \"PARALLELISM\",\n        \"LogLevel\": \"DEBUG\"\n      },\n      \"ParallelismConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"Parallelism\": \"<integer>\",\n        \"ParallelismPerKPU\": \"<integer>\",\n        \"AutoScalingEnabled\": \"<boolean>\"\n      }\n    },\n    \"EnvironmentProperties\": {\n      \"PropertyGroups\": [\n        {\n          \"PropertyGroupId\": \"H8Wc2qVzMm\",\n          \"PropertyMap\": {\n            \"nisi_a\": \"<string>\",\n            \"laborum_1\": \"<string>\",\n            \"laborea7\": \"<string>\",\n            \"laborum_8\": \"<string>\",\n            \"anim_b\": \"<string>\",\n            \"elit_2\": \"<string>\",\n            \"non_d5f\": \"<string>\",\n            \"laborum44b\": \"<string>\",\n            \"voluptate02\": \"<string>\",\n            \"aute_94\": \"<string>\",\n            \"sitdd\": \"<string>\",\n            \"sunt_9_8\": \"<string>\",\n            \"aute_db2\": \"<string>\",\n            \"cillum_63\": \"<string>\",\n            \"Excepteur264\": \"<string>\",\n            \"sit_6ee\": \"<string>\",\n            \"sed6_\": \"<string>\",\n            \"quis_95\": \"<string>\",\n            \"utf\": \"<string>\"\n          }\n        },\n        {\n          \"PropertyGroupId\": \"v\",\n          \"PropertyMap\": {\n            \"cillum07\": \"<string>\",\n            \"quis_2b8\": \"<string>\",\n            \"eiusmod_4\": \"<string>\",\n            \"ullamco_12\": \"<string>\",\n            \"exercitationea_\": \"<string>\",\n            \"doef7\": \"<string>\",\n            \"do042\": \"<string>\",\n            \"officia_cd9\": \"<string>\",\n            \"eiusmod_1d7\": \"<string>\",\n            \"id5\": \"<string>\",\n            \"magnaf2\": \"<string>\",\n            \"cupidatatb\": \"<string>\",\n            \"cillum_6\": \"<string>\",\n            \"elitada\": \"<string>\",\n            \"ullamco3c\": \"<string>\",\n            \"sit_c\": \"<string>\",\n            \"voluptate__\": \"<string>\",\n            \"amet_2e\": \"<string>\",\n            \"Ut_3f3\": \"<string>\",\n            \"ex_53\": \"<string>\",\n            \"ine5\": \"<string>\",\n            \"ut_4\": \"<string>\",\n            \"sint_35\": \"<string>\",\n            \"elitf5\": \"<string>\",\n            \"proident_92f\": \"<string>\",\n            \"mollit9\": \"<string>\",\n            \"anim_e7\": \"<string>\",\n            \"est96e\": \"<string>\",\n            \"et974\": \"<string>\",\n            \"ut_418\": \"<string>\",\n            \"sitd0\": \"<string>\",\n            \"velitfe\": \"<string>\",\n            \"occaecat_0b6\": \"<string>\",\n            \"ullamco_c\": \"<string>\",\n            \"eue3\": \"<string>\",\n            \"commodo_a1\": \"<string>\",\n            \"fugiat_9d\": \"<string>\",\n            \"adipisicing_eac\": \"<string>\",\n            \"id7d\": \"<string>\",\n            \"sit989\": \"<string>\",\n            \"dolorec13\": \"<string>\",\n            \"Excepteurc3b\": \"<string>\",\n            \"in_bbf\": \"<string>\",\n            \"dolor_1d\": \"<string>\",\n            \"nostrud_01\": \"<string>\",\n            \"Excepteur58\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"ApplicationCodeConfiguration\": {\n      \"CodeContentType\": \"PLAINTEXT\",\n      \"CodeContent\": {\n        \"TextContent\": \"<string>\",\n        \"ZipFileContent\": \"<string>\",\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:JRVk6r d(\",\n          \"FileKey\": \"<string>\",\n          \"ObjectVersion\": \"<string>\"\n        }\n      }\n    },\n    \"ApplicationSnapshotConfiguration\": {\n      \"SnapshotsEnabled\": \"<boolean>\"\n    },\n    \"VpcConfigurations\": [\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      },\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      }\n    ],\n    \"ZeppelinApplicationConfiguration\": {\n      \"MonitoringConfiguration\": {\n        \"LogLevel\": \"WARN\"\n      },\n      \"CatalogConfiguration\": {\n        \"GlueDataCatalogConfiguration\": {\n          \"DatabaseARN\": \"arn:y4X1RX\"\n        }\n      },\n      \"DeployAsApplicationConfiguration\": {\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:gs('[VX2@!\",\n          \"BasePath\": \"n-0bA@y9s\"\n        }\n      },\n      \"CustomArtifactsConfiguration\": [\n        {\n          \"ArtifactType\": \"DEPENDENCY_JAR\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:u,wQYo%D\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"3dP-0bNaDw\",\n            \"ArtifactId\": \"t5ggOA.uD5\",\n            \"Version\": \"j5jT\"\n          }\n        },\n        {\n          \"ArtifactType\": \"UDF\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:\\\\R2YQrnVnU\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"_dNoQ39\",\n            \"ArtifactId\": \"Z_eOeAec\",\n            \"Version\": \"-eAPLaq5L7\"\n          }\n        }\n      ]\n    }\n  },\n  \"CloudWatchLoggingOptions\": [\n    {\n      \"LogStreamARN\": \"arn:+\\\\:_.B %4\"\n    },\n    {\n      \"LogStreamARN\": \"arn:g6%f:)bD)f\"\n    }\n  ],\n  \"Tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"ApplicationMode\": \"STREAMING\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.CreateApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:39.000Z",
+              "updatedAt": "2026-07-28T10:37:39.000Z",
+              "uid": "35240-538e5b90-478a-4c21-b0fb-f19d01ba8880"
+            },
+            {
+              "id": "0c3a38b6-6880-47f3-abf1-fe53e3d5bc8d",
+              "name": "InvalidRequestException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.CreateApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"qHiah0e10c1\",\n  \"RuntimeEnvironment\": \"FLINK-1_8\",\n  \"ServiceExecutionRole\": \"arn:[>c6Sa\\\"P\",\n  \"ApplicationDescription\": \"<string>\",\n  \"ApplicationConfiguration\": {\n    \"SqlApplicationConfiguration\": {\n      \"Inputs\": [\n        {\n          \"NamePrefix\": \"7fwA0|[/Ck\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"[\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"25Rh6\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:^OQzbP5\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:uWA?>rC@\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:_\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        },\n        {\n          \"NamePrefix\": \"[3=X\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"L(\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"N{]zE)\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:ZgD+_t&\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:(9q{H*Mg\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:L4X+g&53\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        }\n      ],\n      \"Outputs\": [\n        {\n          \"Name\": \"%HHf_z[A7\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"JSON\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:i/v\\\\'}74`H\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:rY885\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:1/LqRl%|\"\n          }\n        },\n        {\n          \"Name\": \"uE\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"CSV\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:X71ino\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:r4Cr\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:F1ko2?P4)\"\n          }\n        }\n      ],\n      \"ReferenceDataSources\": [\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \" \"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"8.,c.z\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:R{\\\")\",\n            \"FileKey\": \"<string>\"\n          }\n        },\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"iY|\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"!HY]pC~5dL\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:k9Ec7qn&gM\",\n            \"FileKey\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"FlinkApplicationConfiguration\": {\n      \"CheckpointConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"CheckpointingEnabled\": \"<boolean>\",\n        \"CheckpointInterval\": \"<integer>\",\n        \"MinPauseBetweenCheckpoints\": \"<integer>\"\n      },\n      \"MonitoringConfiguration\": {\n        \"ConfigurationType\": \"CUSTOM\",\n        \"MetricsLevel\": \"PARALLELISM\",\n        \"LogLevel\": \"DEBUG\"\n      },\n      \"ParallelismConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"Parallelism\": \"<integer>\",\n        \"ParallelismPerKPU\": \"<integer>\",\n        \"AutoScalingEnabled\": \"<boolean>\"\n      }\n    },\n    \"EnvironmentProperties\": {\n      \"PropertyGroups\": [\n        {\n          \"PropertyGroupId\": \"H8Wc2qVzMm\",\n          \"PropertyMap\": {\n            \"nisi_a\": \"<string>\",\n            \"laborum_1\": \"<string>\",\n            \"laborea7\": \"<string>\",\n            \"laborum_8\": \"<string>\",\n            \"anim_b\": \"<string>\",\n            \"elit_2\": \"<string>\",\n            \"non_d5f\": \"<string>\",\n            \"laborum44b\": \"<string>\",\n            \"voluptate02\": \"<string>\",\n            \"aute_94\": \"<string>\",\n            \"sitdd\": \"<string>\",\n            \"sunt_9_8\": \"<string>\",\n            \"aute_db2\": \"<string>\",\n            \"cillum_63\": \"<string>\",\n            \"Excepteur264\": \"<string>\",\n            \"sit_6ee\": \"<string>\",\n            \"sed6_\": \"<string>\",\n            \"quis_95\": \"<string>\",\n            \"utf\": \"<string>\"\n          }\n        },\n        {\n          \"PropertyGroupId\": \"v\",\n          \"PropertyMap\": {\n            \"cillum07\": \"<string>\",\n            \"quis_2b8\": \"<string>\",\n            \"eiusmod_4\": \"<string>\",\n            \"ullamco_12\": \"<string>\",\n            \"exercitationea_\": \"<string>\",\n            \"doef7\": \"<string>\",\n            \"do042\": \"<string>\",\n            \"officia_cd9\": \"<string>\",\n            \"eiusmod_1d7\": \"<string>\",\n            \"id5\": \"<string>\",\n            \"magnaf2\": \"<string>\",\n            \"cupidatatb\": \"<string>\",\n            \"cillum_6\": \"<string>\",\n            \"elitada\": \"<string>\",\n            \"ullamco3c\": \"<string>\",\n            \"sit_c\": \"<string>\",\n            \"voluptate__\": \"<string>\",\n            \"amet_2e\": \"<string>\",\n            \"Ut_3f3\": \"<string>\",\n            \"ex_53\": \"<string>\",\n            \"ine5\": \"<string>\",\n            \"ut_4\": \"<string>\",\n            \"sint_35\": \"<string>\",\n            \"elitf5\": \"<string>\",\n            \"proident_92f\": \"<string>\",\n            \"mollit9\": \"<string>\",\n            \"anim_e7\": \"<string>\",\n            \"est96e\": \"<string>\",\n            \"et974\": \"<string>\",\n            \"ut_418\": \"<string>\",\n            \"sitd0\": \"<string>\",\n            \"velitfe\": \"<string>\",\n            \"occaecat_0b6\": \"<string>\",\n            \"ullamco_c\": \"<string>\",\n            \"eue3\": \"<string>\",\n            \"commodo_a1\": \"<string>\",\n            \"fugiat_9d\": \"<string>\",\n            \"adipisicing_eac\": \"<string>\",\n            \"id7d\": \"<string>\",\n            \"sit989\": \"<string>\",\n            \"dolorec13\": \"<string>\",\n            \"Excepteurc3b\": \"<string>\",\n            \"in_bbf\": \"<string>\",\n            \"dolor_1d\": \"<string>\",\n            \"nostrud_01\": \"<string>\",\n            \"Excepteur58\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"ApplicationCodeConfiguration\": {\n      \"CodeContentType\": \"PLAINTEXT\",\n      \"CodeContent\": {\n        \"TextContent\": \"<string>\",\n        \"ZipFileContent\": \"<string>\",\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:JRVk6r d(\",\n          \"FileKey\": \"<string>\",\n          \"ObjectVersion\": \"<string>\"\n        }\n      }\n    },\n    \"ApplicationSnapshotConfiguration\": {\n      \"SnapshotsEnabled\": \"<boolean>\"\n    },\n    \"VpcConfigurations\": [\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      },\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      }\n    ],\n    \"ZeppelinApplicationConfiguration\": {\n      \"MonitoringConfiguration\": {\n        \"LogLevel\": \"WARN\"\n      },\n      \"CatalogConfiguration\": {\n        \"GlueDataCatalogConfiguration\": {\n          \"DatabaseARN\": \"arn:y4X1RX\"\n        }\n      },\n      \"DeployAsApplicationConfiguration\": {\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:gs('[VX2@!\",\n          \"BasePath\": \"n-0bA@y9s\"\n        }\n      },\n      \"CustomArtifactsConfiguration\": [\n        {\n          \"ArtifactType\": \"DEPENDENCY_JAR\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:u,wQYo%D\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"3dP-0bNaDw\",\n            \"ArtifactId\": \"t5ggOA.uD5\",\n            \"Version\": \"j5jT\"\n          }\n        },\n        {\n          \"ArtifactType\": \"UDF\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:\\\\R2YQrnVnU\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"_dNoQ39\",\n            \"ArtifactId\": \"Z_eOeAec\",\n            \"Version\": \"-eAPLaq5L7\"\n          }\n        }\n      ]\n    }\n  },\n  \"CloudWatchLoggingOptions\": [\n    {\n      \"LogStreamARN\": \"arn:+\\\\:_.B %4\"\n    },\n    {\n      \"LogStreamARN\": \"arn:g6%f:)bD)f\"\n    }\n  ],\n  \"Tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"ApplicationMode\": \"STREAMING\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.CreateApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:39.000Z",
+              "updatedAt": "2026-07-28T10:37:39.000Z",
+              "uid": "35240-0c3a38b6-6880-47f3-abf1-fe53e3d5bc8d"
+            },
+            {
+              "id": "80a94dee-515f-4da8-9670-c25a32317a23",
+              "name": "TooManyTagsException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.CreateApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"qHiah0e10c1\",\n  \"RuntimeEnvironment\": \"FLINK-1_8\",\n  \"ServiceExecutionRole\": \"arn:[>c6Sa\\\"P\",\n  \"ApplicationDescription\": \"<string>\",\n  \"ApplicationConfiguration\": {\n    \"SqlApplicationConfiguration\": {\n      \"Inputs\": [\n        {\n          \"NamePrefix\": \"7fwA0|[/Ck\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"[\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"25Rh6\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:^OQzbP5\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:uWA?>rC@\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:_\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        },\n        {\n          \"NamePrefix\": \"[3=X\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"L(\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"N{]zE)\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:ZgD+_t&\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:(9q{H*Mg\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:L4X+g&53\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        }\n      ],\n      \"Outputs\": [\n        {\n          \"Name\": \"%HHf_z[A7\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"JSON\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:i/v\\\\'}74`H\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:rY885\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:1/LqRl%|\"\n          }\n        },\n        {\n          \"Name\": \"uE\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"CSV\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:X71ino\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:r4Cr\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:F1ko2?P4)\"\n          }\n        }\n      ],\n      \"ReferenceDataSources\": [\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \" \"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"8.,c.z\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:R{\\\")\",\n            \"FileKey\": \"<string>\"\n          }\n        },\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"iY|\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"!HY]pC~5dL\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:k9Ec7qn&gM\",\n            \"FileKey\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"FlinkApplicationConfiguration\": {\n      \"CheckpointConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"CheckpointingEnabled\": \"<boolean>\",\n        \"CheckpointInterval\": \"<integer>\",\n        \"MinPauseBetweenCheckpoints\": \"<integer>\"\n      },\n      \"MonitoringConfiguration\": {\n        \"ConfigurationType\": \"CUSTOM\",\n        \"MetricsLevel\": \"PARALLELISM\",\n        \"LogLevel\": \"DEBUG\"\n      },\n      \"ParallelismConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"Parallelism\": \"<integer>\",\n        \"ParallelismPerKPU\": \"<integer>\",\n        \"AutoScalingEnabled\": \"<boolean>\"\n      }\n    },\n    \"EnvironmentProperties\": {\n      \"PropertyGroups\": [\n        {\n          \"PropertyGroupId\": \"H8Wc2qVzMm\",\n          \"PropertyMap\": {\n            \"nisi_a\": \"<string>\",\n            \"laborum_1\": \"<string>\",\n            \"laborea7\": \"<string>\",\n            \"laborum_8\": \"<string>\",\n            \"anim_b\": \"<string>\",\n            \"elit_2\": \"<string>\",\n            \"non_d5f\": \"<string>\",\n            \"laborum44b\": \"<string>\",\n            \"voluptate02\": \"<string>\",\n            \"aute_94\": \"<string>\",\n            \"sitdd\": \"<string>\",\n            \"sunt_9_8\": \"<string>\",\n            \"aute_db2\": \"<string>\",\n            \"cillum_63\": \"<string>\",\n            \"Excepteur264\": \"<string>\",\n            \"sit_6ee\": \"<string>\",\n            \"sed6_\": \"<string>\",\n            \"quis_95\": \"<string>\",\n            \"utf\": \"<string>\"\n          }\n        },\n        {\n          \"PropertyGroupId\": \"v\",\n          \"PropertyMap\": {\n            \"cillum07\": \"<string>\",\n            \"quis_2b8\": \"<string>\",\n            \"eiusmod_4\": \"<string>\",\n            \"ullamco_12\": \"<string>\",\n            \"exercitationea_\": \"<string>\",\n            \"doef7\": \"<string>\",\n            \"do042\": \"<string>\",\n            \"officia_cd9\": \"<string>\",\n            \"eiusmod_1d7\": \"<string>\",\n            \"id5\": \"<string>\",\n            \"magnaf2\": \"<string>\",\n            \"cupidatatb\": \"<string>\",\n            \"cillum_6\": \"<string>\",\n            \"elitada\": \"<string>\",\n            \"ullamco3c\": \"<string>\",\n            \"sit_c\": \"<string>\",\n            \"voluptate__\": \"<string>\",\n            \"amet_2e\": \"<string>\",\n            \"Ut_3f3\": \"<string>\",\n            \"ex_53\": \"<string>\",\n            \"ine5\": \"<string>\",\n            \"ut_4\": \"<string>\",\n            \"sint_35\": \"<string>\",\n            \"elitf5\": \"<string>\",\n            \"proident_92f\": \"<string>\",\n            \"mollit9\": \"<string>\",\n            \"anim_e7\": \"<string>\",\n            \"est96e\": \"<string>\",\n            \"et974\": \"<string>\",\n            \"ut_418\": \"<string>\",\n            \"sitd0\": \"<string>\",\n            \"velitfe\": \"<string>\",\n            \"occaecat_0b6\": \"<string>\",\n            \"ullamco_c\": \"<string>\",\n            \"eue3\": \"<string>\",\n            \"commodo_a1\": \"<string>\",\n            \"fugiat_9d\": \"<string>\",\n            \"adipisicing_eac\": \"<string>\",\n            \"id7d\": \"<string>\",\n            \"sit989\": \"<string>\",\n            \"dolorec13\": \"<string>\",\n            \"Excepteurc3b\": \"<string>\",\n            \"in_bbf\": \"<string>\",\n            \"dolor_1d\": \"<string>\",\n            \"nostrud_01\": \"<string>\",\n            \"Excepteur58\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"ApplicationCodeConfiguration\": {\n      \"CodeContentType\": \"PLAINTEXT\",\n      \"CodeContent\": {\n        \"TextContent\": \"<string>\",\n        \"ZipFileContent\": \"<string>\",\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:JRVk6r d(\",\n          \"FileKey\": \"<string>\",\n          \"ObjectVersion\": \"<string>\"\n        }\n      }\n    },\n    \"ApplicationSnapshotConfiguration\": {\n      \"SnapshotsEnabled\": \"<boolean>\"\n    },\n    \"VpcConfigurations\": [\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      },\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      }\n    ],\n    \"ZeppelinApplicationConfiguration\": {\n      \"MonitoringConfiguration\": {\n        \"LogLevel\": \"WARN\"\n      },\n      \"CatalogConfiguration\": {\n        \"GlueDataCatalogConfiguration\": {\n          \"DatabaseARN\": \"arn:y4X1RX\"\n        }\n      },\n      \"DeployAsApplicationConfiguration\": {\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:gs('[VX2@!\",\n          \"BasePath\": \"n-0bA@y9s\"\n        }\n      },\n      \"CustomArtifactsConfiguration\": [\n        {\n          \"ArtifactType\": \"DEPENDENCY_JAR\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:u,wQYo%D\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"3dP-0bNaDw\",\n            \"ArtifactId\": \"t5ggOA.uD5\",\n            \"Version\": \"j5jT\"\n          }\n        },\n        {\n          \"ArtifactType\": \"UDF\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:\\\\R2YQrnVnU\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"_dNoQ39\",\n            \"ArtifactId\": \"Z_eOeAec\",\n            \"Version\": \"-eAPLaq5L7\"\n          }\n        }\n      ]\n    }\n  },\n  \"CloudWatchLoggingOptions\": [\n    {\n      \"LogStreamARN\": \"arn:+\\\\:_.B %4\"\n    },\n    {\n      \"LogStreamARN\": \"arn:g6%f:)bD)f\"\n    }\n  ],\n  \"Tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"ApplicationMode\": \"STREAMING\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.CreateApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:39.000Z",
+              "updatedAt": "2026-07-28T10:37:39.000Z",
+              "uid": "35240-80a94dee-515f-4da8-9670-c25a32317a23"
+            },
+            {
+              "id": "224e5b49-ed84-4d78-8f89-3c61c017fcfd",
+              "name": "ConcurrentModificationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.CreateApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"qHiah0e10c1\",\n  \"RuntimeEnvironment\": \"FLINK-1_8\",\n  \"ServiceExecutionRole\": \"arn:[>c6Sa\\\"P\",\n  \"ApplicationDescription\": \"<string>\",\n  \"ApplicationConfiguration\": {\n    \"SqlApplicationConfiguration\": {\n      \"Inputs\": [\n        {\n          \"NamePrefix\": \"7fwA0|[/Ck\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"[\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"25Rh6\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:^OQzbP5\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:uWA?>rC@\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:_\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        },\n        {\n          \"NamePrefix\": \"[3=X\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"L(\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"N{]zE)\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:ZgD+_t&\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:(9q{H*Mg\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:L4X+g&53\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        }\n      ],\n      \"Outputs\": [\n        {\n          \"Name\": \"%HHf_z[A7\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"JSON\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:i/v\\\\'}74`H\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:rY885\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:1/LqRl%|\"\n          }\n        },\n        {\n          \"Name\": \"uE\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"CSV\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:X71ino\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:r4Cr\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:F1ko2?P4)\"\n          }\n        }\n      ],\n      \"ReferenceDataSources\": [\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \" \"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"8.,c.z\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:R{\\\")\",\n            \"FileKey\": \"<string>\"\n          }\n        },\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"iY|\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"!HY]pC~5dL\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:k9Ec7qn&gM\",\n            \"FileKey\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"FlinkApplicationConfiguration\": {\n      \"CheckpointConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"CheckpointingEnabled\": \"<boolean>\",\n        \"CheckpointInterval\": \"<integer>\",\n        \"MinPauseBetweenCheckpoints\": \"<integer>\"\n      },\n      \"MonitoringConfiguration\": {\n        \"ConfigurationType\": \"CUSTOM\",\n        \"MetricsLevel\": \"PARALLELISM\",\n        \"LogLevel\": \"DEBUG\"\n      },\n      \"ParallelismConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"Parallelism\": \"<integer>\",\n        \"ParallelismPerKPU\": \"<integer>\",\n        \"AutoScalingEnabled\": \"<boolean>\"\n      }\n    },\n    \"EnvironmentProperties\": {\n      \"PropertyGroups\": [\n        {\n          \"PropertyGroupId\": \"H8Wc2qVzMm\",\n          \"PropertyMap\": {\n            \"nisi_a\": \"<string>\",\n            \"laborum_1\": \"<string>\",\n            \"laborea7\": \"<string>\",\n            \"laborum_8\": \"<string>\",\n            \"anim_b\": \"<string>\",\n            \"elit_2\": \"<string>\",\n            \"non_d5f\": \"<string>\",\n            \"laborum44b\": \"<string>\",\n            \"voluptate02\": \"<string>\",\n            \"aute_94\": \"<string>\",\n            \"sitdd\": \"<string>\",\n            \"sunt_9_8\": \"<string>\",\n            \"aute_db2\": \"<string>\",\n            \"cillum_63\": \"<string>\",\n            \"Excepteur264\": \"<string>\",\n            \"sit_6ee\": \"<string>\",\n            \"sed6_\": \"<string>\",\n            \"quis_95\": \"<string>\",\n            \"utf\": \"<string>\"\n          }\n        },\n        {\n          \"PropertyGroupId\": \"v\",\n          \"PropertyMap\": {\n            \"cillum07\": \"<string>\",\n            \"quis_2b8\": \"<string>\",\n            \"eiusmod_4\": \"<string>\",\n            \"ullamco_12\": \"<string>\",\n            \"exercitationea_\": \"<string>\",\n            \"doef7\": \"<string>\",\n            \"do042\": \"<string>\",\n            \"officia_cd9\": \"<string>\",\n            \"eiusmod_1d7\": \"<string>\",\n            \"id5\": \"<string>\",\n            \"magnaf2\": \"<string>\",\n            \"cupidatatb\": \"<string>\",\n            \"cillum_6\": \"<string>\",\n            \"elitada\": \"<string>\",\n            \"ullamco3c\": \"<string>\",\n            \"sit_c\": \"<string>\",\n            \"voluptate__\": \"<string>\",\n            \"amet_2e\": \"<string>\",\n            \"Ut_3f3\": \"<string>\",\n            \"ex_53\": \"<string>\",\n            \"ine5\": \"<string>\",\n            \"ut_4\": \"<string>\",\n            \"sint_35\": \"<string>\",\n            \"elitf5\": \"<string>\",\n            \"proident_92f\": \"<string>\",\n            \"mollit9\": \"<string>\",\n            \"anim_e7\": \"<string>\",\n            \"est96e\": \"<string>\",\n            \"et974\": \"<string>\",\n            \"ut_418\": \"<string>\",\n            \"sitd0\": \"<string>\",\n            \"velitfe\": \"<string>\",\n            \"occaecat_0b6\": \"<string>\",\n            \"ullamco_c\": \"<string>\",\n            \"eue3\": \"<string>\",\n            \"commodo_a1\": \"<string>\",\n            \"fugiat_9d\": \"<string>\",\n            \"adipisicing_eac\": \"<string>\",\n            \"id7d\": \"<string>\",\n            \"sit989\": \"<string>\",\n            \"dolorec13\": \"<string>\",\n            \"Excepteurc3b\": \"<string>\",\n            \"in_bbf\": \"<string>\",\n            \"dolor_1d\": \"<string>\",\n            \"nostrud_01\": \"<string>\",\n            \"Excepteur58\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"ApplicationCodeConfiguration\": {\n      \"CodeContentType\": \"PLAINTEXT\",\n      \"CodeContent\": {\n        \"TextContent\": \"<string>\",\n        \"ZipFileContent\": \"<string>\",\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:JRVk6r d(\",\n          \"FileKey\": \"<string>\",\n          \"ObjectVersion\": \"<string>\"\n        }\n      }\n    },\n    \"ApplicationSnapshotConfiguration\": {\n      \"SnapshotsEnabled\": \"<boolean>\"\n    },\n    \"VpcConfigurations\": [\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      },\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      }\n    ],\n    \"ZeppelinApplicationConfiguration\": {\n      \"MonitoringConfiguration\": {\n        \"LogLevel\": \"WARN\"\n      },\n      \"CatalogConfiguration\": {\n        \"GlueDataCatalogConfiguration\": {\n          \"DatabaseARN\": \"arn:y4X1RX\"\n        }\n      },\n      \"DeployAsApplicationConfiguration\": {\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:gs('[VX2@!\",\n          \"BasePath\": \"n-0bA@y9s\"\n        }\n      },\n      \"CustomArtifactsConfiguration\": [\n        {\n          \"ArtifactType\": \"DEPENDENCY_JAR\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:u,wQYo%D\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"3dP-0bNaDw\",\n            \"ArtifactId\": \"t5ggOA.uD5\",\n            \"Version\": \"j5jT\"\n          }\n        },\n        {\n          \"ArtifactType\": \"UDF\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:\\\\R2YQrnVnU\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"_dNoQ39\",\n            \"ArtifactId\": \"Z_eOeAec\",\n            \"Version\": \"-eAPLaq5L7\"\n          }\n        }\n      ]\n    }\n  },\n  \"CloudWatchLoggingOptions\": [\n    {\n      \"LogStreamARN\": \"arn:+\\\\:_.B %4\"\n    },\n    {\n      \"LogStreamARN\": \"arn:g6%f:)bD)f\"\n    }\n  ],\n  \"Tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"ApplicationMode\": \"STREAMING\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.CreateApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:39.000Z",
+              "updatedAt": "2026-07-28T10:37:39.000Z",
+              "uid": "35240-224e5b49-ed84-4d78-8f89-3c61c017fcfd"
+            },
+            {
+              "id": "48503657-be23-4b24-8fa1-a47f3601784d",
+              "name": "UnsupportedOperationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.CreateApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"qHiah0e10c1\",\n  \"RuntimeEnvironment\": \"FLINK-1_8\",\n  \"ServiceExecutionRole\": \"arn:[>c6Sa\\\"P\",\n  \"ApplicationDescription\": \"<string>\",\n  \"ApplicationConfiguration\": {\n    \"SqlApplicationConfiguration\": {\n      \"Inputs\": [\n        {\n          \"NamePrefix\": \"7fwA0|[/Ck\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"[\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"25Rh6\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:^OQzbP5\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:uWA?>rC@\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:_\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        },\n        {\n          \"NamePrefix\": \"[3=X\",\n          \"InputSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"CSV\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"L(\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"N{]zE)\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"InputProcessingConfiguration\": {\n            \"InputLambdaProcessor\": {\n              \"ResourceARN\": \"arn:ZgD+_t&\"\n            }\n          },\n          \"KinesisStreamsInput\": {\n            \"ResourceARN\": \"arn:(9q{H*Mg\"\n          },\n          \"KinesisFirehoseInput\": {\n            \"ResourceARN\": \"arn:L4X+g&53\"\n          },\n          \"InputParallelism\": {\n            \"Count\": \"<integer>\"\n          }\n        }\n      ],\n      \"Outputs\": [\n        {\n          \"Name\": \"%HHf_z[A7\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"JSON\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:i/v\\\\'}74`H\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:rY885\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:1/LqRl%|\"\n          }\n        },\n        {\n          \"Name\": \"uE\",\n          \"DestinationSchema\": {\n            \"RecordFormatType\": \"CSV\"\n          },\n          \"KinesisStreamsOutput\": {\n            \"ResourceARN\": \"arn:X71ino\"\n          },\n          \"KinesisFirehoseOutput\": {\n            \"ResourceARN\": \"arn:r4Cr\"\n          },\n          \"LambdaOutput\": {\n            \"ResourceARN\": \"arn:F1ko2?P4)\"\n          }\n        }\n      ],\n      \"ReferenceDataSources\": [\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \" \"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"8.,c.z\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:R{\\\")\",\n            \"FileKey\": \"<string>\"\n          }\n        },\n        {\n          \"TableName\": \"<string>\",\n          \"ReferenceSchema\": {\n            \"RecordFormat\": {\n              \"RecordFormatType\": \"JSON\",\n              \"MappingParameters\": {\n                \"JSONMappingParameters\": {\n                  \"RecordRowPath\": \"iY|\"\n                },\n                \"CSVMappingParameters\": {\n                  \"RecordRowDelimiter\": \"<string>\",\n                  \"RecordColumnDelimiter\": \"<string>\"\n                }\n              }\n            },\n            \"RecordColumns\": [\n              {\n                \"Name\": \"!HY]pC~5dL\",\n                \"SqlType\": \"<string>\",\n                \"Mapping\": \"<string>\"\n              }\n            ],\n            \"RecordEncoding\": \"UTF-8\"\n          },\n          \"S3ReferenceDataSource\": {\n            \"BucketARN\": \"arn:k9Ec7qn&gM\",\n            \"FileKey\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"FlinkApplicationConfiguration\": {\n      \"CheckpointConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"CheckpointingEnabled\": \"<boolean>\",\n        \"CheckpointInterval\": \"<integer>\",\n        \"MinPauseBetweenCheckpoints\": \"<integer>\"\n      },\n      \"MonitoringConfiguration\": {\n        \"ConfigurationType\": \"CUSTOM\",\n        \"MetricsLevel\": \"PARALLELISM\",\n        \"LogLevel\": \"DEBUG\"\n      },\n      \"ParallelismConfiguration\": {\n        \"ConfigurationType\": \"DEFAULT\",\n        \"Parallelism\": \"<integer>\",\n        \"ParallelismPerKPU\": \"<integer>\",\n        \"AutoScalingEnabled\": \"<boolean>\"\n      }\n    },\n    \"EnvironmentProperties\": {\n      \"PropertyGroups\": [\n        {\n          \"PropertyGroupId\": \"H8Wc2qVzMm\",\n          \"PropertyMap\": {\n            \"nisi_a\": \"<string>\",\n            \"laborum_1\": \"<string>\",\n            \"laborea7\": \"<string>\",\n            \"laborum_8\": \"<string>\",\n            \"anim_b\": \"<string>\",\n            \"elit_2\": \"<string>\",\n            \"non_d5f\": \"<string>\",\n            \"laborum44b\": \"<string>\",\n            \"voluptate02\": \"<string>\",\n            \"aute_94\": \"<string>\",\n            \"sitdd\": \"<string>\",\n            \"sunt_9_8\": \"<string>\",\n            \"aute_db2\": \"<string>\",\n            \"cillum_63\": \"<string>\",\n            \"Excepteur264\": \"<string>\",\n            \"sit_6ee\": \"<string>\",\n            \"sed6_\": \"<string>\",\n            \"quis_95\": \"<string>\",\n            \"utf\": \"<string>\"\n          }\n        },\n        {\n          \"PropertyGroupId\": \"v\",\n          \"PropertyMap\": {\n            \"cillum07\": \"<string>\",\n            \"quis_2b8\": \"<string>\",\n            \"eiusmod_4\": \"<string>\",\n            \"ullamco_12\": \"<string>\",\n            \"exercitationea_\": \"<string>\",\n            \"doef7\": \"<string>\",\n            \"do042\": \"<string>\",\n            \"officia_cd9\": \"<string>\",\n            \"eiusmod_1d7\": \"<string>\",\n            \"id5\": \"<string>\",\n            \"magnaf2\": \"<string>\",\n            \"cupidatatb\": \"<string>\",\n            \"cillum_6\": \"<string>\",\n            \"elitada\": \"<string>\",\n            \"ullamco3c\": \"<string>\",\n            \"sit_c\": \"<string>\",\n            \"voluptate__\": \"<string>\",\n            \"amet_2e\": \"<string>\",\n            \"Ut_3f3\": \"<string>\",\n            \"ex_53\": \"<string>\",\n            \"ine5\": \"<string>\",\n            \"ut_4\": \"<string>\",\n            \"sint_35\": \"<string>\",\n            \"elitf5\": \"<string>\",\n            \"proident_92f\": \"<string>\",\n            \"mollit9\": \"<string>\",\n            \"anim_e7\": \"<string>\",\n            \"est96e\": \"<string>\",\n            \"et974\": \"<string>\",\n            \"ut_418\": \"<string>\",\n            \"sitd0\": \"<string>\",\n            \"velitfe\": \"<string>\",\n            \"occaecat_0b6\": \"<string>\",\n            \"ullamco_c\": \"<string>\",\n            \"eue3\": \"<string>\",\n            \"commodo_a1\": \"<string>\",\n            \"fugiat_9d\": \"<string>\",\n            \"adipisicing_eac\": \"<string>\",\n            \"id7d\": \"<string>\",\n            \"sit989\": \"<string>\",\n            \"dolorec13\": \"<string>\",\n            \"Excepteurc3b\": \"<string>\",\n            \"in_bbf\": \"<string>\",\n            \"dolor_1d\": \"<string>\",\n            \"nostrud_01\": \"<string>\",\n            \"Excepteur58\": \"<string>\"\n          }\n        }\n      ]\n    },\n    \"ApplicationCodeConfiguration\": {\n      \"CodeContentType\": \"PLAINTEXT\",\n      \"CodeContent\": {\n        \"TextContent\": \"<string>\",\n        \"ZipFileContent\": \"<string>\",\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:JRVk6r d(\",\n          \"FileKey\": \"<string>\",\n          \"ObjectVersion\": \"<string>\"\n        }\n      }\n    },\n    \"ApplicationSnapshotConfiguration\": {\n      \"SnapshotsEnabled\": \"<boolean>\"\n    },\n    \"VpcConfigurations\": [\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      },\n      {\n        \"SubnetIds\": [\n          \"<string>\"\n        ],\n        \"SecurityGroupIds\": [\n          \"<string>\"\n        ]\n      }\n    ],\n    \"ZeppelinApplicationConfiguration\": {\n      \"MonitoringConfiguration\": {\n        \"LogLevel\": \"WARN\"\n      },\n      \"CatalogConfiguration\": {\n        \"GlueDataCatalogConfiguration\": {\n          \"DatabaseARN\": \"arn:y4X1RX\"\n        }\n      },\n      \"DeployAsApplicationConfiguration\": {\n        \"S3ContentLocation\": {\n          \"BucketARN\": \"arn:gs('[VX2@!\",\n          \"BasePath\": \"n-0bA@y9s\"\n        }\n      },\n      \"CustomArtifactsConfiguration\": [\n        {\n          \"ArtifactType\": \"DEPENDENCY_JAR\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:u,wQYo%D\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"3dP-0bNaDw\",\n            \"ArtifactId\": \"t5ggOA.uD5\",\n            \"Version\": \"j5jT\"\n          }\n        },\n        {\n          \"ArtifactType\": \"UDF\",\n          \"S3ContentLocation\": {\n            \"BucketARN\": \"arn:\\\\R2YQrnVnU\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          },\n          \"MavenReference\": {\n            \"GroupId\": \"_dNoQ39\",\n            \"ArtifactId\": \"Z_eOeAec\",\n            \"Version\": \"-eAPLaq5L7\"\n          }\n        }\n      ]\n    }\n  },\n  \"CloudWatchLoggingOptions\": [\n    {\n      \"LogStreamARN\": \"arn:+\\\\:_.B %4\"\n    },\n    {\n      \"LogStreamARN\": \"arn:g6%f:)bD)f\"\n    }\n  ],\n  \"Tags\": [\n    {\n      \"Key\": \"<string>\",\n      \"Value\": \"<string>\"\n    }\n  ],\n  \"ApplicationMode\": \"STREAMING\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.CreateApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.CreateApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:39.000Z",
+              "updatedAt": "2026-07-28T10:37:39.000Z",
+              "uid": "35240-48503657-be23-4b24-8fa1-a47f3601784d"
+            }
+          ],
+          "createdAt": "2026-07-28T10:37:39.000Z",
+          "updatedAt": "2026-07-28T10:37:39.000Z",
+          "uid": "35240-5a1ac594-64ea-42d6-9a55-c3d77b874a56"
+        }
+      ],
+      "id": "84bfe434-83cb-4ce1-94a2-21ade043cb76",
+      "createdAt": "2026-07-28T10:37:39.000Z",
+      "updatedAt": "2026-07-28T10:37:39.000Z",
+      "uid": "35240-84bfe434-83cb-4ce1-94a2-21ade043cb76"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://kinesisanalytics.{{region}}.amazonaws.com"
+    }
+  ]
+}

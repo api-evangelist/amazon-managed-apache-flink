@@ -1,0 +1,750 @@
+{
+  "info": {
+    "_postman_id": "f7c43129-7663-47f6-8e81-6b108720436c",
+    "name": "Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.RollbackApplication API",
+    "description": "Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:38:37.000Z",
+    "updatedAt": "2026-07-28T10:38:37.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-f7c43129-7663-47f6-8e81-6b108720436c"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication",
+      "item": [
+        {
+          "name": "Amazon Managed Service for Apache Flink Rollback Application",
+          "id": "1bf21368-2251-4dfd-acda-443507b79804",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "KinesisAnalytics_20180523.RollbackApplication"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ApplicationName\": \"DT3o\",\n  \"CurrentApplicationVersionId\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication"
+            },
+            "description": "<p>Reverts the application to the previous running version. You can roll back an application if you suspect it is stuck in a transient status. </p> <p>You can roll back an application only if it is in the <code>UPDATING</code> or <code>AUTOSCALING</code> status.</p> <p>When you rollback an application, it loads state data from the last successful snapshot. If the application has no snapshots, Kinesis Data Analytics rejects the rollback request.</p> <p>This action is not supported for Kinesis Data Analytics for SQL applications.</p>"
+          },
+          "response": [
+            {
+              "id": "b6d3341c-5422-437b-9766-11b940603ad0",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.RollbackApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"DT3o\",\n  \"CurrentApplicationVersionId\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"ApplicationDetail\": {\n    \"ApplicationARN\": \"arn:bB)%yv9\",\n    \"ApplicationName\": \"2xMoqFx\",\n    \"RuntimeEnvironment\": \"FLINK-1_6\",\n    \"ApplicationStatus\": \"DELETING\",\n    \"ApplicationVersionId\": \"<integer>\",\n    \"ApplicationDescription\": \"<string>\",\n    \"ServiceExecutionRole\": \"arn:8\",\n    \"CreateTimestamp\": \"<dateTime>\",\n    \"LastUpdateTimestamp\": \"<dateTime>\",\n    \"ApplicationConfigurationDescription\": {\n      \"SqlApplicationConfigurationDescription\": {\n        \"InputDescriptions\": [\n          {\n            \"InputId\": \"K_0abQtgYXa\",\n            \"NamePrefix\": \"qd9FP\",\n            \"InAppStreamNames\": [\n              \"/%@Eh\",\n              \"\\\\xG\\\\R)\"\n            ],\n            \"InputProcessingConfigurationDescription\": {\n              \"InputLambdaProcessorDescription\": {\n                \"ResourceARN\": \"arn:\",\n                \"RoleARN\": \"arn:qT4G[Uc?9*\"\n              }\n            },\n            \"KinesisStreamsInputDescription\": {\n              \"ResourceARN\": \"arn:\",\n              \"RoleARN\": \"arn:b\"\n            },\n            \"KinesisFirehoseInputDescription\": {\n              \"ResourceARN\": \"arn:RIS%;\",\n              \"RoleARN\": \"arn:ZFcFd5]n\"\n            },\n            \"InputSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"CSV\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"C*\\\\&&5a!\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"CzS\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            },\n            \"InputParallelism\": {\n              \"Count\": \"<integer>\"\n            },\n            \"InputStartingPositionConfiguration\": {\n              \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n            }\n          },\n          {\n            \"InputId\": \"JCga\",\n            \"NamePrefix\": \"/\",\n            \"InAppStreamNames\": [\n              \"T.OBVfe{g\",\n              \"G/ZYcE;\"\n            ],\n            \"InputProcessingConfigurationDescription\": {\n              \"InputLambdaProcessorDescription\": {\n                \"ResourceARN\": \"arn:O5@]\",\n                \"RoleARN\": \"arn:}K/RZ@T\\\"\"\n              }\n            },\n            \"KinesisStreamsInputDescription\": {\n              \"ResourceARN\": \"arn:T,>]fo7'*\",\n              \"RoleARN\": \"arn:DeUa%J E\"\n            },\n            \"KinesisFirehoseInputDescription\": {\n              \"ResourceARN\": \"arn:k|Ht\",\n              \"RoleARN\": \"arn:*^\"\n            },\n            \"InputSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"CSV\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"dZ\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"LDXmJ]#XEy\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            },\n            \"InputParallelism\": {\n              \"Count\": \"<integer>\"\n            },\n            \"InputStartingPositionConfiguration\": {\n              \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n            }\n          }\n        ],\n        \"OutputDescriptions\": [\n          {\n            \"OutputId\": \"O0mcWYUMIo\",\n            \"Name\": \"j(:$2[\",\n            \"KinesisStreamsOutputDescription\": {\n              \"ResourceARN\": \"arn:Q`1?/\",\n              \"RoleARN\": \"arn:E(-GN!\"\n            },\n            \"KinesisFirehoseOutputDescription\": {\n              \"ResourceARN\": \"arn:&:0Bh\",\n              \"RoleARN\": \"arn:Tl}riJRbaf\"\n            },\n            \"LambdaOutputDescription\": {\n              \"ResourceARN\": \"arn:|cL(S\\\\PPS\",\n              \"RoleARN\": \"arn:bW!Mm\"\n            },\n            \"DestinationSchema\": {\n              \"RecordFormatType\": \"JSON\"\n            }\n          },\n          {\n            \"OutputId\": \"z_Tes9hDHRG\",\n            \"Name\": \"\\\\dIF2+\",\n            \"KinesisStreamsOutputDescription\": {\n              \"ResourceARN\": \"arn:=.gOX7m^\",\n              \"RoleARN\": \"arn:{\"\n            },\n            \"KinesisFirehoseOutputDescription\": {\n              \"ResourceARN\": \"arn:\",\n              \"RoleARN\": \"arn:uy&TVM-\"\n            },\n            \"LambdaOutputDescription\": {\n              \"ResourceARN\": \"arn:r<R Tu\",\n              \"RoleARN\": \"arn:Er\"\n            },\n            \"DestinationSchema\": {\n              \"RecordFormatType\": \"JSON\"\n            }\n          }\n        ],\n        \"ReferenceDataSourceDescriptions\": [\n          {\n            \"ReferenceId\": \"LY527PX\",\n            \"TableName\": \"<string>\",\n            \"S3ReferenceDataSourceDescription\": {\n              \"BucketARN\": \"arn:F`\",\n              \"FileKey\": \"<string>\",\n              \"ReferenceRoleARN\": \"arn:K,?I\"\n            },\n            \"ReferenceSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"CSV\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"HvexB1V\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"p=UWjoM\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            }\n          },\n          {\n            \"ReferenceId\": \"v12FUY\",\n            \"TableName\": \"<string>\",\n            \"S3ReferenceDataSourceDescription\": {\n              \"BucketARN\": \"arn:H\",\n              \"FileKey\": \"<string>\",\n              \"ReferenceRoleARN\": \"arn:)BH9.lCe\"\n            },\n            \"ReferenceSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"JSON\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"IG\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"E(dTsz?L:\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            }\n          }\n        ]\n      },\n      \"ApplicationCodeConfigurationDescription\": {\n        \"CodeContentType\": \"ZIPFILE\",\n        \"CodeContentDescription\": {\n          \"TextContent\": \"<string>\",\n          \"CodeMD5\": \"<string>\",\n          \"CodeSize\": \"<integer>\",\n          \"S3ApplicationCodeLocationDescription\": {\n            \"BucketARN\": \"arn::jl'O\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          }\n        }\n      },\n      \"RunConfigurationDescription\": {\n        \"ApplicationRestoreConfigurationDescription\": {\n          \"ApplicationRestoreType\": \"RESTORE_FROM_CUSTOM_SNAPSHOT\",\n          \"SnapshotName\": \"mv\"\n        },\n        \"FlinkRunConfigurationDescription\": {\n          \"AllowNonRestoredState\": \"<boolean>\"\n        }\n      },\n      \"FlinkApplicationConfigurationDescription\": {\n        \"CheckpointConfigurationDescription\": {\n          \"ConfigurationType\": \"DEFAULT\",\n          \"CheckpointingEnabled\": \"<boolean>\",\n          \"CheckpointInterval\": \"<integer>\",\n          \"MinPauseBetweenCheckpoints\": \"<integer>\"\n        },\n        \"MonitoringConfigurationDescription\": {\n          \"ConfigurationType\": \"CUSTOM\",\n          \"MetricsLevel\": \"OPERATOR\",\n          \"LogLevel\": \"ERROR\"\n        },\n        \"ParallelismConfigurationDescription\": {\n          \"ConfigurationType\": \"DEFAULT\",\n          \"Parallelism\": \"<integer>\",\n          \"ParallelismPerKPU\": \"<integer>\",\n          \"CurrentParallelism\": \"<integer>\",\n          \"AutoScalingEnabled\": \"<boolean>\"\n        },\n        \"JobPlanDescription\": \"<string>\"\n      },\n      \"EnvironmentPropertyDescriptions\": {\n        \"PropertyGroupDescriptions\": [\n          {\n            \"PropertyGroupId\": \"WI0qpTUJJYF\",\n            \"PropertyMap\": {\n              \"ut_78\": \"<string>\",\n              \"amet_f\": \"<string>\",\n              \"quib6\": \"<string>\",\n              \"laborisa\": \"<string>\",\n              \"labore_\": \"<string>\",\n              \"voluptate_1\": \"<string>\",\n              \"dolor_9\": \"<string>\",\n              \"doe59\": \"<string>\",\n              \"culpa_5\": \"<string>\",\n              \"doe52\": \"<string>\",\n              \"in_e\": \"<string>\",\n              \"dolor8\": \"<string>\",\n              \"nulla_33\": \"<string>\",\n              \"ametdc\": \"<string>\",\n              \"magna75\": \"<string>\",\n              \"euf\": \"<string>\",\n              \"enim_699\": \"<string>\",\n              \"qui_3\": \"<string>\",\n              \"ad4c\": \"<string>\",\n              \"addf9\": \"<string>\",\n              \"minim_260\": \"<string>\",\n              \"cillum_f\": \"<string>\",\n              \"id7c2\": \"<string>\",\n              \"qui_6\": \"<string>\",\n              \"occaecat_2\": \"<string>\",\n              \"irure_1c\": \"<string>\",\n              \"eac\": \"<string>\",\n              \"in592\": \"<string>\",\n              \"doloreb2\": \"<string>\",\n              \"non_19e\": \"<string>\",\n              \"minim_30\": \"<string>\",\n              \"magna_9b\": \"<string>\",\n              \"dolorad0\": \"<string>\"\n            }\n          },\n          {\n            \"PropertyGroupId\": \"o2\",\n            \"PropertyMap\": {\n              \"amet2_\": \"<string>\",\n              \"laboris_5e_\": \"<string>\",\n              \"nostrud5b\": \"<string>\",\n              \"aliqua4b6\": \"<string>\",\n              \"elitbe\": \"<string>\",\n              \"aliqua_\": \"<string>\",\n              \"eud\": \"<string>\",\n              \"Excepteur_2\": \"<string>\",\n              \"sita1\": \"<string>\",\n              \"culpa52d\": \"<string>\",\n              \"sed_3d\": \"<string>\",\n              \"Excepteurc\": \"<string>\",\n              \"non_e\": \"<string>\",\n              \"occaecat4\": \"<string>\",\n              \"pariatur6\": \"<string>\",\n              \"do_b_\": \"<string>\",\n              \"in_62\": \"<string>\",\n              \"non__82\": \"<string>\",\n              \"voluptatec_6\": \"<string>\",\n              \"mollit73\": \"<string>\",\n              \"laborum_135\": \"<string>\",\n              \"magnae47\": \"<string>\",\n              \"in_8\": \"<string>\",\n              \"sunt__d\": \"<string>\",\n              \"aliqua_e\": \"<string>\",\n              \"deserunt_f8\": \"<string>\",\n              \"nonb9d\": \"<string>\",\n              \"aliquip_c8\": \"<string>\",\n              \"nisi53\": \"<string>\",\n              \"ex_2ac\": \"<string>\",\n              \"magna_9fb\": \"<string>\",\n              \"magnae_\": \"<string>\",\n              \"eiusmodb\": \"<string>\",\n              \"incididunt_20\": \"<string>\",\n              \"sunt_4\": \"<string>\",\n              \"mollit4_\": \"<string>\",\n              \"dolore_429\": \"<string>\",\n              \"enim_3a\": \"<string>\",\n              \"estc\": \"<string>\",\n              \"esseff9\": \"<string>\",\n              \"eiusmod_2e\": \"<string>\",\n              \"tempor8_\": \"<string>\",\n              \"eiusmod_f_\": \"<string>\"\n            }\n          }\n        ]\n      },\n      \"ApplicationSnapshotConfigurationDescription\": {\n        \"SnapshotsEnabled\": \"<boolean>\"\n      },\n      \"VpcConfigurationDescriptions\": [\n        {\n          \"VpcConfigurationId\": \"Tc.9Jh\",\n          \"VpcId\": \"<string>\",\n          \"SubnetIds\": [\n            \"<string>\"\n          ],\n          \"SecurityGroupIds\": [\n            \"<string>\"\n          ]\n        },\n        {\n          \"VpcConfigurationId\": \"QHrB0psmafj\",\n          \"VpcId\": \"<string>\",\n          \"SubnetIds\": [\n            \"<string>\"\n          ],\n          \"SecurityGroupIds\": [\n            \"<string>\"\n          ]\n        }\n      ],\n      \"ZeppelinApplicationConfigurationDescription\": {\n        \"MonitoringConfigurationDescription\": {\n          \"LogLevel\": \"ERROR\"\n        },\n        \"CatalogConfigurationDescription\": {\n          \"GlueDataCatalogConfigurationDescription\": {\n            \"DatabaseARN\": \"arn:<]yrhw{>\"\n          }\n        },\n        \"DeployAsApplicationConfigurationDescription\": {\n          \"S3ContentLocationDescription\": {\n            \"BucketARN\": \"arn:\",\n            \"BasePath\": \"R7dN7B<\"\n          }\n        },\n        \"CustomArtifactsConfigurationDescription\": [\n          {\n            \"ArtifactType\": \"UDF\",\n            \"S3ContentLocationDescription\": {\n              \"BucketARN\": \"arn:KJ\",\n              \"FileKey\": \"<string>\",\n              \"ObjectVersion\": \"<string>\"\n            },\n            \"MavenReferenceDescription\": {\n              \"GroupId\": \"QGBCE\",\n              \"ArtifactId\": \"X5\",\n              \"Version\": \"e9ykSnmz7\"\n            }\n          },\n          {\n            \"ArtifactType\": \"UDF\",\n            \"S3ContentLocationDescription\": {\n              \"BucketARN\": \"arn:~OvQV,\",\n              \"FileKey\": \"<string>\",\n              \"ObjectVersion\": \"<string>\"\n            },\n            \"MavenReferenceDescription\": {\n              \"GroupId\": \"mp\",\n              \"ArtifactId\": \"ybi\",\n              \"Version\": \"qpuD\"\n            }\n          }\n        ]\n      }\n    },\n    \"CloudWatchLoggingOptionDescriptions\": [\n      {\n        \"LogStreamARN\": \"arn:& \\\\'Kc\",\n        \"CloudWatchLoggingOptionId\": \"EWzSNm\",\n        \"RoleARN\": \"arn:BLOQ)%\"\n      },\n      {\n        \"LogStreamARN\": \"arn:;tGb\",\n        \"CloudWatchLoggingOptionId\": \"EjN65_p1\",\n        \"RoleARN\": \"arn:WMe&/oBZ,\"\n      }\n    ],\n    \"ApplicationMaintenanceConfigurationDescription\": {\n      \"ApplicationMaintenanceWindowStartTime\": \"21:59\",\n      \"ApplicationMaintenanceWindowEndTime\": \"23:20\"\n    },\n    \"ApplicationVersionUpdatedFrom\": \"<integer>\",\n    \"ApplicationVersionRolledBackFrom\": \"<integer>\",\n    \"ConditionalToken\": \"SPKBN\",\n    \"ApplicationVersionRolledBackTo\": \"<integer>\",\n    \"ApplicationMode\": \"STREAMING\"\n  }\n}",
+              "createdAt": "2026-07-28T10:38:37.000Z",
+              "updatedAt": "2026-07-28T10:38:37.000Z",
+              "uid": "35240-b6d3341c-5422-437b-9766-11b940603ad0"
+            },
+            {
+              "id": "cbed88b9-3675-4662-b5b8-34d4c051edcf",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.RollbackApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"DT3o\",\n  \"CurrentApplicationVersionId\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:37.000Z",
+              "updatedAt": "2026-07-28T10:38:37.000Z",
+              "uid": "35240-cbed88b9-3675-4662-b5b8-34d4c051edcf"
+            },
+            {
+              "id": "1403978b-5508-4467-ab5f-229e40d12e4b",
+              "name": "InvalidArgumentException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.RollbackApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"DT3o\",\n  \"CurrentApplicationVersionId\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:37.000Z",
+              "updatedAt": "2026-07-28T10:38:37.000Z",
+              "uid": "35240-1403978b-5508-4467-ab5f-229e40d12e4b"
+            },
+            {
+              "id": "bb441d93-a90c-4a2e-a99f-c27f612ef71b",
+              "name": "ResourceInUseException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.RollbackApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"DT3o\",\n  \"CurrentApplicationVersionId\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:37.000Z",
+              "updatedAt": "2026-07-28T10:38:37.000Z",
+              "uid": "35240-bb441d93-a90c-4a2e-a99f-c27f612ef71b"
+            },
+            {
+              "id": "6bae689b-06c3-4464-a70d-e045dfb38cc9",
+              "name": "InvalidRequestException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.RollbackApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"DT3o\",\n  \"CurrentApplicationVersionId\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:37.000Z",
+              "updatedAt": "2026-07-28T10:38:37.000Z",
+              "uid": "35240-6bae689b-06c3-4464-a70d-e045dfb38cc9"
+            },
+            {
+              "id": "0759b547-bbca-4bcc-aa2e-4d7ddba748a6",
+              "name": "ConcurrentModificationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.RollbackApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"DT3o\",\n  \"CurrentApplicationVersionId\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:37.000Z",
+              "updatedAt": "2026-07-28T10:38:37.000Z",
+              "uid": "35240-0759b547-bbca-4bcc-aa2e-4d7ddba748a6"
+            },
+            {
+              "id": "2e292508-1f0e-4fa8-864f-e3a5011ce789",
+              "name": "UnsupportedOperationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.RollbackApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"DT3o\",\n  \"CurrentApplicationVersionId\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.RollbackApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:37.000Z",
+              "updatedAt": "2026-07-28T10:38:37.000Z",
+              "uid": "35240-2e292508-1f0e-4fa8-864f-e3a5011ce789"
+            }
+          ],
+          "createdAt": "2026-07-28T10:38:37.000Z",
+          "updatedAt": "2026-07-28T10:38:37.000Z",
+          "uid": "35240-1bf21368-2251-4dfd-acda-443507b79804"
+        }
+      ],
+      "id": "824f6376-6bde-4427-9f01-bc47c994e09f",
+      "createdAt": "2026-07-28T10:38:37.000Z",
+      "updatedAt": "2026-07-28T10:38:37.000Z",
+      "uid": "35240-824f6376-6bde-4427-9f01-bc47c994e09f"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://kinesisanalytics.{{region}}.amazonaws.com"
+    }
+  ]
+}

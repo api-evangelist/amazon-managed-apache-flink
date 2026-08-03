@@ -1,0 +1,662 @@
+{
+  "info": {
+    "_postman_id": "cf80ded9-4809-458b-a715-4d162e5b0575",
+    "name": "Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.StartApplication API",
+    "description": "Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:38:38.000Z",
+    "updatedAt": "2026-07-28T10:38:38.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-cf80ded9-4809-458b-a715-4d162e5b0575"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=KinesisAnalytics_20180523.StartApplication",
+      "item": [
+        {
+          "name": "Amazon Managed Service for Apache Flink Start Application",
+          "id": "170bdc6e-58b7-486a-a7c5-fb8cbd34adeb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "KinesisAnalytics_20180523.StartApplication"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ApplicationName\": \"j6dhOKGv\",\n  \"RunConfiguration\": {\n    \"FlinkRunConfiguration\": {\n      \"AllowNonRestoredState\": \"<boolean>\"\n    },\n    \"SqlRunConfigurations\": [\n      {\n        \"InputId\": \"W_\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      },\n      {\n        \"InputId\": \"o-3becb4NT\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      }\n    ],\n    \"ApplicationRestoreConfiguration\": {\n      \"ApplicationRestoreType\": \"RESTORE_FROM_CUSTOM_SNAPSHOT\",\n      \"SnapshotName\": \"hR\"\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.StartApplication",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=KinesisAnalytics_20180523.StartApplication"
+            },
+            "description": "Starts the specified Kinesis Data Analytics application. After creating an application, you must exclusively call this operation to start your application."
+          },
+          "response": [
+            {
+              "id": "6f4f5334-0b4b-4ded-91eb-3e9474c4130d",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.StartApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"j6dhOKGv\",\n  \"RunConfiguration\": {\n    \"FlinkRunConfiguration\": {\n      \"AllowNonRestoredState\": \"<boolean>\"\n    },\n    \"SqlRunConfigurations\": [\n      {\n        \"InputId\": \"W_\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      },\n      {\n        \"InputId\": \"o-3becb4NT\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      }\n    ],\n    \"ApplicationRestoreConfiguration\": {\n      \"ApplicationRestoreType\": \"RESTORE_FROM_CUSTOM_SNAPSHOT\",\n      \"SnapshotName\": \"hR\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.StartApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.StartApplication"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:39.000Z",
+              "updatedAt": "2026-07-28T10:38:39.000Z",
+              "uid": "35240-6f4f5334-0b4b-4ded-91eb-3e9474c4130d"
+            },
+            {
+              "id": "b50a1e86-a319-4ef6-87a4-413a756cd982",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.StartApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"j6dhOKGv\",\n  \"RunConfiguration\": {\n    \"FlinkRunConfiguration\": {\n      \"AllowNonRestoredState\": \"<boolean>\"\n    },\n    \"SqlRunConfigurations\": [\n      {\n        \"InputId\": \"W_\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      },\n      {\n        \"InputId\": \"o-3becb4NT\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      }\n    ],\n    \"ApplicationRestoreConfiguration\": {\n      \"ApplicationRestoreType\": \"RESTORE_FROM_CUSTOM_SNAPSHOT\",\n      \"SnapshotName\": \"hR\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.StartApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.StartApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:39.000Z",
+              "updatedAt": "2026-07-28T10:38:39.000Z",
+              "uid": "35240-b50a1e86-a319-4ef6-87a4-413a756cd982"
+            },
+            {
+              "id": "1b2cd3c8-2b44-466f-bd27-a068b1bdee2a",
+              "name": "ResourceInUseException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.StartApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"j6dhOKGv\",\n  \"RunConfiguration\": {\n    \"FlinkRunConfiguration\": {\n      \"AllowNonRestoredState\": \"<boolean>\"\n    },\n    \"SqlRunConfigurations\": [\n      {\n        \"InputId\": \"W_\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      },\n      {\n        \"InputId\": \"o-3becb4NT\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      }\n    ],\n    \"ApplicationRestoreConfiguration\": {\n      \"ApplicationRestoreType\": \"RESTORE_FROM_CUSTOM_SNAPSHOT\",\n      \"SnapshotName\": \"hR\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.StartApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.StartApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:39.000Z",
+              "updatedAt": "2026-07-28T10:38:39.000Z",
+              "uid": "35240-1b2cd3c8-2b44-466f-bd27-a068b1bdee2a"
+            },
+            {
+              "id": "ca773a66-342a-436b-9605-fec2ee53b4ee",
+              "name": "InvalidArgumentException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.StartApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"j6dhOKGv\",\n  \"RunConfiguration\": {\n    \"FlinkRunConfiguration\": {\n      \"AllowNonRestoredState\": \"<boolean>\"\n    },\n    \"SqlRunConfigurations\": [\n      {\n        \"InputId\": \"W_\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      },\n      {\n        \"InputId\": \"o-3becb4NT\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      }\n    ],\n    \"ApplicationRestoreConfiguration\": {\n      \"ApplicationRestoreType\": \"RESTORE_FROM_CUSTOM_SNAPSHOT\",\n      \"SnapshotName\": \"hR\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.StartApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.StartApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:39.000Z",
+              "updatedAt": "2026-07-28T10:38:39.000Z",
+              "uid": "35240-ca773a66-342a-436b-9605-fec2ee53b4ee"
+            },
+            {
+              "id": "fd127b1f-cdac-417f-8546-88fc1063b68c",
+              "name": "InvalidApplicationConfigurationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.StartApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"j6dhOKGv\",\n  \"RunConfiguration\": {\n    \"FlinkRunConfiguration\": {\n      \"AllowNonRestoredState\": \"<boolean>\"\n    },\n    \"SqlRunConfigurations\": [\n      {\n        \"InputId\": \"W_\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      },\n      {\n        \"InputId\": \"o-3becb4NT\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      }\n    ],\n    \"ApplicationRestoreConfiguration\": {\n      \"ApplicationRestoreType\": \"RESTORE_FROM_CUSTOM_SNAPSHOT\",\n      \"SnapshotName\": \"hR\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.StartApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.StartApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:39.000Z",
+              "updatedAt": "2026-07-28T10:38:39.000Z",
+              "uid": "35240-fd127b1f-cdac-417f-8546-88fc1063b68c"
+            },
+            {
+              "id": "82bc0065-ca68-4e73-b16f-c15e600905c2",
+              "name": "InvalidRequestException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.StartApplication"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"j6dhOKGv\",\n  \"RunConfiguration\": {\n    \"FlinkRunConfiguration\": {\n      \"AllowNonRestoredState\": \"<boolean>\"\n    },\n    \"SqlRunConfigurations\": [\n      {\n        \"InputId\": \"W_\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      },\n      {\n        \"InputId\": \"o-3becb4NT\",\n        \"InputStartingPositionConfiguration\": {\n          \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n        }\n      }\n    ],\n    \"ApplicationRestoreConfiguration\": {\n      \"ApplicationRestoreType\": \"RESTORE_FROM_CUSTOM_SNAPSHOT\",\n      \"SnapshotName\": \"hR\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.StartApplication",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.StartApplication"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:39.000Z",
+              "updatedAt": "2026-07-28T10:38:39.000Z",
+              "uid": "35240-82bc0065-ca68-4e73-b16f-c15e600905c2"
+            }
+          ],
+          "createdAt": "2026-07-28T10:38:39.000Z",
+          "updatedAt": "2026-07-28T10:38:39.000Z",
+          "uid": "35240-170bdc6e-58b7-486a-a7c5-fb8cbd34adeb"
+        }
+      ],
+      "id": "14d353b8-cb58-4c4e-b3ac-3f78470a0205",
+      "createdAt": "2026-07-28T10:38:39.000Z",
+      "updatedAt": "2026-07-28T10:38:39.000Z",
+      "uid": "35240-14d353b8-cb58-4c4e-b3ac-3f78470a0205"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://kinesisanalytics.{{region}}.amazonaws.com"
+    }
+  ]
+}

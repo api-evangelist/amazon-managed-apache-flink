@@ -1,0 +1,486 @@
+{
+  "info": {
+    "_postman_id": "21c4efc8-a1e6-4ca0-a313-6c5177ceff8c",
+    "name": "Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DescribeApplicationVersion API",
+    "description": "Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:38:19.000Z",
+    "updatedAt": "2026-07-28T10:38:19.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-21c4efc8-a1e6-4ca0-a313-6c5177ceff8c"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion",
+      "item": [
+        {
+          "name": "Amazon Managed Service for Apache Flink Describe Application Version",
+          "id": "2f43833a-fa90-4338-a7d2-96b94ac4239a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "KinesisAnalytics_20180523.DescribeApplicationVersion"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ApplicationName\": \"_A\",\n  \"ApplicationVersionId\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion"
+            },
+            "description": "<p>Provides a detailed description of a specified version of the application. To see a list of all the versions of an application, invoke the <a>ListApplicationVersions</a> operation.</p> <note> <p>This operation is supported only for Amazon Kinesis Data Analytics for Apache Flink.</p> </note>"
+          },
+          "response": [
+            {
+              "id": "74d31ad8-543c-4a7e-a580-7d21345de660",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.DescribeApplicationVersion"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"_A\",\n  \"ApplicationVersionId\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"ApplicationVersionDetail\": {\n    \"ApplicationARN\": \"arn:M[5?T\",\n    \"ApplicationName\": \"fKEeCH_YMvT\",\n    \"RuntimeEnvironment\": \"ZEPPELIN-FLINK-2_0\",\n    \"ApplicationStatus\": \"STARTING\",\n    \"ApplicationVersionId\": \"<integer>\",\n    \"ApplicationDescription\": \"<string>\",\n    \"ServiceExecutionRole\": \"arn:ntO5]S}\",\n    \"CreateTimestamp\": \"<dateTime>\",\n    \"LastUpdateTimestamp\": \"<dateTime>\",\n    \"ApplicationConfigurationDescription\": {\n      \"SqlApplicationConfigurationDescription\": {\n        \"InputDescriptions\": [\n          {\n            \"InputId\": \"ZLSiqGDyHa-\",\n            \"NamePrefix\": \" \",\n            \"InAppStreamNames\": [\n              \"zws\",\n              \"_mgk}\"\n            ],\n            \"InputProcessingConfigurationDescription\": {\n              \"InputLambdaProcessorDescription\": {\n                \"ResourceARN\": \"arn:Eqe4\",\n                \"RoleARN\": \"arn:yM>'h\"\n              }\n            },\n            \"KinesisStreamsInputDescription\": {\n              \"ResourceARN\": \"arn:+\",\n              \"RoleARN\": \"arn:6\"\n            },\n            \"KinesisFirehoseInputDescription\": {\n              \"ResourceARN\": \"arn:Q H~\",\n              \"RoleARN\": \"arn:Q(oBoH\"\n            },\n            \"InputSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"JSON\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"A\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"REf}H+o\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            },\n            \"InputParallelism\": {\n              \"Count\": \"<integer>\"\n            },\n            \"InputStartingPositionConfiguration\": {\n              \"InputStartingPosition\": \"LAST_STOPPED_POINT\"\n            }\n          },\n          {\n            \"InputId\": \"8xCEWI\",\n            \"NamePrefix\": \"C0u[7uh,(\",\n            \"InAppStreamNames\": [\n              \"81F\",\n              \"7\"\n            ],\n            \"InputProcessingConfigurationDescription\": {\n              \"InputLambdaProcessorDescription\": {\n                \"ResourceARN\": \"arn: mMVJW(C+\",\n                \"RoleARN\": \"arn:xR5VOr?U4\"\n              }\n            },\n            \"KinesisStreamsInputDescription\": {\n              \"ResourceARN\": \"arn:u0eijm !\",\n              \"RoleARN\": \"arn:Xpt?di'R`\"\n            },\n            \"KinesisFirehoseInputDescription\": {\n              \"ResourceARN\": \"arn:yL-^{Vzoc4\",\n              \"RoleARN\": \"arn:C*2mrSp\"\n            },\n            \"InputSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"JSON\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"z\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"5+5\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            },\n            \"InputParallelism\": {\n              \"Count\": \"<integer>\"\n            },\n            \"InputStartingPositionConfiguration\": {\n              \"InputStartingPosition\": \"TRIM_HORIZON\"\n            }\n          }\n        ],\n        \"OutputDescriptions\": [\n          {\n            \"OutputId\": \"n3fe43nZ\",\n            \"Name\": \" \",\n            \"KinesisStreamsOutputDescription\": {\n              \"ResourceARN\": \"arn:K gB?|We_\",\n              \"RoleARN\": \"arn:S|:<Xx<\"\n            },\n            \"KinesisFirehoseOutputDescription\": {\n              \"ResourceARN\": \"arn:uj1m8]z\",\n              \"RoleARN\": \"arn:$g\"\n            },\n            \"LambdaOutputDescription\": {\n              \"ResourceARN\": \"arn:/klg9D+\",\n              \"RoleARN\": \"arn:rG8xUuC)\"\n            },\n            \"DestinationSchema\": {\n              \"RecordFormatType\": \"JSON\"\n            }\n          },\n          {\n            \"OutputId\": \"ia\",\n            \"Name\": \"OXEWfVJt\",\n            \"KinesisStreamsOutputDescription\": {\n              \"ResourceARN\": \"arn:24\",\n              \"RoleARN\": \"arn:}\"\n            },\n            \"KinesisFirehoseOutputDescription\": {\n              \"ResourceARN\": \"arn:\\\"[tb\",\n              \"RoleARN\": \"arn:\"\n            },\n            \"LambdaOutputDescription\": {\n              \"ResourceARN\": \"arn:H@KV>odOr\\\\\",\n              \"RoleARN\": \"arn:I{B!?\"\n            },\n            \"DestinationSchema\": {\n              \"RecordFormatType\": \"JSON\"\n            }\n          }\n        ],\n        \"ReferenceDataSourceDescriptions\": [\n          {\n            \"ReferenceId\": \"m-QE0ifc6\",\n            \"TableName\": \"<string>\",\n            \"S3ReferenceDataSourceDescription\": {\n              \"BucketARN\": \"arn:@ 8QK<%iR\",\n              \"FileKey\": \"<string>\",\n              \"ReferenceRoleARN\": \"arn:U/-aL-j\"\n            },\n            \"ReferenceSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"CSV\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"Le`3_0n9\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \" \",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            }\n          },\n          {\n            \"ReferenceId\": \"Xhtw\",\n            \"TableName\": \"<string>\",\n            \"S3ReferenceDataSourceDescription\": {\n              \"BucketARN\": \"arn:Ls\",\n              \"FileKey\": \"<string>\",\n              \"ReferenceRoleARN\": \"arn:_mrIrST\"\n            },\n            \"ReferenceSchema\": {\n              \"RecordFormat\": {\n                \"RecordFormatType\": \"CSV\",\n                \"MappingParameters\": {\n                  \"JSONMappingParameters\": {\n                    \"RecordRowPath\": \"]N,^3Hde+\"\n                  },\n                  \"CSVMappingParameters\": {\n                    \"RecordRowDelimiter\": \"<string>\",\n                    \"RecordColumnDelimiter\": \"<string>\"\n                  }\n                }\n              },\n              \"RecordColumns\": [\n                {\n                  \"Name\": \"+fL[\",\n                  \"SqlType\": \"<string>\",\n                  \"Mapping\": \"<string>\"\n                }\n              ],\n              \"RecordEncoding\": \"UTF-8\"\n            }\n          }\n        ]\n      },\n      \"ApplicationCodeConfigurationDescription\": {\n        \"CodeContentType\": \"ZIPFILE\",\n        \"CodeContentDescription\": {\n          \"TextContent\": \"<string>\",\n          \"CodeMD5\": \"<string>\",\n          \"CodeSize\": \"<integer>\",\n          \"S3ApplicationCodeLocationDescription\": {\n            \"BucketARN\": \"arn:9\",\n            \"FileKey\": \"<string>\",\n            \"ObjectVersion\": \"<string>\"\n          }\n        }\n      },\n      \"RunConfigurationDescription\": {\n        \"ApplicationRestoreConfigurationDescription\": {\n          \"ApplicationRestoreType\": \"SKIP_RESTORE_FROM_SNAPSHOT\",\n          \"SnapshotName\": \"mpT\"\n        },\n        \"FlinkRunConfigurationDescription\": {\n          \"AllowNonRestoredState\": \"<boolean>\"\n        }\n      },\n      \"FlinkApplicationConfigurationDescription\": {\n        \"CheckpointConfigurationDescription\": {\n          \"ConfigurationType\": \"CUSTOM\",\n          \"CheckpointingEnabled\": \"<boolean>\",\n          \"CheckpointInterval\": \"<integer>\",\n          \"MinPauseBetweenCheckpoints\": \"<integer>\"\n        },\n        \"MonitoringConfigurationDescription\": {\n          \"ConfigurationType\": \"DEFAULT\",\n          \"MetricsLevel\": \"TASK\",\n          \"LogLevel\": \"INFO\"\n        },\n        \"ParallelismConfigurationDescription\": {\n          \"ConfigurationType\": \"CUSTOM\",\n          \"Parallelism\": \"<integer>\",\n          \"ParallelismPerKPU\": \"<integer>\",\n          \"CurrentParallelism\": \"<integer>\",\n          \"AutoScalingEnabled\": \"<boolean>\"\n        },\n        \"JobPlanDescription\": \"<string>\"\n      },\n      \"EnvironmentPropertyDescriptions\": {\n        \"PropertyGroupDescriptions\": [\n          {\n            \"PropertyGroupId\": \"w\",\n            \"PropertyMap\": {\n              \"quis_0a5\": \"<string>\",\n              \"Loremdbc\": \"<string>\",\n              \"doloref8\": \"<string>\",\n              \"adipisicing_fb\": \"<string>\",\n              \"ipsum575\": \"<string>\",\n              \"veniam_a47\": \"<string>\",\n              \"et2\": \"<string>\",\n              \"enimcd\": \"<string>\",\n              \"eu4b5\": \"<string>\",\n              \"qui_5\": \"<string>\",\n              \"ut_04\": \"<string>\",\n              \"tempor5af\": \"<string>\",\n              \"consequat_4\": \"<string>\",\n              \"do7\": \"<string>\",\n              \"Excepteur_98_\": \"<string>\",\n              \"dolor601\": \"<string>\",\n              \"consequat_eac\": \"<string>\",\n              \"laborum788\": \"<string>\",\n              \"inade\": \"<string>\",\n              \"sit564\": \"<string>\",\n              \"officiad8\": \"<string>\",\n              \"eiusmod_0e2\": \"<string>\",\n              \"dolore24\": \"<string>\",\n              \"autefc\": \"<string>\",\n              \"Uta\": \"<string>\",\n              \"qui0\": \"<string>\",\n              \"pariatur11\": \"<string>\",\n              \"laborumcc7\": \"<string>\",\n              \"labore49\": \"<string>\"\n            }\n          },\n          {\n            \"PropertyGroupId\": \"ZEUTRZf5uF2\",\n            \"PropertyMap\": {\n              \"cupidatat_1ee\": \"<string>\"\n            }\n          }\n        ]\n      },\n      \"ApplicationSnapshotConfigurationDescription\": {\n        \"SnapshotsEnabled\": \"<boolean>\"\n      },\n      \"VpcConfigurationDescriptions\": [\n        {\n          \"VpcConfigurationId\": \"3\",\n          \"VpcId\": \"<string>\",\n          \"SubnetIds\": [\n            \"<string>\"\n          ],\n          \"SecurityGroupIds\": [\n            \"<string>\"\n          ]\n        },\n        {\n          \"VpcConfigurationId\": \"1QaQv0\",\n          \"VpcId\": \"<string>\",\n          \"SubnetIds\": [\n            \"<string>\"\n          ],\n          \"SecurityGroupIds\": [\n            \"<string>\"\n          ]\n        }\n      ],\n      \"ZeppelinApplicationConfigurationDescription\": {\n        \"MonitoringConfigurationDescription\": {\n          \"LogLevel\": \"ERROR\"\n        },\n        \"CatalogConfigurationDescription\": {\n          \"GlueDataCatalogConfigurationDescription\": {\n            \"DatabaseARN\": \"arn:\"\n          }\n        },\n        \"DeployAsApplicationConfigurationDescription\": {\n          \"S3ContentLocationDescription\": {\n            \"BucketARN\": \"arn:Vq0/z\",\n            \"BasePath\": \"&k%Tg\"\n          }\n        },\n        \"CustomArtifactsConfigurationDescription\": [\n          {\n            \"ArtifactType\": \"DEPENDENCY_JAR\",\n            \"S3ContentLocationDescription\": {\n              \"BucketARN\": \"arn:$<=\\\"w+\",\n              \"FileKey\": \"<string>\",\n              \"ObjectVersion\": \"<string>\"\n            },\n            \"MavenReferenceDescription\": {\n              \"GroupId\": \"jnvaL57-d\",\n              \"ArtifactId\": \"pL\",\n              \"Version\": \"BwcYIr\"\n            }\n          },\n          {\n            \"ArtifactType\": \"DEPENDENCY_JAR\",\n            \"S3ContentLocationDescription\": {\n              \"BucketARN\": \"arn:\\\\fM:\\\"R7\",\n              \"FileKey\": \"<string>\",\n              \"ObjectVersion\": \"<string>\"\n            },\n            \"MavenReferenceDescription\": {\n              \"GroupId\": \"UC-dZFNjKBP\",\n              \"ArtifactId\": \"sZj\",\n              \"Version\": \"yDCnf10u9U\"\n            }\n          }\n        ]\n      }\n    },\n    \"CloudWatchLoggingOptionDescriptions\": [\n      {\n        \"LogStreamARN\": \"arn:@-3VJ\",\n        \"CloudWatchLoggingOptionId\": \"waiabfsts\",\n        \"RoleARN\": \"arn: ax5<\\\"n\"\n      },\n      {\n        \"LogStreamARN\": \"arn:IAT@GG\",\n        \"CloudWatchLoggingOptionId\": \"5ll\",\n        \"RoleARN\": \"arn:%i3r1\"\n      }\n    ],\n    \"ApplicationMaintenanceConfigurationDescription\": {\n      \"ApplicationMaintenanceWindowStartTime\": \"22:04\",\n      \"ApplicationMaintenanceWindowEndTime\": \"00:44\"\n    },\n    \"ApplicationVersionUpdatedFrom\": \"<integer>\",\n    \"ApplicationVersionRolledBackFrom\": \"<integer>\",\n    \"ConditionalToken\": \"xg7ZbzvG6J\",\n    \"ApplicationVersionRolledBackTo\": \"<integer>\",\n    \"ApplicationMode\": \"STREAMING\"\n  }\n}",
+              "createdAt": "2026-07-28T10:38:19.000Z",
+              "updatedAt": "2026-07-28T10:38:19.000Z",
+              "uid": "35240-74d31ad8-543c-4a7e-a580-7d21345de660"
+            },
+            {
+              "id": "8c5e8d7b-988e-48db-9bb0-1ba0702fba4a",
+              "name": "InvalidArgumentException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.DescribeApplicationVersion"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"_A\",\n  \"ApplicationVersionId\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:19.000Z",
+              "updatedAt": "2026-07-28T10:38:19.000Z",
+              "uid": "35240-8c5e8d7b-988e-48db-9bb0-1ba0702fba4a"
+            },
+            {
+              "id": "6c679353-0f1a-41be-8acd-6ae51209d107",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.DescribeApplicationVersion"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"_A\",\n  \"ApplicationVersionId\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:19.000Z",
+              "updatedAt": "2026-07-28T10:38:19.000Z",
+              "uid": "35240-6c679353-0f1a-41be-8acd-6ae51209d107"
+            },
+            {
+              "id": "936f1c78-a44c-49d6-81c2-c29689b20bc2",
+              "name": "UnsupportedOperationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.DescribeApplicationVersion"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"_A\",\n  \"ApplicationVersionId\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.DescribeApplicationVersion"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:38:19.000Z",
+              "updatedAt": "2026-07-28T10:38:19.000Z",
+              "uid": "35240-936f1c78-a44c-49d6-81c2-c29689b20bc2"
+            }
+          ],
+          "createdAt": "2026-07-28T10:38:19.000Z",
+          "updatedAt": "2026-07-28T10:38:19.000Z",
+          "uid": "35240-2f43833a-fa90-4338-a7d2-96b94ac4239a"
+        }
+      ],
+      "id": "cba91211-24e0-42c4-b088-87f56e278cd0",
+      "createdAt": "2026-07-28T10:38:19.000Z",
+      "updatedAt": "2026-07-28T10:38:19.000Z",
+      "uid": "35240-cba91211-24e0-42c4-b088-87f56e278cd0"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://kinesisanalytics.{{region}}.amazonaws.com"
+    }
+  ]
+}

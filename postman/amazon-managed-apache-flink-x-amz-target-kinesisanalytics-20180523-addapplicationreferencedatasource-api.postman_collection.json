@@ -1,0 +1,662 @@
+{
+  "info": {
+    "_postman_id": "9ceb8a18-2588-4256-ade7-918d2ade88c5",
+    "name": "Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationReferenceDataSource ",
+    "description": "Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:37:36.000Z",
+    "updatedAt": "2026-07-28T10:37:36.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-9ceb8a18-2588-4256-ade7-918d2ade88c5"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource",
+      "item": [
+        {
+          "name": "Amazon Managed Service for Apache Flink Add Application Reference Data Source",
+          "id": "09d13c4c-d947-4518-b01b-23d0d4bb7f3d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"ApplicationName\": \"2z7\",\n  \"CurrentApplicationVersionId\": \"<integer>\",\n  \"ReferenceDataSource\": {\n    \"TableName\": \"<string>\",\n    \"ReferenceSchema\": {\n      \"RecordFormat\": {\n        \"RecordFormatType\": \"JSON\",\n        \"MappingParameters\": {\n          \"JSONMappingParameters\": {\n            \"RecordRowPath\": \"_9\"\n          },\n          \"CSVMappingParameters\": {\n            \"RecordRowDelimiter\": \"<string>\",\n            \"RecordColumnDelimiter\": \"<string>\"\n          }\n        }\n      },\n      \"RecordColumns\": [\n        {\n          \"Name\": \" \",\n          \"SqlType\": \"<string>\",\n          \"Mapping\": \"<string>\"\n        }\n      ],\n      \"RecordEncoding\": \"UTF-8\"\n    },\n    \"S3ReferenceDataSource\": {\n      \"BucketARN\": \"arn:vs\",\n      \"FileKey\": \"<string>\"\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+            },
+            "description": "<p>Adds a reference data source to an existing SQL-based Kinesis Data Analytics application.</p> <p>Kinesis Data Analytics reads reference data (that is, an Amazon S3 object) and creates an in-application table within your application. In the request, you provide the source (S3 bucket name and object key name), name of the in-application table to create, and the necessary mapping information that describes how data in an Amazon S3 object maps to columns in the resulting in-application table.</p>"
+          },
+          "response": [
+            {
+              "id": "78dcf7d3-1490-47d7-b36a-dbc4d71b9196",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"2z7\",\n  \"CurrentApplicationVersionId\": \"<integer>\",\n  \"ReferenceDataSource\": {\n    \"TableName\": \"<string>\",\n    \"ReferenceSchema\": {\n      \"RecordFormat\": {\n        \"RecordFormatType\": \"JSON\",\n        \"MappingParameters\": {\n          \"JSONMappingParameters\": {\n            \"RecordRowPath\": \"_9\"\n          },\n          \"CSVMappingParameters\": {\n            \"RecordRowDelimiter\": \"<string>\",\n            \"RecordColumnDelimiter\": \"<string>\"\n          }\n        }\n      },\n      \"RecordColumns\": [\n        {\n          \"Name\": \" \",\n          \"SqlType\": \"<string>\",\n          \"Mapping\": \"<string>\"\n        }\n      ],\n      \"RecordEncoding\": \"UTF-8\"\n    },\n    \"S3ReferenceDataSource\": {\n      \"BucketARN\": \"arn:vs\",\n      \"FileKey\": \"<string>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"ApplicationARN\": \"arn:O\",\n  \"ApplicationVersionId\": \"<integer>\",\n  \"ReferenceDataSourceDescriptions\": [\n    {\n      \"ReferenceId\": \"6sG\",\n      \"TableName\": \"<string>\",\n      \"S3ReferenceDataSourceDescription\": {\n        \"BucketARN\": \"arn:OzE\",\n        \"FileKey\": \"<string>\",\n        \"ReferenceRoleARN\": \"arn:{V7pA*0\"\n      },\n      \"ReferenceSchema\": {\n        \"RecordFormat\": {\n          \"RecordFormatType\": \"CSV\",\n          \"MappingParameters\": {\n            \"JSONMappingParameters\": {\n              \"RecordRowPath\": \"Y&\"\n            },\n            \"CSVMappingParameters\": {\n              \"RecordRowDelimiter\": \"<string>\",\n              \"RecordColumnDelimiter\": \"<string>\"\n            }\n          }\n        },\n        \"RecordColumns\": [\n          {\n            \"Name\": \"A@,Gv$C|Cq\",\n            \"SqlType\": \"<string>\",\n            \"Mapping\": \"<string>\"\n          }\n        ],\n        \"RecordEncoding\": \"UTF-8\"\n      }\n    },\n    {\n      \"ReferenceId\": \"Y684Zqu3XW\",\n      \"TableName\": \"<string>\",\n      \"S3ReferenceDataSourceDescription\": {\n        \"BucketARN\": \"arn:ZCf{Q\",\n        \"FileKey\": \"<string>\",\n        \"ReferenceRoleARN\": \"arn:^ftLnBRR\"\n      },\n      \"ReferenceSchema\": {\n        \"RecordFormat\": {\n          \"RecordFormatType\": \"CSV\",\n          \"MappingParameters\": {\n            \"JSONMappingParameters\": {\n              \"RecordRowPath\": \"+\"\n            },\n            \"CSVMappingParameters\": {\n              \"RecordRowDelimiter\": \"<string>\",\n              \"RecordColumnDelimiter\": \"<string>\"\n            }\n          }\n        },\n        \"RecordColumns\": [\n          {\n            \"Name\": \"I`\",\n            \"SqlType\": \"<string>\",\n            \"Mapping\": \"<string>\"\n          }\n        ],\n        \"RecordEncoding\": \"UTF-8\"\n      }\n    }\n  ]\n}",
+              "createdAt": "2026-07-28T10:37:37.000Z",
+              "updatedAt": "2026-07-28T10:37:37.000Z",
+              "uid": "35240-78dcf7d3-1490-47d7-b36a-dbc4d71b9196"
+            },
+            {
+              "id": "39e7deb3-6f88-4ff7-a5dd-8f546e16a7ad",
+              "name": "ResourceNotFoundException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"2z7\",\n  \"CurrentApplicationVersionId\": \"<integer>\",\n  \"ReferenceDataSource\": {\n    \"TableName\": \"<string>\",\n    \"ReferenceSchema\": {\n      \"RecordFormat\": {\n        \"RecordFormatType\": \"JSON\",\n        \"MappingParameters\": {\n          \"JSONMappingParameters\": {\n            \"RecordRowPath\": \"_9\"\n          },\n          \"CSVMappingParameters\": {\n            \"RecordRowDelimiter\": \"<string>\",\n            \"RecordColumnDelimiter\": \"<string>\"\n          }\n        }\n      },\n      \"RecordColumns\": [\n        {\n          \"Name\": \" \",\n          \"SqlType\": \"<string>\",\n          \"Mapping\": \"<string>\"\n        }\n      ],\n      \"RecordEncoding\": \"UTF-8\"\n    },\n    \"S3ReferenceDataSource\": {\n      \"BucketARN\": \"arn:vs\",\n      \"FileKey\": \"<string>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:37.000Z",
+              "updatedAt": "2026-07-28T10:37:37.000Z",
+              "uid": "35240-39e7deb3-6f88-4ff7-a5dd-8f546e16a7ad"
+            },
+            {
+              "id": "3f81d5a1-9f8e-4182-b36d-b637211b3866",
+              "name": "ResourceInUseException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"2z7\",\n  \"CurrentApplicationVersionId\": \"<integer>\",\n  \"ReferenceDataSource\": {\n    \"TableName\": \"<string>\",\n    \"ReferenceSchema\": {\n      \"RecordFormat\": {\n        \"RecordFormatType\": \"JSON\",\n        \"MappingParameters\": {\n          \"JSONMappingParameters\": {\n            \"RecordRowPath\": \"_9\"\n          },\n          \"CSVMappingParameters\": {\n            \"RecordRowDelimiter\": \"<string>\",\n            \"RecordColumnDelimiter\": \"<string>\"\n          }\n        }\n      },\n      \"RecordColumns\": [\n        {\n          \"Name\": \" \",\n          \"SqlType\": \"<string>\",\n          \"Mapping\": \"<string>\"\n        }\n      ],\n      \"RecordEncoding\": \"UTF-8\"\n    },\n    \"S3ReferenceDataSource\": {\n      \"BucketARN\": \"arn:vs\",\n      \"FileKey\": \"<string>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:37.000Z",
+              "updatedAt": "2026-07-28T10:37:37.000Z",
+              "uid": "35240-3f81d5a1-9f8e-4182-b36d-b637211b3866"
+            },
+            {
+              "id": "92aeb2d2-cd5f-4838-b511-e77f0e2c3c3f",
+              "name": "InvalidArgumentException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"2z7\",\n  \"CurrentApplicationVersionId\": \"<integer>\",\n  \"ReferenceDataSource\": {\n    \"TableName\": \"<string>\",\n    \"ReferenceSchema\": {\n      \"RecordFormat\": {\n        \"RecordFormatType\": \"JSON\",\n        \"MappingParameters\": {\n          \"JSONMappingParameters\": {\n            \"RecordRowPath\": \"_9\"\n          },\n          \"CSVMappingParameters\": {\n            \"RecordRowDelimiter\": \"<string>\",\n            \"RecordColumnDelimiter\": \"<string>\"\n          }\n        }\n      },\n      \"RecordColumns\": [\n        {\n          \"Name\": \" \",\n          \"SqlType\": \"<string>\",\n          \"Mapping\": \"<string>\"\n        }\n      ],\n      \"RecordEncoding\": \"UTF-8\"\n    },\n    \"S3ReferenceDataSource\": {\n      \"BucketARN\": \"arn:vs\",\n      \"FileKey\": \"<string>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:37.000Z",
+              "updatedAt": "2026-07-28T10:37:37.000Z",
+              "uid": "35240-92aeb2d2-cd5f-4838-b511-e77f0e2c3c3f"
+            },
+            {
+              "id": "b2fcf405-65bd-4ef7-8681-82cf71afbc70",
+              "name": "ConcurrentModificationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"2z7\",\n  \"CurrentApplicationVersionId\": \"<integer>\",\n  \"ReferenceDataSource\": {\n    \"TableName\": \"<string>\",\n    \"ReferenceSchema\": {\n      \"RecordFormat\": {\n        \"RecordFormatType\": \"JSON\",\n        \"MappingParameters\": {\n          \"JSONMappingParameters\": {\n            \"RecordRowPath\": \"_9\"\n          },\n          \"CSVMappingParameters\": {\n            \"RecordRowDelimiter\": \"<string>\",\n            \"RecordColumnDelimiter\": \"<string>\"\n          }\n        }\n      },\n      \"RecordColumns\": [\n        {\n          \"Name\": \" \",\n          \"SqlType\": \"<string>\",\n          \"Mapping\": \"<string>\"\n        }\n      ],\n      \"RecordEncoding\": \"UTF-8\"\n    },\n    \"S3ReferenceDataSource\": {\n      \"BucketARN\": \"arn:vs\",\n      \"FileKey\": \"<string>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:37.000Z",
+              "updatedAt": "2026-07-28T10:37:37.000Z",
+              "uid": "35240-b2fcf405-65bd-4ef7-8681-82cf71afbc70"
+            },
+            {
+              "id": "c755ccaa-7a55-41f4-94e9-6d9b9ec832d5",
+              "name": "InvalidRequestException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"ApplicationName\": \"2z7\",\n  \"CurrentApplicationVersionId\": \"<integer>\",\n  \"ReferenceDataSource\": {\n    \"TableName\": \"<string>\",\n    \"ReferenceSchema\": {\n      \"RecordFormat\": {\n        \"RecordFormatType\": \"JSON\",\n        \"MappingParameters\": {\n          \"JSONMappingParameters\": {\n            \"RecordRowPath\": \"_9\"\n          },\n          \"CSVMappingParameters\": {\n            \"RecordRowDelimiter\": \"<string>\",\n            \"RecordColumnDelimiter\": \"<string>\"\n          }\n        }\n      },\n      \"RecordColumns\": [\n        {\n          \"Name\": \" \",\n          \"SqlType\": \"<string>\",\n          \"Mapping\": \"<string>\"\n        }\n      ],\n      \"RecordEncoding\": \"UTF-8\"\n    },\n    \"S3ReferenceDataSource\": {\n      \"BucketARN\": \"arn:vs\",\n      \"FileKey\": \"<string>\"\n    }\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=KinesisAnalytics_20180523.AddApplicationReferenceDataSource"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:37:37.000Z",
+              "updatedAt": "2026-07-28T10:37:37.000Z",
+              "uid": "35240-c755ccaa-7a55-41f4-94e9-6d9b9ec832d5"
+            }
+          ],
+          "createdAt": "2026-07-28T10:37:36.000Z",
+          "updatedAt": "2026-07-28T10:37:36.000Z",
+          "uid": "35240-09d13c4c-d947-4518-b01b-23d0d4bb7f3d"
+        }
+      ],
+      "id": "328a45b2-e3bc-47d4-a22b-e1631d061361",
+      "createdAt": "2026-07-28T10:37:36.000Z",
+      "updatedAt": "2026-07-28T10:37:36.000Z",
+      "uid": "35240-328a45b2-e3bc-47d4-a22b-e1631d061361"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://kinesisanalytics.{{region}}.amazonaws.com"
+    }
+  ]
+}
