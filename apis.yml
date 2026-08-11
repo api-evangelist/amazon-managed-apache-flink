@@ -57,8 +57,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinput-api
   name: >-
@@ -87,8 +85,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinputprocessingconfiguration-api
   name: >-
@@ -117,8 +113,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationoutput-api
   name: >-
@@ -147,8 +141,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationreferencedatasource-api
   name: >-
@@ -177,8 +169,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationvpcconfiguration-api
   name: >-
@@ -207,8 +197,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplication-api
   name: >-
@@ -237,8 +225,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationpresignedurl-api
   name: >-
@@ -267,8 +253,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationsnapshot-api
   name: >-
@@ -297,8 +281,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplication-api
   name: >-
@@ -327,8 +309,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationcloudwatchloggingoption-api
   name: >-
@@ -357,8 +337,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationinputprocessingconfiguration-api
   name: >-
@@ -387,8 +365,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationoutput-api
   name: >-
@@ -417,8 +393,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationreferencedatasource-api
   name: >-
@@ -447,8 +421,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationsnapshot-api
   name: >-
@@ -477,8 +449,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationvpcconfiguration-api
   name: >-
@@ -507,8 +477,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplication-api
   name: >-
@@ -537,8 +505,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationsnapshot-api
   name: >-
@@ -567,8 +533,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationversion-api
   name: >-
@@ -597,8 +561,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-discoverinputschema-api
   name: >-
@@ -627,8 +589,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplications-api
   name: >-
@@ -656,8 +616,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationsnapshots-api
   name: >-
@@ -686,8 +644,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationversions-api
   name: >-
@@ -716,8 +672,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listtagsforresource-api
   name: >-
@@ -746,8 +700,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-rollbackapplication-api
   name: >-
@@ -776,8 +728,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-startapplication-api
   name: >-
@@ -805,8 +755,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-stopapplication-api
   name: >-
@@ -834,8 +782,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-tagresource-api
   name: >-
@@ -863,8 +809,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-untagresource-api
   name: >-
@@ -892,8 +836,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplication-api
   name: >-
@@ -922,8 +864,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 - aid: >-
     amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplicationmaintenanceconfiguration-api
   name: >-
@@ -952,8 +892,6 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-  - type: X-NaftikoCapability
-    url: capabilities/amazon-managed-apache-flink.yaml
 common:
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-managed-service-for-apache-flink/overview
