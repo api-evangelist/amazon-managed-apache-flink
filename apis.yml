@@ -4,6 +4,18 @@ description: Amazon Managed Service for Apache Flink is the easiest way to trans
   with Apache Flink. It enables you to build sophisticated streaming analytics applications using Apache Flink with fully
   managed infrastructure and pay-as-you-go pricing.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
