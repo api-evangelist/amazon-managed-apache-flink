@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.TagResource API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.TagResource #X Amz Target=KinesisAnalytics 20180523.TagResource #X Amz Target=KinesisAnalytics 20180523.TagResource API'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -182,7 +182,8 @@ paths:
       - '#X Amz Target=KinesisAnalytics 20180523.TagResource'
 components:
   schemas:
-    ResourceInUseException: {}
+    TooManyTagsException: {}
+    InvalidArgumentException: {}
     Tag:
       type: object
       required:
@@ -197,31 +198,24 @@ components:
           - $ref: '#/components/schemas/TagValue'
           - description: The value of the key-value tag. The value is optional.
       description: A key-value pair (the value is optional) that you can define and assign to Amazon resources. If you specify a tag that already exists, the tag value is replaced with the value that you specify in the request. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50. For more information, see <a href="https://docs.aws.amazon.com/kinesisanalytics/latest/java/how-tagging.html">Using Tagging</a>.
-    TagValue:
+    TagKey:
       type: string
-      minLength: 0
-      maxLength: 256
+      minLength: 1
+      maxLength: 128
     Tags:
       type: array
       items:
         $ref: '#/components/schemas/Tag'
       minItems: 1
       maxItems: 200
-    TagResourceResponse:
-      type: object
-      properties: {}
-    TagKey:
-      type: string
-      minLength: 1
-      maxLength: 128
-    TooManyTagsException: {}
+    ResourceNotFoundException: {}
+    ConcurrentModificationException: {}
     KinesisAnalyticsARN:
       type: string
       pattern: arn:.*
       minLength: 1
       maxLength: 2048
-    ConcurrentModificationException: {}
-    InvalidArgumentException: {}
+    ResourceInUseException: {}
     TagResourceRequest:
       type: object
       required:
@@ -237,10 +231,34 @@ components:
           allOf:
           - $ref: '#/components/schemas/Tags'
           - description: The key-value tags to assign to the application.
-    ResourceNotFoundException: {}
+    TagResourceResponse:
+      type: object
+      properties: {}
+    TagValue:
+      type: string
+      minLength: 0
+      maxLength: 256
   parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
@@ -257,26 +275,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string

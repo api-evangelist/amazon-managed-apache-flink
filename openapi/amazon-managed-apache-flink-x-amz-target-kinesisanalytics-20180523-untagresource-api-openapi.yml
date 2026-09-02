@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.UntagResource API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.UntagResource #X Amz Target=KinesisAnalytics 20180523.UntagResource #X Amz Target=KinesisAnalytics 20180523.UntagResource API'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -181,54 +181,15 @@ paths:
       tags:
       - '#X Amz Target=KinesisAnalytics 20180523.UntagResource'
 components:
-  schemas:
-    ResourceInUseException: {}
-    InvalidArgumentException: {}
-    UntagResourceResponse:
-      type: object
-      properties: {}
-    ConcurrentModificationException: {}
-    TooManyTagsException: {}
-    UntagResourceRequest:
-      type: object
-      required:
-      - ResourceARN
-      - TagKeys
-      title: UntagResourceRequest
-      properties:
-        ResourceARN:
-          allOf:
-          - $ref: '#/components/schemas/KinesisAnalyticsARN'
-          - description: The ARN of the Kinesis Data Analytics application from which to remove the tags.
-        TagKeys:
-          allOf:
-          - $ref: '#/components/schemas/TagKeys'
-          - description: A list of keys of tags to remove from the specified application.
-    KinesisAnalyticsARN:
-      type: string
-      pattern: arn:.*
-      minLength: 1
-      maxLength: 2048
-    ResourceNotFoundException: {}
-    TagKeys:
-      type: array
-      items:
-        $ref: '#/components/schemas/TagKey'
-      minItems: 1
-      maxItems: 200
-    TagKey:
-      type: string
-      minLength: 1
-      maxLength: 128
   parameters:
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string
@@ -245,14 +206,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
@@ -263,6 +218,51 @@ components:
       schema:
         type: string
       required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+  schemas:
+    TagKeys:
+      type: array
+      items:
+        $ref: '#/components/schemas/TagKey'
+      minItems: 1
+      maxItems: 200
+    UntagResourceRequest:
+      type: object
+      required:
+      - ResourceARN
+      - TagKeys
+      title: UntagResourceRequest
+      properties:
+        ResourceARN:
+          allOf:
+          - $ref: '#/components/schemas/KinesisAnalyticsARN'
+          - description: The ARN of the Kinesis Data Analytics application from which to remove the tags.
+        TagKeys:
+          allOf:
+          - $ref: '#/components/schemas/TagKeys'
+          - description: A list of keys of tags to remove from the specified application.
+    TooManyTagsException: {}
+    InvalidArgumentException: {}
+    ConcurrentModificationException: {}
+    ResourceNotFoundException: {}
+    KinesisAnalyticsARN:
+      type: string
+      pattern: arn:.*
+      minLength: 1
+      maxLength: 2048
+    UntagResourceResponse:
+      type: object
+      properties: {}
+    ResourceInUseException: {}
+    TagKey:
+      type: string
+      minLength: 1
+      maxLength: 128
   securitySchemes:
     hmac:
       type: apiKey

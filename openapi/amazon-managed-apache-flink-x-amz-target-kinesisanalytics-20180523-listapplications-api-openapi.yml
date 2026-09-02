@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.ListApplications API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.ListApplications #X Amz Target=KinesisAnalytics 20180523.ListApplications #X Amz Target=KinesisAnalytics 20180523.ListApplications API'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -157,68 +157,12 @@ paths:
       tags:
       - '#X Amz Target=KinesisAnalytics 20180523.ListApplications'
 components:
-  parameters:
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
-    InvalidRequestException: {}
-    ApplicationSummaries:
-      type: array
-      items:
-        $ref: '#/components/schemas/ApplicationSummary'
-    ListApplicationsResponse:
-      type: object
-      required:
-      - ApplicationSummaries
-      properties:
-        ApplicationSummaries:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationSummaries'
-          - description: A list of <code>ApplicationSummary</code> objects.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationName'
-          - description: The pagination token for the next set of results, or <code>null</code> if there are no additional results. Pass this token into a subsequent command to retrieve the next set of items For more information about pagination, see <a href="https://docs.aws.amazon.com/cli/latest/userguide/pagination.html">Using the Amazon Command Line Interface's Pagination Options</a>.
+    ResourceARN:
+      type: string
+      pattern: arn:.*
+      minLength: 1
+      maxLength: 2048
     ApplicationStatus:
       type: string
       enum:
@@ -233,6 +177,23 @@ components:
       - ROLLING_BACK
       - MAINTENANCE
       - ROLLED_BACK
+    RuntimeEnvironment:
+      type: string
+      enum:
+      - SQL-1_0
+      - FLINK-1_6
+      - FLINK-1_8
+      - ZEPPELIN-FLINK-1_0
+      - FLINK-1_11
+      - FLINK-1_13
+      - ZEPPELIN-FLINK-2_0
+      - FLINK-1_15
+      - ZEPPELIN-FLINK-3_0
+    ApplicationSummaries:
+      type: array
+      items:
+        $ref: '#/components/schemas/ApplicationSummary'
+    InvalidRequestException: {}
     ListApplicationsInputLimit:
       type: integer
       minimum: 1
@@ -242,11 +203,31 @@ components:
       enum:
       - STREAMING
       - INTERACTIVE
-    ResourceARN:
-      type: string
-      pattern: arn:.*
-      minLength: 1
-      maxLength: 2048
+    ListApplicationsRequest:
+      type: object
+      title: ListApplicationsRequest
+      properties:
+        Limit:
+          allOf:
+          - $ref: '#/components/schemas/ListApplicationsInputLimit'
+          - description: The maximum number of applications to list.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationName'
+          - description: If a previous command returned a pagination token, pass it into this value to retrieve the next set of results. For more information about pagination, see <a href="https://docs.aws.amazon.com/cli/latest/userguide/pagination.html">Using the Amazon Command Line Interface's Pagination Options</a>.
+    ListApplicationsResponse:
+      type: object
+      required:
+      - ApplicationSummaries
+      properties:
+        ApplicationSummaries:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationSummaries'
+          - description: A list of <code>ApplicationSummary</code> objects.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationName'
+          - description: The pagination token for the next set of results, or <code>null</code> if there are no additional results. Pass this token into a subsequent command to retrieve the next set of items For more information about pagination, see <a href="https://docs.aws.amazon.com/cli/latest/userguide/pagination.html">Using the Amazon Command Line Interface's Pagination Options</a>.
     ApplicationSummary:
       type: object
       required:
@@ -281,18 +262,6 @@ components:
           - $ref: '#/components/schemas/ApplicationMode'
           - description: For a Kinesis Data Analytics for Apache Flink application, the mode is <code>STREAMING</code>. For a Kinesis Data Analytics Studio notebook, it is <code>INTERACTIVE</code>.
       description: Provides application summary information, including the application Amazon Resource Name (ARN), name, and status.
-    ListApplicationsRequest:
-      type: object
-      title: ListApplicationsRequest
-      properties:
-        Limit:
-          allOf:
-          - $ref: '#/components/schemas/ListApplicationsInputLimit'
-          - description: The maximum number of applications to list.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationName'
-          - description: If a previous command returned a pagination token, pass it into this value to retrieve the next set of results. For more information about pagination, see <a href="https://docs.aws.amazon.com/cli/latest/userguide/pagination.html">Using the Amazon Command Line Interface's Pagination Options</a>.
     ApplicationVersionId:
       type: integer
       minimum: 1
@@ -302,18 +271,49 @@ components:
       pattern: '[a-zA-Z0-9_.-]+'
       minLength: 1
       maxLength: 128
-    RuntimeEnvironment:
-      type: string
-      enum:
-      - SQL-1_0
-      - FLINK-1_6
-      - FLINK-1_8
-      - ZEPPELIN-FLINK-1_0
-      - FLINK-1_11
-      - FLINK-1_13
-      - ZEPPELIN-FLINK-2_0
-      - FLINK-1_15
-      - ZEPPELIN-FLINK-3_0
+  parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey

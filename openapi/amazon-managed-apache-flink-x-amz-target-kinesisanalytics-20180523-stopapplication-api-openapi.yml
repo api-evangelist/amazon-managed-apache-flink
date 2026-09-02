@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.StopApplication API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.StopApplication #X Amz Target=KinesisAnalytics 20180523.StopApplication #X Amz Target=KinesisAnalytics 20180523.StopApplication API'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -187,46 +187,15 @@ paths:
       tags:
       - '#X Amz Target=KinesisAnalytics 20180523.StopApplication'
 components:
-  schemas:
-    ResourceInUseException: {}
-    InvalidArgumentException: {}
-    StopApplicationRequest:
-      type: object
-      required:
-      - ApplicationName
-      title: StopApplicationRequest
-      properties:
-        ApplicationName:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationName'
-          - description: The name of the running application to stop.
-        Force:
-          allOf:
-          - $ref: '#/components/schemas/BooleanObject'
-          - description: <p>Set to <code>true</code> to force the application to stop. If you set <code>Force</code> to <code>true</code>, Kinesis Data Analytics stops the application without taking a snapshot. </p> <note> <p>Force-stopping your application may lead to data loss or duplication. To prevent data loss or duplicate processing of data during application restarts, we recommend you to take frequent snapshots of your application.</p> </note> <p>You can only force stop a Flink-based Kinesis Data Analytics application. You can't force stop a SQL-based Kinesis Data Analytics application.</p> <p>The application must be in the <code>STARTING</code>, <code>UPDATING</code>, <code>STOPPING</code>, <code>AUTOSCALING</code>, or <code>RUNNING</code> status. </p>
-    ConcurrentModificationException: {}
-    InvalidApplicationConfigurationException: {}
-    BooleanObject:
-      type: boolean
-    ApplicationName:
-      type: string
-      pattern: '[a-zA-Z0-9_.-]+'
-      minLength: 1
-      maxLength: 128
-    StopApplicationResponse:
-      type: object
-      properties: {}
-    ResourceNotFoundException: {}
-    InvalidRequestException: {}
   parameters:
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Credential:
+      name: X-Amz-Credential
       in: header
       schema:
         type: string
@@ -243,14 +212,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
@@ -261,6 +224,43 @@ components:
       schema:
         type: string
       required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+  schemas:
+    InvalidRequestException: {}
+    BooleanObject:
+      type: boolean
+    InvalidArgumentException: {}
+    ConcurrentModificationException: {}
+    ResourceNotFoundException: {}
+    InvalidApplicationConfigurationException: {}
+    ApplicationName:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 1
+      maxLength: 128
+    StopApplicationRequest:
+      type: object
+      required:
+      - ApplicationName
+      title: StopApplicationRequest
+      properties:
+        ApplicationName:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationName'
+          - description: The name of the running application to stop.
+        Force:
+          allOf:
+          - $ref: '#/components/schemas/BooleanObject'
+          - description: <p>Set to <code>true</code> to force the application to stop. If you set <code>Force</code> to <code>true</code>, Kinesis Data Analytics stops the application without taking a snapshot. </p> <note> <p>Force-stopping your application may lead to data loss or duplication. To prevent data loss or duplicate processing of data during application restarts, we recommend you to take frequent snapshots of your application.</p> </note> <p>You can only force stop a Flink-based Kinesis Data Analytics application. You can't force stop a SQL-based Kinesis Data Analytics application.</p> <p>The application must be in the <code>STARTING</code>, <code>UPDATING</code>, <code>STOPPING</code>, <code>AUTOSCALING</code>, or <code>RUNNING</code> status. </p>
+    ResourceInUseException: {}
+    StopApplicationResponse:
+      type: object
+      properties: {}
   securitySchemes:
     hmac:
       type: apiKey

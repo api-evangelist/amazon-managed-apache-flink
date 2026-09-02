@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption API'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -188,33 +188,6 @@ paths:
       - '#X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption'
 components:
   schemas:
-    ResourceInUseException: {}
-    AddApplicationCloudWatchLoggingOptionResponse:
-      type: object
-      properties:
-        ApplicationARN:
-          allOf:
-          - $ref: '#/components/schemas/ResourceARN'
-          - description: The application's ARN.
-        ApplicationVersionId:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationVersionId'
-          - description: 'The new version ID of the Kinesis Data Analytics application. Kinesis Data Analytics updates the <code>ApplicationVersionId</code> each time you change the CloudWatch logging options. '
-        CloudWatchLoggingOptionDescriptions:
-          allOf:
-          - $ref: '#/components/schemas/CloudWatchLoggingOptionDescriptions'
-          - description: The descriptions of the current CloudWatch logging options for the Kinesis Data Analytics application.
-    ConditionalToken:
-      type: string
-      pattern: '[a-zA-Z0-9-_+/=]+'
-      minLength: 1
-      maxLength: 512
-    InvalidApplicationConfigurationException: {}
-    InvalidRequestException: {}
-    CloudWatchLoggingOptionDescriptions:
-      type: array
-      items:
-        $ref: '#/components/schemas/CloudWatchLoggingOptionDescription'
     CloudWatchLoggingOptionDescription:
       type: object
       required:
@@ -233,22 +206,44 @@ components:
           - $ref: '#/components/schemas/RoleARN'
           - description: <p>The IAM ARN of the role to use to send application messages. </p> <note> <p>Provided for backward compatibility. Applications created with the current API version have an application-level service execution role rather than a resource-level role.</p> </note>
       description: Describes the Amazon CloudWatch logging option.
-    Id:
-      type: string
-      pattern: '[a-zA-Z0-9_.-]+'
-      minLength: 1
-      maxLength: 50
-    RoleARN:
-      type: string
-      pattern: arn:.*
-      minLength: 1
-      maxLength: 2048
     LogStreamARN:
       type: string
       pattern: arn:.*
       minLength: 1
       maxLength: 2048
+    ResourceARN:
+      type: string
+      pattern: arn:.*
+      minLength: 1
+      maxLength: 2048
+    InvalidArgumentException: {}
+    CloudWatchLoggingOptionDescriptions:
+      type: array
+      items:
+        $ref: '#/components/schemas/CloudWatchLoggingOptionDescription'
+    InvalidRequestException: {}
+    ResourceNotFoundException: {}
+    Id:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 1
+      maxLength: 50
+    ConditionalToken:
+      type: string
+      pattern: '[a-zA-Z0-9-_+/=]+'
+      minLength: 1
+      maxLength: 512
     ConcurrentModificationException: {}
+    ApplicationVersionId:
+      type: integer
+      minimum: 1
+      maximum: 999999999
+    ApplicationName:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 1
+      maxLength: 128
+    ResourceInUseException: {}
     CloudWatchLoggingOption:
       type: object
       required:
@@ -259,16 +254,21 @@ components:
           - $ref: '#/components/schemas/LogStreamARN'
           - description: The ARN of the CloudWatch log to receive application messages.
       description: 'Provides a description of Amazon CloudWatch logging options, including the log stream Amazon Resource Name (ARN). '
-    InvalidArgumentException: {}
-    ResourceARN:
-      type: string
-      pattern: arn:.*
-      minLength: 1
-      maxLength: 2048
-    ApplicationVersionId:
-      type: integer
-      minimum: 1
-      maximum: 999999999
+    AddApplicationCloudWatchLoggingOptionResponse:
+      type: object
+      properties:
+        ApplicationARN:
+          allOf:
+          - $ref: '#/components/schemas/ResourceARN'
+          - description: The application's ARN.
+        ApplicationVersionId:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationVersionId'
+          - description: 'The new version ID of the Kinesis Data Analytics application. Kinesis Data Analytics updates the <code>ApplicationVersionId</code> each time you change the CloudWatch logging options. '
+        CloudWatchLoggingOptionDescriptions:
+          allOf:
+          - $ref: '#/components/schemas/CloudWatchLoggingOptionDescriptions'
+          - description: The descriptions of the current CloudWatch logging options for the Kinesis Data Analytics application.
     AddApplicationCloudWatchLoggingOptionRequest:
       type: object
       required:
@@ -292,15 +292,33 @@ components:
           allOf:
           - $ref: '#/components/schemas/ConditionalToken'
           - description: A value you use to implement strong concurrency for application updates. You must provide the <code>CurrentApplicationVersionId</code> or the <code>ConditionalToken</code>. You get the application's current <code>ConditionalToken</code> using <a>DescribeApplication</a>. For better concurrency support, use the <code>ConditionalToken</code> parameter instead of <code>CurrentApplicationVersionId</code>.
-    ApplicationName:
+    RoleARN:
       type: string
-      pattern: '[a-zA-Z0-9_.-]+'
+      pattern: arn:.*
       minLength: 1
-      maxLength: 128
-    ResourceNotFoundException: {}
+      maxLength: 2048
+    InvalidApplicationConfigurationException: {}
   parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
@@ -317,26 +335,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string

@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationSnapshot API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationSnapshot #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationSnapshot #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationSnapshot API'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -188,15 +188,16 @@ paths:
       - '#X Amz Target=KinesisAnalytics 20180523.DeleteApplicationSnapshot'
 components:
   schemas:
-    ResourceInUseException: {}
-    UnsupportedOperationException: {}
-    Timestamp:
-      type: string
-      format: date-time
-    ConcurrentModificationException: {}
     DeleteApplicationSnapshotResponse:
       type: object
       properties: {}
+    InvalidRequestException: {}
+    SnapshotName:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 1
+      maxLength: 256
+    UnsupportedOperationException: {}
     InvalidArgumentException: {}
     DeleteApplicationSnapshotRequest:
       type: object
@@ -218,21 +219,32 @@ components:
           allOf:
           - $ref: '#/components/schemas/Timestamp'
           - description: The creation timestamp of the application snapshot to delete. You can retrieve this value using or .
+    ConcurrentModificationException: {}
+    ResourceNotFoundException: {}
     ApplicationName:
       type: string
       pattern: '[a-zA-Z0-9_.-]+'
       minLength: 1
       maxLength: 128
-    ResourceNotFoundException: {}
-    InvalidRequestException: {}
-    SnapshotName:
+    ResourceInUseException: {}
+    Timestamp:
       type: string
-      pattern: '[a-zA-Z0-9_.-]+'
-      minLength: 1
-      maxLength: 256
+      format: date-time
   parameters:
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
       in: header
       schema:
         type: string
@@ -249,26 +261,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Security-Token:
       name: X-Amz-Security-Token
       in: header
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
+    X-Amz-Date:
+      name: X-Amz-Date
       in: header
       schema:
         type: string

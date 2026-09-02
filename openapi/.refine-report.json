@@ -69,6 +69,8 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
+  "notes": [
+    "apis.yml register: already-registered"
+  ],
   "skipped": []
 }

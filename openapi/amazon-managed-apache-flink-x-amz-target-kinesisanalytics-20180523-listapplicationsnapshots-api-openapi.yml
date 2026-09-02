@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.ListApplicationSnapshots API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.ListApplicationSnapshots #X Amz Target=KinesisAnalytics 20180523.ListApplicationSnapshots #X Amz Target=KinesisAnalytics 20180523.ListApplicationSnapshots API'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -164,8 +164,32 @@ paths:
       - '#X Amz Target=KinesisAnalytics 20180523.ListApplicationSnapshots'
 components:
   parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
@@ -182,79 +206,7 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
-    Timestamp:
-      type: string
-      format: date-time
-    SnapshotSummaries:
-      type: array
-      items:
-        $ref: '#/components/schemas/SnapshotDetails'
-    SnapshotDetails:
-      type: object
-      required:
-      - SnapshotName
-      - SnapshotStatus
-      - ApplicationVersionId
-      properties:
-        SnapshotName:
-          allOf:
-          - $ref: '#/components/schemas/SnapshotName'
-          - description: The identifier for the application snapshot.
-        SnapshotStatus:
-          allOf:
-          - $ref: '#/components/schemas/SnapshotStatus'
-          - description: The status of the application snapshot.
-        ApplicationVersionId:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationVersionId'
-          - description: The current application version ID when the snapshot was created.
-        SnapshotCreationTimestamp:
-          allOf:
-          - $ref: '#/components/schemas/Timestamp'
-          - description: The timestamp of the application snapshot.
-      description: Provides details about a snapshot of application state.
-    UnsupportedOperationException: {}
-    ListApplicationSnapshotsResponse:
-      type: object
-      properties:
-        SnapshotSummaries:
-          allOf:
-          - $ref: '#/components/schemas/SnapshotSummaries'
-          - description: A collection of objects containing information about the application snapshots.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/NextToken'
-          - description: The token for the next set of results, or <code>null</code> if there are no additional results.
-    SnapshotName:
-      type: string
-      pattern: '[a-zA-Z0-9_.-]+'
-      minLength: 1
-      maxLength: 256
     ListApplicationSnapshotsRequest:
       type: object
       required:
@@ -285,6 +237,21 @@ components:
       type: integer
       minimum: 1
       maximum: 50
+    NextToken:
+      type: string
+      minLength: 1
+      maxLength: 512
+    ListApplicationSnapshotsResponse:
+      type: object
+      properties:
+        SnapshotSummaries:
+          allOf:
+          - $ref: '#/components/schemas/SnapshotSummaries'
+          - description: A collection of objects containing information about the application snapshots.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: The token for the next set of results, or <code>null</code> if there are no additional results.
     ApplicationVersionId:
       type: integer
       minimum: 1
@@ -294,10 +261,43 @@ components:
       pattern: '[a-zA-Z0-9_.-]+'
       minLength: 1
       maxLength: 128
-    NextToken:
+    Timestamp:
       type: string
+      format: date-time
+    UnsupportedOperationException: {}
+    SnapshotSummaries:
+      type: array
+      items:
+        $ref: '#/components/schemas/SnapshotDetails'
+    SnapshotName:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
       minLength: 1
-      maxLength: 512
+      maxLength: 256
+    SnapshotDetails:
+      type: object
+      required:
+      - SnapshotName
+      - SnapshotStatus
+      - ApplicationVersionId
+      properties:
+        SnapshotName:
+          allOf:
+          - $ref: '#/components/schemas/SnapshotName'
+          - description: The identifier for the application snapshot.
+        SnapshotStatus:
+          allOf:
+          - $ref: '#/components/schemas/SnapshotStatus'
+          - description: The status of the application snapshot.
+        ApplicationVersionId:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationVersionId'
+          - description: The current application version ID when the snapshot was created.
+        SnapshotCreationTimestamp:
+          allOf:
+          - $ref: '#/components/schemas/Timestamp'
+          - description: The timestamp of the application snapshot.
+      description: Provides details about a snapshot of application state.
   securitySchemes:
     hmac:
       type: apiKey

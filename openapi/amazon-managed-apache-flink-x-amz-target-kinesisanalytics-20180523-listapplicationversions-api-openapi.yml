@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.ListApplicationVersions API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.ListApplicationVersions #X Amz Target=KinesisAnalytics 20180523.ListApplicationVersions #X Amz Target=KinesisAnalytics 20180523.ListApplicationVersions API'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -169,50 +169,46 @@ paths:
       tags:
       - '#X Amz Target=KinesisAnalytics 20180523.ListApplicationVersions'
 components:
-  parameters:
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
   schemas:
+    ApplicationStatus:
+      type: string
+      enum:
+      - DELETING
+      - STARTING
+      - STOPPING
+      - READY
+      - RUNNING
+      - UPDATING
+      - AUTOSCALING
+      - FORCE_STOPPING
+      - ROLLING_BACK
+      - MAINTENANCE
+      - ROLLED_BACK
+    InvalidArgumentException: {}
+    NextToken:
+      type: string
+      minLength: 1
+      maxLength: 512
+    ResourceNotFoundException: {}
+    ApplicationVersionSummaries:
+      type: array
+      items:
+        $ref: '#/components/schemas/ApplicationVersionSummary'
+    ApplicationVersionSummary:
+      type: object
+      required:
+      - ApplicationVersionId
+      - ApplicationStatus
+      properties:
+        ApplicationVersionId:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationVersionId'
+          - description: The ID of the application version. Kinesis Data Analytics updates the <code>ApplicationVersionId</code> each time you update the application.
+        ApplicationStatus:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationStatus'
+          - description: The status of the application.
+      description: The summary of the application version.
     ListApplicationVersionsResponse:
       type: object
       properties:
@@ -224,6 +220,20 @@ components:
           allOf:
           - $ref: '#/components/schemas/NextToken'
           - description: The pagination token for the next set of results, or <code>null</code> if there are no additional results. To retrieve the next set of items, pass this token into a subsequent invocation of this operation. For more information about pagination, see <a href="https://docs.aws.amazon.com/cli/latest/userguide/pagination.html">Using the Amazon Command Line Interface's Pagination Options</a>.
+    ApplicationVersionId:
+      type: integer
+      minimum: 1
+      maximum: 999999999
+    ApplicationName:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 1
+      maxLength: 128
+    ListApplicationVersionsInputLimit:
+      type: integer
+      minimum: 1
+      maximum: 50
+    UnsupportedOperationException: {}
     ListApplicationVersionsRequest:
       type: object
       required:
@@ -242,59 +252,49 @@ components:
           allOf:
           - $ref: '#/components/schemas/NextToken'
           - description: If a previous invocation of this operation returned a pagination token, pass it into this value to retrieve the next set of results. For more information about pagination, see <a href="https://docs.aws.amazon.com/cli/latest/userguide/pagination.html">Using the Amazon Command Line Interface's Pagination Options</a>.
-    ApplicationVersionSummary:
-      type: object
-      required:
-      - ApplicationVersionId
-      - ApplicationStatus
-      properties:
-        ApplicationVersionId:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationVersionId'
-          - description: The ID of the application version. Kinesis Data Analytics updates the <code>ApplicationVersionId</code> each time you update the application.
-        ApplicationStatus:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationStatus'
-          - description: The status of the application.
-      description: The summary of the application version.
-    UnsupportedOperationException: {}
-    ApplicationVersionSummaries:
-      type: array
-      items:
-        $ref: '#/components/schemas/ApplicationVersionSummary'
-    ApplicationStatus:
-      type: string
-      enum:
-      - DELETING
-      - STARTING
-      - STOPPING
-      - READY
-      - RUNNING
-      - UPDATING
-      - AUTOSCALING
-      - FORCE_STOPPING
-      - ROLLING_BACK
-      - MAINTENANCE
-      - ROLLED_BACK
-    ListApplicationVersionsInputLimit:
-      type: integer
-      minimum: 1
-      maximum: 50
-    InvalidArgumentException: {}
-    ApplicationVersionId:
-      type: integer
-      minimum: 1
-      maximum: 999999999
-    ApplicationName:
-      type: string
-      pattern: '[a-zA-Z0-9_.-]+'
-      minLength: 1
-      maxLength: 128
-    ResourceNotFoundException: {}
-    NextToken:
-      type: string
-      minLength: 1
-      maxLength: 512
+  parameters:
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
   securitySchemes:
     hmac:
       type: apiKey
