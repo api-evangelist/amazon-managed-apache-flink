@@ -1,8 +1,8 @@
 aid: amazon-managed-apache-flink
 name: Amazon Managed Service for Apache Flink
-description: Amazon Managed Service for Apache Flink is the easiest way to transform and analyze streaming data in real time
-  with Apache Flink. It enables you to build sophisticated streaming analytics applications using Apache Flink with fully
-  managed infrastructure and pay-as-you-go pricing.
+description: Amazon Managed Service for Apache Flink is the easiest way to transform and analyze streaming
+  data in real time with Apache Flink. It enables you to build sophisticated streaming analytics applications
+  using Apache Flink with fully managed infrastructure and pay-as-you-go pricing.
 type: Index
 deliveryModel:
   model: saas
@@ -39,17 +39,14 @@ tags:
 - Streaming Analytics
 url: https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/apis.yml
 created: '2026-03-16'
-modified: '2026-05-19'
+modified: '2026-09-16'
 specificationVersion: '0.23'
 apis:
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationcloudwatchloggingoption-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption API from Amazon
-    Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.addapplicationcloudwatchloggingoption.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationcloudwatchloggingoption-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption API
+    from Amazon Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.addapplicationcloudwatchloggingoption.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -57,8 +54,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationcloudwatchloggingoption-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationcloudwatchloggingoption-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -71,22 +67,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinput-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationInput
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.AddApplicationInput API from Amazon Managed Service for
-    Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.addapplicationinput.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinput-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationInput
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.AddApplicationInput API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.addapplicationinput.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.AddApplicationInput'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinput-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinput-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -99,14 +91,12 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinputprocessingconfiguration-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationInputProcessingConfiguration
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.AddApplicationInputProcessingConfiguration API from Amazon
-    Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.addapplicationinputprocessingconfiguration.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinputprocessingconfiguration-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationInputProcessingConfiguration
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.AddApplicationInputProcessingConfiguration
+    API from Amazon Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics
+    20180523.addapplicationinputprocessingconfiguration.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -114,8 +104,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.AddApplicationInputProcessingConfiguration'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinputprocessingconfiguration-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinputprocessingconfiguration-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -128,22 +117,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationoutput-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationOutput
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.AddApplicationOutput API from Amazon Managed Service for
-    Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.addapplicationoutput.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationoutput-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationOutput
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.AddApplicationOutput API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.addapplicationoutput.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.AddApplicationOutput'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationoutput-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationoutput-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -156,14 +141,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationreferencedatasource-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationReferenceDataSource
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.AddApplicationReferenceDataSource API from Amazon Managed
-    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.addapplicationreferencedatasource.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationreferencedatasource-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationReferenceDataSource
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.AddApplicationReferenceDataSource API from
+    Amazon Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.addapplicationreferencedatasource.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -171,8 +153,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.AddApplicationReferenceDataSource'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationreferencedatasource-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationreferencedatasource-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -185,14 +166,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationvpcconfiguration-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationVpcConfiguration
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.AddApplicationVpcConfiguration API from Amazon Managed
-    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.addapplicationvpcconfiguration.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationvpcconfiguration-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.AddApplicationVpcConfiguration
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.AddApplicationVpcConfiguration API from Amazon
+    Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.addapplicationvpcconfiguration.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -200,8 +178,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.AddApplicationVpcConfiguration'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationvpcconfiguration-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationvpcconfiguration-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -214,22 +191,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplication-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.CreateApplication
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.CreateApplication API from Amazon Managed Service for
-    Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.createapplication.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplication-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.CreateApplication
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.CreateApplication API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.createapplication.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.CreateApplication'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplication-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplication-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -242,14 +215,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationpresignedurl-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.CreateApplicationPresignedUrl
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.CreateApplicationPresignedUrl API from Amazon Managed
-    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.createapplicationpresignedurl.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationpresignedurl-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.CreateApplicationPresignedUrl
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.CreateApplicationPresignedUrl API from Amazon
+    Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.createapplicationpresignedurl.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -257,8 +227,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.CreateApplicationPresignedUrl'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationpresignedurl-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationpresignedurl-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -271,14 +240,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationsnapshot-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.CreateApplicationSnapshot
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.CreateApplicationSnapshot API from Amazon Managed Service
-    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.createapplicationsnapshot.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationsnapshot-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.CreateApplicationSnapshot
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.CreateApplicationSnapshot API from Amazon
+    Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.createapplicationsnapshot.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -286,8 +252,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.CreateApplicationSnapshot'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationsnapshot-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationsnapshot-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -300,22 +265,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplication-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplication
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.DeleteApplication API from Amazon Managed Service for
-    Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplication.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplication-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplication
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.DeleteApplication API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplication.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.DeleteApplication'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplication-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplication-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -328,14 +289,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationcloudwatchloggingoption-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationCloudWatchLoggingOption
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationCloudWatchLoggingOption API from Amazon
-    Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplicationcloudwatchloggingoption.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationcloudwatchloggingoption-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationCloudWatchLoggingOption
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationCloudWatchLoggingOption API
+    from Amazon Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplicationcloudwatchloggingoption.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -343,8 +301,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.DeleteApplicationCloudWatchLoggingOption'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationcloudwatchloggingoption-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationcloudwatchloggingoption-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -357,14 +314,12 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationinputprocessingconfiguration-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationInputProcessingConfiguration
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationInputProcessingConfiguration API from
-    Amazon Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplicationinputprocessingconfiguration.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationinputprocessingconfiguration-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationInputProcessingConfiguration
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationInputProcessingConfiguration
+    API from Amazon Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics
+    20180523.deleteapplicationinputprocessingconfiguration.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -372,8 +327,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.DeleteApplicationInputProcessingConfiguration'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationinputprocessingconfiguration-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationinputprocessingconfiguration-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -386,14 +340,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationoutput-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationOutput
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationOutput API from Amazon Managed Service
-    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplicationoutput.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationoutput-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationOutput
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationOutput API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplicationoutput.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -401,8 +352,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.DeleteApplicationOutput'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationoutput-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationoutput-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -415,14 +365,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationreferencedatasource-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationReferenceDataSource
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationReferenceDataSource API from Amazon Managed
-    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplicationreferencedatasource.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationreferencedatasource-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationReferenceDataSource
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationReferenceDataSource API from
+    Amazon Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplicationreferencedatasource.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -430,8 +377,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.DeleteApplicationReferenceDataSource'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationreferencedatasource-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationreferencedatasource-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -444,14 +390,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationsnapshot-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationSnapshot
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationSnapshot API from Amazon Managed Service
-    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplicationsnapshot.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationsnapshot-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationSnapshot
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationSnapshot API from Amazon
+    Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplicationsnapshot.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -459,8 +402,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.DeleteApplicationSnapshot'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationsnapshot-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationsnapshot-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -473,14 +415,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationvpcconfiguration-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationVpcConfiguration
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationVpcConfiguration API from Amazon Managed
-    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplicationvpcconfiguration.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationvpcconfiguration-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationVpcConfiguration
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationVpcConfiguration API from
+    Amazon Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.deleteapplicationvpcconfiguration.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -488,8 +427,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.DeleteApplicationVpcConfiguration'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationvpcconfiguration-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationvpcconfiguration-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -502,22 +440,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplication-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DescribeApplication
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.DescribeApplication API from Amazon Managed Service for
-    Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.describeapplication.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplication-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DescribeApplication
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.DescribeApplication API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.describeapplication.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.DescribeApplication'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplication-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplication-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -530,14 +464,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationsnapshot-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DescribeApplicationSnapshot
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.DescribeApplicationSnapshot API from Amazon Managed Service
-    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.describeapplicationsnapshot.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationsnapshot-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DescribeApplicationSnapshot
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.DescribeApplicationSnapshot API from Amazon
+    Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.describeapplicationsnapshot.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -545,8 +476,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.DescribeApplicationSnapshot'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationsnapshot-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationsnapshot-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -559,14 +489,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationversion-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DescribeApplicationVersion
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.DescribeApplicationVersion API from Amazon Managed Service
-    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.describeapplicationversion.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationversion-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DescribeApplicationVersion
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.DescribeApplicationVersion API from Amazon
+    Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.describeapplicationversion.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -574,8 +501,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.DescribeApplicationVersion'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationversion-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationversion-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -588,22 +514,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-discoverinputschema-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DiscoverInputSchema
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.DiscoverInputSchema API from Amazon Managed Service for
-    Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.discoverinputschema.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-discoverinputschema-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.DiscoverInputSchema
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.DiscoverInputSchema API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.discoverinputschema.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.DiscoverInputSchema'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-discoverinputschema-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-discoverinputschema-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -616,21 +538,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplications-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.ListApplications API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.ListApplications API from Amazon Managed Service for Apache
-    Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.listapplications.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplications-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.ListApplications
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.ListApplications API from Amazon Managed Service
+    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.listapplications.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.ListApplications'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplications-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplications-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -643,14 +562,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationsnapshots-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.ListApplicationSnapshots
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.ListApplicationSnapshots API from Amazon Managed Service
-    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.listapplicationsnapshots.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationsnapshots-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.ListApplicationSnapshots
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.ListApplicationSnapshots API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.listapplicationsnapshots.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -658,8 +574,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.ListApplicationSnapshots'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationsnapshots-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationsnapshots-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -672,14 +587,11 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationversions-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.ListApplicationVersions
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.ListApplicationVersions API from Amazon Managed Service
-    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.listapplicationversions.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationversions-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.ListApplicationVersions
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.ListApplicationVersions API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.listapplicationversions.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -687,8 +599,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.ListApplicationVersions'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationversions-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationversions-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -701,22 +612,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listtagsforresource-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.ListTagsForResource
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.ListTagsForResource API from Amazon Managed Service for
-    Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.listtagsforresource.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listtagsforresource-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.ListTagsForResource
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.ListTagsForResource API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.listtagsforresource.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.ListTagsForResource'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listtagsforresource-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listtagsforresource-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -729,22 +636,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-rollbackapplication-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.RollbackApplication
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.RollbackApplication API from Amazon Managed Service for
-    Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.rollbackapplication.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-rollbackapplication-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.RollbackApplication
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.RollbackApplication API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.rollbackapplication.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.RollbackApplication'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-rollbackapplication-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-rollbackapplication-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -757,21 +660,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-startapplication-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.StartApplication API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.StartApplication API from Amazon Managed Service for Apache
-    Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.startapplication.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-startapplication-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.StartApplication
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.StartApplication API from Amazon Managed Service
+    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.startapplication.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.StartApplication'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-startapplication-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-startapplication-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -784,21 +684,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-stopapplication-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.StopApplication API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.StopApplication API from Amazon Managed Service for Apache
-    Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.stopapplication.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-stopapplication-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.StopApplication
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.StopApplication API from Amazon Managed Service
+    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.stopapplication.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.StopApplication'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-stopapplication-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-stopapplication-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -811,21 +708,17 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-tagresource-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.TagResource API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.TagResource API from Amazon Managed Service for Apache
-    Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.tagresource.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-tagresource-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.TagResource API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.TagResource API from Amazon Managed Service
+    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.tagresource.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.TagResource'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-tagresource-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-tagresource-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -838,21 +731,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-untagresource-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.UntagResource API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.UntagResource API from Amazon Managed Service for Apache
-    Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.untagresource.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-untagresource-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.UntagResource
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.UntagResource API from Amazon Managed Service
+    for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.untagresource.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.UntagResource'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-untagresource-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-untagresource-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -865,22 +755,18 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplication-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.UpdateApplication
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.UpdateApplication API from Amazon Managed Service for
-    Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.updateapplication.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplication-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.UpdateApplication
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.UpdateApplication API from Amazon Managed
+    Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.updateapplication.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags:
   - '#X Amz Target=KinesisAnalytics 20180523.UpdateApplication'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplication-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplication-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -893,14 +779,12 @@ apis:
     url: json-schema/amazon-managed-apache-flink-application-detail-schema.json
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
-- aid: >-
-    amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplicationmaintenanceconfiguration-api
-  name: >-
-    Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.UpdateApplicationMaintenanceConfiguration
-    API
-  description: >-
-    The #X Amz Target=KinesisAnalytics 20180523.UpdateApplicationMaintenanceConfiguration API from Amazon
-    Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics 20180523.updateapplicationmaintenanceconfiguration.
+- aid: amazon-managed-apache-flink:amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplicationmaintenanceconfiguration-api
+  name: 'Amazon Managed Service for Apache Flink #X Amz Target=KinesisAnalytics 20180523.UpdateApplicationMaintenanceConfiguration
+    API'
+  description: 'The #X Amz Target=KinesisAnalytics 20180523.UpdateApplicationMaintenanceConfiguration
+    API from Amazon Managed Service for Apache Flink — 1 operation(s) for #x amz target=kinesisanalytics
+    20180523.updateapplicationmaintenanceconfiguration.'
   humanURL: https://aws.amazon.com/managed-service-apache-flink/
   baseURL: https://kinesisanalytics.amazonaws.com
   tags: []
@@ -908,8 +792,7 @@ apis:
   - '#X Amz Target=KinesisAnalytics 20180523.UpdateApplicationMaintenanceConfiguration'
   properties:
   - type: OpenAPI
-    url: >-
-      openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplicationmaintenanceconfiguration-api-openapi.yml
+    url: openapi/amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplicationmaintenanceconfiguration-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html
   - type: GettingStarted
@@ -923,6 +806,8 @@ apis:
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
 common:
+- type: Website
+  url: https://amazon.com
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-managed-service-for-apache-flink/overview
 - type: AgenticAccess
@@ -966,7 +851,8 @@ common:
 - type: Features
   data:
   - name: Fully Managed Apache Flink
-    description: Run Apache Flink applications without managing infrastructure, patching, or capacity planning.
+    description: Run Apache Flink applications without managing infrastructure, patching, or capacity
+      planning.
   - name: Auto Scaling
     description: Automatically scales application parallelism based on streaming data volume.
   - name: Application Snapshots
@@ -978,13 +864,15 @@ common:
 - type: UseCases
   data:
   - name: Real-Time Analytics
-    description: Build streaming analytics pipelines to analyze data as it arrives from IoT devices, logs, or transactions.
+    description: Build streaming analytics pipelines to analyze data as it arrives from IoT devices, logs,
+      or transactions.
   - name: Event-Driven Processing
     description: Process and transform event streams for real-time dashboards and operational monitoring.
   - name: Anomaly Detection
     description: Detect anomalies in streaming data for fraud detection and security monitoring.
   - name: ETL Pipelines
-    description: Build real-time ETL pipelines to transform and enrich streaming data before loading to destinations.
+    description: Build real-time ETL pipelines to transform and enrich streaming data before loading to
+      destinations.
 - type: Integrations
   data:
   - name: Amazon Kinesis Data Streams
