@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2018-05-23'
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationOutput #X Amz Target=KinesisAnalytics 20180523.AddApplicationOutput #X Amz Target=KinesisAnalytics 20180523.AddApplicationOutput API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics…'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/kinesisanalyticsv2-2018-05-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,16 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: AddApplicationOutput
-      description: <p>Adds an external destination to your SQL-based Kinesis Data Analytics application.</p> <p>If you want Kinesis Data Analytics to deliver data from an in-application stream within your application to an external destination (such as an Kinesis data stream, a Kinesis Data Firehose delivery stream, or an Amazon Lambda function), you add the relevant configuration to your application using this operation. You can configure one or more outputs for your application. Each output configuration maps an in-application stream and an external destination.</p> <p> You can use one of the output configurations to deliver data from your in-application error stream to an external destination so that you can analyze the errors. </p> <p> Any configuration update, including adding a streaming source using this operation, results in a new version of the application. You can use the <a>DescribeApplication</a> operation to find the current application version.</p>
+      description: 'Adds an external destination to your SQL-based Kinesis Data Analytics application.
+
+
+        If you want Kinesis Data Analytics to deliver data from an in-application stream within your application to an external destination (such as an Kinesis data stream, a Kinesis Data Firehose delivery stream, or an Amazon Lambda function), you add the relevant configuration to your application using this operation. You can configure one or more outputs for your application. Each output configuration maps an in-application stream and an external destination.
+
+
+        You can use one of the output configurations to deliver data from your in-application error stream to an external destination so that you can analyze the errors.
+
+
+        Any configuration update, including adding a streaming source using this operation, results in a new version of the application. You can use the DescribeApplication operation to find the current application version.'
       responses:
         '200':
           description: Success
@@ -182,32 +192,8 @@ paths:
       - '#X Amz Target=KinesisAnalytics 20180523.AddApplicationOutput'
 components:
   parameters:
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
@@ -224,7 +210,32 @@ components:
       schema:
         type: string
       required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
+    ResourceInUseException: {}
     KinesisFirehoseOutputDescription:
       type: object
       required:
@@ -239,6 +250,7 @@ components:
           - $ref: '#/components/schemas/RoleARN'
           - description: <p>The ARN of the IAM role that Kinesis Data Analytics can assume to access the stream.</p> <note> <p>Provided for backward compatibility. Applications that are created with the current API version have an application-level service execution role rather than a resource-level role.</p> </note>
       description: For a SQL-based Kinesis Data Analytics application's output, describes the Kinesis Data Firehose delivery stream that is configured as its destination.
+    ResourceNotFoundException: {}
     LambdaOutputDescription:
       type: object
       required:
@@ -253,6 +265,15 @@ components:
           - $ref: '#/components/schemas/RoleARN'
           - description: <p>The ARN of the IAM role that Kinesis Data Analytics can assume to write to the destination function.</p> <note> <p>Provided for backward compatibility. Applications that are created with the current API version have an application-level service execution role rather than a resource-level role.</p> </note>
       description: 'For a SQL-based Kinesis Data Analytics application''s output, describes the Amazon Lambda function that is configured as its destination. '
+    Id:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 1
+      maxLength: 50
+    OutputDescriptions:
+      type: array
+      items:
+        $ref: '#/components/schemas/OutputDescription'
     KinesisStreamsOutputDescription:
       type: object
       required:
@@ -267,48 +288,7 @@ components:
           - $ref: '#/components/schemas/RoleARN'
           - description: <p>The ARN of the IAM role that Kinesis Data Analytics can assume to access the stream.</p> <note> <p>Provided for backward compatibility. Applications that are created with the current API version have an application-level service execution role rather than a resource-level role.</p> </note>
       description: 'For an SQL-based Kinesis Data Analytics application''s output, describes the Kinesis data stream that is configured as its destination. '
-    ResourceARN:
-      type: string
-      pattern: arn:.*
-      minLength: 1
-      maxLength: 2048
-    AddApplicationOutputRequest:
-      type: object
-      required:
-      - ApplicationName
-      - CurrentApplicationVersionId
-      - Output
-      title: AddApplicationOutputRequest
-      properties:
-        ApplicationName:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationName'
-          - description: The name of the application to which you want to add the output configuration.
-        CurrentApplicationVersionId:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationVersionId'
-          - description: 'The version of the application to which you want to add the output configuration. You can use the <a>DescribeApplication</a> operation to get the current application version. If the version specified is not the current version, the <code>ConcurrentModificationException</code> is returned. '
-        Output:
-          allOf:
-          - $ref: '#/components/schemas/Output'
-          - description: An array of objects, each describing one output configuration. In the output configuration, you specify the name of an in-application stream, a destination (that is, a Kinesis data stream, a Kinesis Data Firehose delivery stream, or an Amazon Lambda function), and record the formation to use when writing to the destination.
-    InvalidArgumentException: {}
-    AddApplicationOutputResponse:
-      type: object
-      properties:
-        ApplicationARN:
-          allOf:
-          - $ref: '#/components/schemas/ResourceARN'
-          - description: The application Amazon Resource Name (ARN).
-        ApplicationVersionId:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationVersionId'
-          - description: The updated application version ID. Kinesis Data Analytics increments this ID when the application is updated.
-        OutputDescriptions:
-          allOf:
-          - $ref: '#/components/schemas/OutputDescriptions'
-          - description: 'Describes the application output configuration. For more information, see <a href="https://docs.aws.amazon.com/kinesisanalytics/latest/dev/how-it-works-output.html">Configuring Application Output</a>. '
-    KinesisFirehoseOutput:
+    LambdaOutput:
       type: object
       required:
       - ResourceARN
@@ -316,25 +296,8 @@ components:
         ResourceARN:
           allOf:
           - $ref: '#/components/schemas/ResourceARN'
-          - description: The ARN of the destination delivery stream to write to.
-      description: 'For a SQL-based Kinesis Data Analytics application, when configuring application output, identifies a Kinesis Data Firehose delivery stream as the destination. You provide the stream Amazon Resource Name (ARN) of the delivery stream. '
-    RecordFormatType:
-      type: string
-      enum:
-      - JSON
-      - CSV
-    InvalidRequestException: {}
-    ResourceNotFoundException: {}
-    KinesisStreamsOutput:
-      type: object
-      required:
-      - ResourceARN
-      properties:
-        ResourceARN:
-          allOf:
-          - $ref: '#/components/schemas/ResourceARN'
-          - description: The ARN of the destination Kinesis data stream to write to.
-      description: 'When you configure a SQL-based Kinesis Data Analytics application''s output, identifies a Kinesis data stream as the destination. You provide the stream Amazon Resource Name (ARN). '
+          - description: '<p>The Amazon Resource Name (ARN) of the destination Lambda function to write to.</p> <note> <p>To specify an earlier version of the Lambda function than the latest, include the Lambda function version in the Lambda function ARN. For more information about Lambda ARNs, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-lambda">Example ARNs: Amazon Lambda</a> </p> </note>'
+      description: 'When you configure a SQL-based Kinesis Data Analytics application''s output, identifies an Amazon Lambda function as the destination. You provide the function Amazon Resource Name (ARN) of the Lambda function. '
     OutputDescription:
       type: object
       properties:
@@ -363,21 +326,62 @@ components:
           - $ref: '#/components/schemas/DestinationSchema'
           - description: The data format used for writing data to the destination.
       description: 'For a SQL-based Kinesis Data Analytics application, describes the application output configuration, which includes the in-application stream name and the destination where the stream data is written. The destination can be a Kinesis data stream or a Kinesis Data Firehose delivery stream. '
-    Id:
-      type: string
-      pattern: '[a-zA-Z0-9_.-]+'
-      minLength: 1
-      maxLength: 50
-    InAppStreamName:
-      type: string
-      pattern: '[^-\s<>&]*'
-      minLength: 1
-      maxLength: 32
-    ConcurrentModificationException: {}
     ApplicationVersionId:
       type: integer
       minimum: 1
       maximum: 999999999
+    InvalidArgumentException: {}
+    InvalidRequestException: {}
+    KinesisFirehoseOutput:
+      type: object
+      required:
+      - ResourceARN
+      properties:
+        ResourceARN:
+          allOf:
+          - $ref: '#/components/schemas/ResourceARN'
+          - description: The ARN of the destination delivery stream to write to.
+      description: 'For a SQL-based Kinesis Data Analytics application, when configuring application output, identifies a Kinesis Data Firehose delivery stream as the destination. You provide the stream Amazon Resource Name (ARN) of the delivery stream. '
+    AddApplicationOutputRequest:
+      type: object
+      required:
+      - ApplicationName
+      - CurrentApplicationVersionId
+      - Output
+      title: AddApplicationOutputRequest
+      properties:
+        ApplicationName:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationName'
+          - description: The name of the application to which you want to add the output configuration.
+        CurrentApplicationVersionId:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationVersionId'
+          - description: 'The version of the application to which you want to add the output configuration. You can use the <a>DescribeApplication</a> operation to get the current application version. If the version specified is not the current version, the <code>ConcurrentModificationException</code> is returned. '
+        Output:
+          allOf:
+          - $ref: '#/components/schemas/Output'
+          - description: An array of objects, each describing one output configuration. In the output configuration, you specify the name of an in-application stream, a destination (that is, a Kinesis data stream, a Kinesis Data Firehose delivery stream, or an Amazon Lambda function), and record the formation to use when writing to the destination.
+    AddApplicationOutputResponse:
+      type: object
+      properties:
+        ApplicationARN:
+          allOf:
+          - $ref: '#/components/schemas/ResourceARN'
+          - description: The application Amazon Resource Name (ARN).
+        ApplicationVersionId:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationVersionId'
+          - description: The updated application version ID. Kinesis Data Analytics increments this ID when the application is updated.
+        OutputDescriptions:
+          allOf:
+          - $ref: '#/components/schemas/OutputDescriptions'
+          - description: 'Describes the application output configuration. For more information, see <a href="https://docs.aws.amazon.com/kinesisanalytics/latest/dev/how-it-works-output.html">Configuring Application Output</a>. '
+    RecordFormatType:
+      type: string
+      enum:
+      - JSON
+      - CSV
     Output:
       type: object
       required:
@@ -405,31 +409,12 @@ components:
           - $ref: '#/components/schemas/DestinationSchema'
           - description: 'Describes the data format when records are written to the destination. '
       description: <p> Describes a SQL-based Kinesis Data Analytics application's output configuration, in which you identify an in-application stream and a destination where you want the in-application stream data to be written. The destination can be a Kinesis data stream or a Kinesis Data Firehose delivery stream. </p> <p/>
-    ResourceInUseException: {}
     ApplicationName:
       type: string
       pattern: '[a-zA-Z0-9_.-]+'
       minLength: 1
       maxLength: 128
-    LambdaOutput:
-      type: object
-      required:
-      - ResourceARN
-      properties:
-        ResourceARN:
-          allOf:
-          - $ref: '#/components/schemas/ResourceARN'
-          - description: '<p>The Amazon Resource Name (ARN) of the destination Lambda function to write to.</p> <note> <p>To specify an earlier version of the Lambda function than the latest, include the Lambda function version in the Lambda function ARN. For more information about Lambda ARNs, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-lambda">Example ARNs: Amazon Lambda</a> </p> </note>'
-      description: 'When you configure a SQL-based Kinesis Data Analytics application''s output, identifies an Amazon Lambda function as the destination. You provide the function Amazon Resource Name (ARN) of the Lambda function. '
-    RoleARN:
-      type: string
-      pattern: arn:.*
-      minLength: 1
-      maxLength: 2048
-    OutputDescriptions:
-      type: array
-      items:
-        $ref: '#/components/schemas/OutputDescription'
+    ConcurrentModificationException: {}
     DestinationSchema:
       type: object
       required:
@@ -440,6 +425,31 @@ components:
           - $ref: '#/components/schemas/RecordFormatType'
           - description: Specifies the format of the records on the output stream.
       description: 'Describes the data format when records are written to the destination in a SQL-based Kinesis Data Analytics application. '
+    KinesisStreamsOutput:
+      type: object
+      required:
+      - ResourceARN
+      properties:
+        ResourceARN:
+          allOf:
+          - $ref: '#/components/schemas/ResourceARN'
+          - description: The ARN of the destination Kinesis data stream to write to.
+      description: 'When you configure a SQL-based Kinesis Data Analytics application''s output, identifies a Kinesis data stream as the destination. You provide the stream Amazon Resource Name (ARN). '
+    ResourceARN:
+      type: string
+      pattern: arn:.*
+      minLength: 1
+      maxLength: 2048
+    InAppStreamName:
+      type: string
+      pattern: '[^-\s<>&]*'
+      minLength: 1
+      maxLength: 32
+    RoleARN:
+      type: string
+      pattern: arn:.*
+      minLength: 1
+      maxLength: 2048
   securitySchemes:
     hmac:
       type: apiKey

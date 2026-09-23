@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2018-05-23'
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationInputProcessingConfiguration #X Amz Target=KinesisAnalytics 20180523.AddApplicationInputProcessingConfiguration #X Amz Target=KinesisAnalytics 20180523.AddApplicationInputProcessingConfiguration API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics…'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/kinesisanalyticsv2-2018-05-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,7 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: AddApplicationInputProcessingConfiguration
-      description: Adds an <a>InputProcessingConfiguration</a> to a SQL-based Kinesis Data Analytics application. An input processor pre-processes records on the input stream before the application's SQL code executes. Currently, the only input processor available is <a href="https://docs.aws.amazon.com/lambda/">Amazon Lambda</a>.
+      description: Adds an InputProcessingConfiguration to a SQL-based Kinesis Data Analytics application. An input processor pre-processes records on the input stream before the application's SQL code executes. Currently, the only input processor available is Amazon Lambda.
       responses:
         '200':
           description: Success
@@ -177,11 +178,118 @@ paths:
           type: string
           enum:
           - KinesisAnalytics_20180523.AddApplicationInputProcessingConfiguration
-      summary: Amazon Managed Service for Apache Flink Add Application Input Processing Configuration
+      summary: Amazon Managed Service for Apache Flink Add Application Input Processing…
       tags:
       - '#X Amz Target=KinesisAnalytics 20180523.AddApplicationInputProcessingConfiguration'
 components:
+  parameters:
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
+    ResourceInUseException: {}
+    ResourceNotFoundException: {}
+    Id:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 1
+      maxLength: 50
+    InputProcessingConfigurationDescription:
+      type: object
+      properties:
+        InputLambdaProcessorDescription:
+          allOf:
+          - $ref: '#/components/schemas/InputLambdaProcessorDescription'
+          - description: 'Provides configuration information about the associated <a>InputLambdaProcessorDescription</a> '
+      description: For a SQL-based Kinesis Data Analytics application, provides the configuration information about an input processor. Currently, the only input processor available is <a href="https://docs.aws.amazon.com/lambda/">Amazon Lambda</a>.
+    AddApplicationInputProcessingConfigurationResponse:
+      type: object
+      properties:
+        ApplicationARN:
+          allOf:
+          - $ref: '#/components/schemas/ResourceARN'
+          - description: The Amazon Resource Name (ARN) of the application.
+        ApplicationVersionId:
+          allOf:
+          - $ref: '#/components/schemas/ApplicationVersionId'
+          - description: 'Provides the current application version. '
+        InputId:
+          allOf:
+          - $ref: '#/components/schemas/Id'
+          - description: The input ID that is associated with the application input. This is the ID that Kinesis Data Analytics assigns to each input configuration that you add to your application.
+        InputProcessingConfigurationDescription:
+          allOf:
+          - $ref: '#/components/schemas/InputProcessingConfigurationDescription'
+          - description: The description of the preprocessor that executes on records in this input before the application's code is run.
+    ApplicationVersionId:
+      type: integer
+      minimum: 1
+      maximum: 999999999
+    InputLambdaProcessorDescription:
+      type: object
+      required:
+      - ResourceARN
+      properties:
+        ResourceARN:
+          allOf:
+          - $ref: '#/components/schemas/ResourceARN'
+          - description: '<p>The ARN of the Amazon Lambda function that is used to preprocess the records in the stream.</p> <note> <p>To specify an earlier version of the Lambda function than the latest, include the Lambda function version in the Lambda function ARN. For more information about Lambda ARNs, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-lambda">Example ARNs: Amazon Lambda</a> </p> </note>'
+        RoleARN:
+          allOf:
+          - $ref: '#/components/schemas/RoleARN'
+          - description: <p>The ARN of the IAM role that is used to access the Amazon Lambda function.</p> <note> <p>Provided for backward compatibility. Applications that are created with the current API version have an application-level service execution role rather than a resource-level role.</p> </note>
+      description: For a SQL-based Kinesis Data Analytics application, an object that contains the Amazon Resource Name (ARN) of the Amazon Lambda function that is used to preprocess records in the stream.
+    InvalidArgumentException: {}
+    InvalidRequestException: {}
+    InputLambdaProcessor:
+      type: object
+      required:
+      - ResourceARN
+      properties:
+        ResourceARN:
+          allOf:
+          - $ref: '#/components/schemas/ResourceARN'
+          - description: '<p>The ARN of the Amazon Lambda function that operates on records in the stream.</p> <note> <p>To specify an earlier version of the Lambda function than the latest, include the Lambda function version in the Lambda function ARN. For more information about Lambda ARNs, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-lambda">Example ARNs: Amazon Lambda</a> </p> </note>'
+      description: 'An object that contains the Amazon Resource Name (ARN) of the Amazon Lambda function that is used to preprocess records in the stream in a SQL-based Kinesis Data Analytics application. '
     AddApplicationInputProcessingConfigurationRequest:
       type: object
       required:
@@ -207,6 +315,12 @@ components:
           allOf:
           - $ref: '#/components/schemas/InputProcessingConfiguration'
           - description: The <a>InputProcessingConfiguration</a> to add to the application.
+    ApplicationName:
+      type: string
+      pattern: '[a-zA-Z0-9_.-]+'
+      minLength: 1
+      maxLength: 128
+    ConcurrentModificationException: {}
     InputProcessingConfiguration:
       type: object
       required:
@@ -222,124 +336,11 @@ components:
       pattern: arn:.*
       minLength: 1
       maxLength: 2048
-    InvalidArgumentException: {}
-    InputLambdaProcessorDescription:
-      type: object
-      required:
-      - ResourceARN
-      properties:
-        ResourceARN:
-          allOf:
-          - $ref: '#/components/schemas/ResourceARN'
-          - description: '<p>The ARN of the Amazon Lambda function that is used to preprocess the records in the stream.</p> <note> <p>To specify an earlier version of the Lambda function than the latest, include the Lambda function version in the Lambda function ARN. For more information about Lambda ARNs, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-lambda">Example ARNs: Amazon Lambda</a> </p> </note>'
-        RoleARN:
-          allOf:
-          - $ref: '#/components/schemas/RoleARN'
-          - description: <p>The ARN of the IAM role that is used to access the Amazon Lambda function.</p> <note> <p>Provided for backward compatibility. Applications that are created with the current API version have an application-level service execution role rather than a resource-level role.</p> </note>
-      description: For a SQL-based Kinesis Data Analytics application, an object that contains the Amazon Resource Name (ARN) of the Amazon Lambda function that is used to preprocess records in the stream.
-    InputLambdaProcessor:
-      type: object
-      required:
-      - ResourceARN
-      properties:
-        ResourceARN:
-          allOf:
-          - $ref: '#/components/schemas/ResourceARN'
-          - description: '<p>The ARN of the Amazon Lambda function that operates on records in the stream.</p> <note> <p>To specify an earlier version of the Lambda function than the latest, include the Lambda function version in the Lambda function ARN. For more information about Lambda ARNs, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#arn-syntax-lambda">Example ARNs: Amazon Lambda</a> </p> </note>'
-      description: 'An object that contains the Amazon Resource Name (ARN) of the Amazon Lambda function that is used to preprocess records in the stream in a SQL-based Kinesis Data Analytics application. '
-    InvalidRequestException: {}
-    InputProcessingConfigurationDescription:
-      type: object
-      properties:
-        InputLambdaProcessorDescription:
-          allOf:
-          - $ref: '#/components/schemas/InputLambdaProcessorDescription'
-          - description: 'Provides configuration information about the associated <a>InputLambdaProcessorDescription</a> '
-      description: For a SQL-based Kinesis Data Analytics application, provides the configuration information about an input processor. Currently, the only input processor available is <a href="https://docs.aws.amazon.com/lambda/">Amazon Lambda</a>.
-    ResourceNotFoundException: {}
-    Id:
-      type: string
-      pattern: '[a-zA-Z0-9_.-]+'
-      minLength: 1
-      maxLength: 50
-    AddApplicationInputProcessingConfigurationResponse:
-      type: object
-      properties:
-        ApplicationARN:
-          allOf:
-          - $ref: '#/components/schemas/ResourceARN'
-          - description: The Amazon Resource Name (ARN) of the application.
-        ApplicationVersionId:
-          allOf:
-          - $ref: '#/components/schemas/ApplicationVersionId'
-          - description: 'Provides the current application version. '
-        InputId:
-          allOf:
-          - $ref: '#/components/schemas/Id'
-          - description: The input ID that is associated with the application input. This is the ID that Kinesis Data Analytics assigns to each input configuration that you add to your application.
-        InputProcessingConfigurationDescription:
-          allOf:
-          - $ref: '#/components/schemas/InputProcessingConfigurationDescription'
-          - description: The description of the preprocessor that executes on records in this input before the application's code is run.
-    ConcurrentModificationException: {}
-    ApplicationVersionId:
-      type: integer
-      minimum: 1
-      maximum: 999999999
-    ApplicationName:
-      type: string
-      pattern: '[a-zA-Z0-9_.-]+'
-      minLength: 1
-      maxLength: 128
-    ResourceInUseException: {}
     RoleARN:
       type: string
       pattern: arn:.*
       minLength: 1
       maxLength: 2048
-  parameters:
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Date:
-      name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
   securitySchemes:
     hmac:
       type: apiKey

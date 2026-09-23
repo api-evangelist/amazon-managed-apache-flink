@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2018-05-23'
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationReferenceDataSource #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationReferenceDataSource #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationReferenceDataSource API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics…'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/kinesisanalyticsv2-2018-05-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,10 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: DeleteApplicationReferenceDataSource
-      description: <p>Deletes a reference data source configuration from the specified SQL-based Kinesis Data Analytics application's configuration.</p> <p>If the application is running, Kinesis Data Analytics immediately removes the in-application table that you created using the <a>AddApplicationReferenceDataSource</a> operation. </p>
+      description: 'Deletes a reference data source configuration from the specified SQL-based Kinesis Data Analytics application''s configuration.
+
+
+        If the application is running, Kinesis Data Analytics immediately removes the in-application table that you created using the AddApplicationReferenceDataSource operation.'
       responses:
         '200':
           description: Success
@@ -182,38 +186,14 @@ paths:
       - '#X Amz Target=KinesisAnalytics 20180523.DeleteApplicationReferenceDataSource'
 components:
   parameters:
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Credential:
-      name: X-Amz-Credential
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
@@ -224,13 +204,32 @@ components:
       schema:
         type: string
       required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
   schemas:
-    InvalidRequestException: {}
-    ResourceARN:
-      type: string
-      pattern: arn:.*
-      minLength: 1
-      maxLength: 2048
+    ConcurrentModificationException: {}
     DeleteApplicationReferenceDataSourceRequest:
       type: object
       required:
@@ -251,13 +250,6 @@ components:
           allOf:
           - $ref: '#/components/schemas/Id'
           - description: 'The ID of the reference data source. When you add a reference data source to your application using the <a>AddApplicationReferenceDataSource</a>, Kinesis Data Analytics assigns an ID. You can use the <a>DescribeApplication</a> operation to get the reference ID. '
-    InvalidArgumentException: {}
-    ConcurrentModificationException: {}
-    ResourceNotFoundException: {}
-    ApplicationVersionId:
-      type: integer
-      minimum: 1
-      maximum: 999999999
     ApplicationName:
       type: string
       pattern: '[a-zA-Z0-9_.-]+'
@@ -269,6 +261,7 @@ components:
       pattern: '[a-zA-Z0-9_.-]+'
       minLength: 1
       maxLength: 50
+    ResourceNotFoundException: {}
     DeleteApplicationReferenceDataSourceResponse:
       type: object
       properties:
@@ -280,6 +273,17 @@ components:
           allOf:
           - $ref: '#/components/schemas/ApplicationVersionId'
           - description: The updated version ID of the application.
+    ApplicationVersionId:
+      type: integer
+      minimum: 1
+      maximum: 999999999
+    ResourceARN:
+      type: string
+      pattern: arn:.*
+      minLength: 1
+      maxLength: 2048
+    InvalidArgumentException: {}
+    InvalidRequestException: {}
   securitySchemes:
     hmac:
       type: apiKey

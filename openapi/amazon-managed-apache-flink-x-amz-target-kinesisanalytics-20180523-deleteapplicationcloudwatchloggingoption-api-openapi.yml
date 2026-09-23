@@ -1,8 +1,8 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: '2018-05-23'
   x-release: v4
-  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationCloudWatchLoggingOption API'
+  title: 'Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics…'
   description: Amazon Kinesis Data Analytics is a fully managed service that you can use to process and analyze streaming data using Java, SQL, or Scala. The service enables you to quickly author and run Java, SQL, or Scala code against streaming sources to perform time series analytics, feed real-time dashboards, and create real-time metrics.
   x-logo:
     url: https://twitter.com/awscloud/profile_image?size=original
@@ -24,6 +24,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/kinesisanalyticsv2-2018-05-23.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -125,7 +126,7 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: DeleteApplicationCloudWatchLoggingOption
-      description: 'Deletes an Amazon CloudWatch log stream from an Kinesis Data Analytics application. '
+      description: Deletes an Amazon CloudWatch log stream from an Kinesis Data Analytics application.
       responses:
         '200':
           description: Success
@@ -183,7 +184,7 @@ paths:
           type: string
           enum:
           - KinesisAnalytics_20180523.DeleteApplicationCloudWatchLoggingOption
-      summary: Amazon Managed Service for Apache Flink Delete Application Cloud Watch Logging Option
+      summary: Amazon Managed Service for Apache Flink Delete Application Cloud Watch Logging…
       tags:
       - '#X Amz Target=KinesisAnalytics 20180523.DeleteApplicationCloudWatchLoggingOption'
 components:
@@ -206,11 +207,28 @@ components:
           - $ref: '#/components/schemas/RoleARN'
           - description: <p>The IAM ARN of the role to use to send application messages. </p> <note> <p>Provided for backward compatibility. Applications created with the current API version have an application-level service execution role rather than a resource-level role.</p> </note>
       description: Describes the Amazon CloudWatch logging option.
-    LogStreamARN:
+    ResourceInUseException: {}
+    ResourceNotFoundException: {}
+    Id:
       type: string
-      pattern: arn:.*
+      pattern: '[a-zA-Z0-9_.-]+'
       minLength: 1
-      maxLength: 2048
+      maxLength: 50
+    CloudWatchLoggingOptionDescriptions:
+      type: array
+      items:
+        $ref: '#/components/schemas/CloudWatchLoggingOptionDescription'
+    ConditionalToken:
+      type: string
+      pattern: '[a-zA-Z0-9-_+/=]+'
+      minLength: 1
+      maxLength: 512
+    ApplicationVersionId:
+      type: integer
+      minimum: 1
+      maximum: 999999999
+    InvalidArgumentException: {}
+    InvalidRequestException: {}
     DeleteApplicationCloudWatchLoggingOptionResponse:
       type: object
       properties:
@@ -226,16 +244,6 @@ components:
           allOf:
           - $ref: '#/components/schemas/CloudWatchLoggingOptionDescriptions'
           - description: The descriptions of the remaining CloudWatch logging options for the application.
-    ResourceARN:
-      type: string
-      pattern: arn:.*
-      minLength: 1
-      maxLength: 2048
-    InvalidArgumentException: {}
-    CloudWatchLoggingOptionDescriptions:
-      type: array
-      items:
-        $ref: '#/components/schemas/CloudWatchLoggingOptionDescription'
     DeleteApplicationCloudWatchLoggingOptionRequest:
       type: object
       required:
@@ -259,56 +267,31 @@ components:
           allOf:
           - $ref: '#/components/schemas/ConditionalToken'
           - description: A value you use to implement strong concurrency for application updates. You must provide the <code>CurrentApplicationVersionId</code> or the <code>ConditionalToken</code>. You get the application's current <code>ConditionalToken</code> using <a>DescribeApplication</a>. For better concurrency support, use the <code>ConditionalToken</code> parameter instead of <code>CurrentApplicationVersionId</code>.
-    InvalidRequestException: {}
-    ResourceNotFoundException: {}
-    Id:
-      type: string
-      pattern: '[a-zA-Z0-9_.-]+'
-      minLength: 1
-      maxLength: 50
-    ConditionalToken:
-      type: string
-      pattern: '[a-zA-Z0-9-_+/=]+'
-      minLength: 1
-      maxLength: 512
-    ConcurrentModificationException: {}
-    ApplicationVersionId:
-      type: integer
-      minimum: 1
-      maximum: 999999999
     ApplicationName:
       type: string
       pattern: '[a-zA-Z0-9_.-]+'
       minLength: 1
       maxLength: 128
-    ResourceInUseException: {}
+    ConcurrentModificationException: {}
+    InvalidApplicationConfigurationException: {}
+    ResourceARN:
+      type: string
+      pattern: arn:.*
+      minLength: 1
+      maxLength: 2048
     RoleARN:
       type: string
       pattern: arn:.*
       minLength: 1
       maxLength: 2048
-    InvalidApplicationConfigurationException: {}
+    LogStreamARN:
+      type: string
+      pattern: arn:.*
+      minLength: 1
+      maxLength: 2048
   parameters:
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
@@ -325,8 +308,26 @@ components:
       schema:
         type: string
       required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Date:
       name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
