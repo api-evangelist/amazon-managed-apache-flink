@@ -6,9 +6,7 @@
   "outputs": [
     "amazon-managed-apache-flink-amazon-kinesis-analytics-api-openapi.yml"
   ],
-  "archived": [
-    "deleted 31 superseded output(s) from the previous generation"
-  ],
+  "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
@@ -46,40 +44,9 @@
     "amazon-managed-apache-flink-openapi-original.yaml: tagged paths POST /#X-Amz-Target=KinesisAnalytics_20180523.UpdateApplication -> Amazon Kinesis Analytics",
     "amazon-managed-apache-flink-openapi-original.yaml: tagged paths POST /#X-Amz-Target=KinesisAnalytics_20180523.UpdateApplicationMaintenanceConfiguration -> Amazon Kinesis Analytics",
     "amazon-managed-apache-flink-openapi-original.yaml: declared missing tag: Amazon Kinesis Analytics",
-    "superseded outputs removed: amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationcloudwatchloggingoption-api-openapi.yml, amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinput-api-openapi.yml, amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinputprocessingconfiguration-api-openapi.yml, amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationoutput-api-openapi.yml, amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationreferencedatasource-api-openapi.yml \u2026",
-    "apis.yml register: written (+1 apis, 1 total)"
+    "apis.yml register: already-registered"
   ],
   "skipped": [
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationcloudwatchloggingoption-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinput-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinputprocessingconfiguration-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationoutput-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationreferencedatasource-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationvpcconfiguration-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplication-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationpresignedurl-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationsnapshot-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplication-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationcloudwatchloggingoption-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationinputprocessingconfiguration-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationoutput-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationreferencedatasource-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationsnapshot-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationvpcconfiguration-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplication-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationsnapshot-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationversion-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-discoverinputschema-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplications-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationsnapshots-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationversions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listtagsforresource-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-rollbackapplication-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-startapplication-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-stopapplication-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-tagresource-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-untagresource-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplication-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-updateapplicationmaintenanceconfiguration-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+    "amazon-managed-apache-flink-amazon-kinesis-analytics-api-openapi.yml: previously refined output, superseded by openapi/_original/"
   ]
 }
