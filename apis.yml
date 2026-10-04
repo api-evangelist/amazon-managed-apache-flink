@@ -67,6 +67,9 @@ apis:
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
 common:
+- type: CapabilityMap
+  url: capabilities/amazon-managed-apache-flink-capability-edges.yml
+  name: Amazon Managed Service for Apache Flink Business Capability Map
 - type: Website
   url: https://aws.amazon.com/managed-service-apache-flink/
 - type: PostmanWorkspace

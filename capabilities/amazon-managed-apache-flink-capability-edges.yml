@@ -1,0 +1,27 @@
+slug: amazon-managed-apache-flink
+provider: Amazon Managed Service for Apache Flink
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 1
+edges:
+- tag: Amazon Kinesis Analytics
+  spec_file: amazon-managed-apache-flink-amazon-kinesis-analytics-api-openapi.yml
+  capability_id: BC-610.50
+  capability_id_l1: BC-610
+  capability_name: Analytics & BI Management
+  confidence: 0.7
+  evidence: '"process and analyze streaming data using Java, SQL, or Scala ... perform time series analytics,
+    feed real-time dashboards, and create real-time metrics"'
+  reason: Managed streaming analytics application lifecycle (CreateApplication, AddApplicationInput/Output,
+    reference data sources). This is a data/analytics platform service, best placed under Information
+    & Data Management, analytics delivery. Some ambiguity between analytics delivery and data architecture,
+    hence moderate confidence.
