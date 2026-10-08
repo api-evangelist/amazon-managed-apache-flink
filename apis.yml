@@ -67,6 +67,12 @@ apis:
   - type: JSONLD
     url: json-ld/amazon-managed-apache-flink-context.jsonld
 common:
+- type: Plans
+  url: plans/amazon-managed-apache-flink-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/amazon-managed-apache-flink-rate-limits.yml
+- type: FinOps
+  url: finops/amazon-managed-apache-flink-finops.yml
 - type: CapabilityMap
   url: capabilities/amazon-managed-apache-flink-capability-edges.yml
   name: Amazon Managed Service for Apache Flink Business Capability Map
