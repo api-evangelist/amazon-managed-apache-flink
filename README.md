@@ -1,4 +1,4 @@
-# Amazon Managed Service for Apache Flink (amazon-managed-apache-flink)
+# Amazon Managed Service for Apache Flink
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,132 +66,261 @@
 
 Amazon Managed Service for Apache Flink is the easiest way to transform and analyze streaming data in real time with Apache Flink. It enables you to build sophisticated streaming analytics applications using Apache Flink with fully managed infrastructure and pay-as-you-go pricing.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/amazon-managed-apache-flink/refs/heads/main/apis.yml)
+**Areas:** Apache Flink · AWS · Big Data · Real-Time Processing · Streaming Analytics
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Amazon Managed Service for Apache Flink on APIs.io
 
-## Tags:
+Everything profiled for Amazon Managed Service for Apache Flink is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amazon-managed-apache-flink/](https://apis.io/providers/amazon-managed-apache-flink/)** — or go straight to one of the APIs or properties below.
 
- - Apache Flink, AWS, Big Data, Real-Time Processing, Streaming Analytics
+### APIs (2)
 
-## Timestamps
+- [Amazon Managed Service for Apache Flink Amazon Kinesis Analytics API](https://apis.io/apis/amazon-managed-apache-flink/amazon-managed-apache-flink-amazon-kinesis-analytics-api/) — The Amazon Kinesis Analytics API from Amazon Managed Service for Apache Flink — 31 operation(s) for amazon kinesis analytics.
+- [Amazon Managed Service for Apache Flink Managed Apache Flink Operations API](https://apis.io/apis/amazon-managed-apache-flink/amazon-managed-apache-flink-operations-api/) — The Managed Apache Flink Operations API from Amazon Managed Service for Apache Flink — 2 operation(s) for managed apache flink operations.
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Amazon Managed Service for Apache Flink API
-The Amazon Managed Service for Apache Flink API provides programmatic access to create and manage streaming applications, application versions, snapshots, and VPC configurations for Apache Flink workloads. Covers 31 paths and 31 operations.
+#### Agentic access (1)
 
-**Human URL:** [https://aws.amazon.com/managed-service-apache-flink/](https://aws.amazon.com/managed-service-apache-flink/)
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags:
+- [Amazon Managed Apache Flink Agentic Access](https://apis.io/agentic-access/amazon-managed-apache-flink/amazon-managed-apache-flink-agentic-access/)
 
- - Apache Flink, Real-Time Processing, Streaming Analytics
+#### JSON Schema (297)
 
-#### Properties
+The data models the API reads and writes.
 
-- [Documentation](https://docs.aws.amazon.com/managed-flink/latest/apiv2/Welcome.html)
-- [OpenAPI](openapi/amazon-managed-apache-flink-openapi-original.yaml)
-- [GettingStarted](https://aws.amazon.com/managed-service-apache-flink/getting-started/)
-- [Pricing](https://aws.amazon.com/managed-service-apache-flink/pricing/)
-- [FAQ](https://aws.amazon.com/managed-service-apache-flink/faqs/)
+- [AddApplicationCloudWatchLoggingOptionRequest](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-cloud-watch-logging-option-request/)
+- [AddApplicationCloudWatchLoggingOptionResponse](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-cloud-watch-logging-option-response/)
+- [AddApplicationInputProcessingConfigurationRequest](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-processing-configuration-request/)
+- [AddApplicationInputProcessingConfigurationResponse](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-processing-configuration-response/)
+- [AddApplicationInputRequest](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-request/)
+- [AddApplicationInputResponse](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-response/)
+- [AddApplicationOutputRequest](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-output-request/)
+- [AddApplicationOutputResponse](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-output-response/)
+- [AddApplicationReferenceDataSourceRequest](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-reference-data-source-request/)
+- [AddApplicationReferenceDataSourceResponse](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-reference-data-source-response/)
+- [AddApplicationVpcConfigurationRequest](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-vpc-configuration-request/)
+- [AddApplicationVpcConfigurationResponse](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-vpc-configuration-response/)
+- [ApplicationCodeConfiguration](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-code-configuration/)
+- [ApplicationCodeConfigurationDescription](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-code-configuration-description/)
+- [ApplicationCodeConfigurationUpdate](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-code-configuration-update/)
+- [ApplicationConfiguration](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-configuration/)
+- [ApplicationConfigurationDescription](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-configuration-description/)
+- [ApplicationConfigurationUpdate](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-configuration-update/)
+- [ApplicationDescription](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-description/)
+- [ApplicationDetail](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-detail/)
+- [ApplicationMaintenanceConfigurationDescription](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-configuration-description/)
+- [ApplicationMaintenanceConfigurationUpdate](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-configuration-update/)
+- [ApplicationMaintenanceWindowEndTime](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-window-end-time/)
+- [ApplicationMaintenanceWindowStartTime](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-window-start-time/)
+- [ApplicationMode](https://apis.io/schemas/amazon-managed-apache-flink/amazon-managed-apache-flink-application-mode/)
+- …and 272 more published on APIs.io
 
-## Common Properties
+#### JSON Structure (297)
 
-- [Portal](https://aws.amazon.com/managed-service-apache-flink/)
+Data models expressed in JSON Structure.
+
+- [Amazon Managed Apache Flink Add Application Cloud Watch Logging Option Request Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-cloud-watch-logging-option-request-structure/)
+- [Amazon Managed Apache Flink Add Application Cloud Watch Logging Option Response Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-cloud-watch-logging-option-response-structure/)
+- [Amazon Managed Apache Flink Add Application Input Processing Configuration Request Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-processing-configuration-request-structure/)
+- [Amazon Managed Apache Flink Add Application Input Processing Configuration Response Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-processing-configuration-response-structure/)
+- [Amazon Managed Apache Flink Add Application Input Request Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-request-structure/)
+- [Amazon Managed Apache Flink Add Application Input Response Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-response-structure/)
+- [Amazon Managed Apache Flink Add Application Output Request Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-output-request-structure/)
+- [Amazon Managed Apache Flink Add Application Output Response Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-output-response-structure/)
+- [Amazon Managed Apache Flink Add Application Reference Data Source Request Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-reference-data-source-request-structure/)
+- [Amazon Managed Apache Flink Add Application Reference Data Source Response Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-reference-data-source-response-structure/)
+- [Amazon Managed Apache Flink Add Application Vpc Configuration Request Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-vpc-configuration-request-structure/)
+- [Amazon Managed Apache Flink Add Application Vpc Configuration Response Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-vpc-configuration-response-structure/)
+- [Amazon Managed Apache Flink Application Code Configuration Description Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-code-configuration-description-structure/)
+- [Amazon Managed Apache Flink Application Code Configuration Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-code-configuration-structure/)
+- [Amazon Managed Apache Flink Application Code Configuration Update Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-code-configuration-update-structure/)
+- [Amazon Managed Apache Flink Application Configuration Description Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-configuration-description-structure/)
+- [Amazon Managed Apache Flink Application Configuration Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-configuration-structure/)
+- [Amazon Managed Apache Flink Application Configuration Update Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-configuration-update-structure/)
+- [Amazon Managed Apache Flink Application Description Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-description-structure/)
+- [Amazon Managed Apache Flink Application Detail Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-detail-structure/)
+- [Amazon Managed Apache Flink Application Maintenance Configuration Description Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-configuration-description-structure/)
+- [Amazon Managed Apache Flink Application Maintenance Configuration Update Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-configuration-update-structure/)
+- [Amazon Managed Apache Flink Application Maintenance Window End Time Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-window-end-time-structure/)
+- [Amazon Managed Apache Flink Application Maintenance Window Start Time Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-window-start-time-structure/)
+- [Amazon Managed Apache Flink Application Mode Structure](https://apis.io/json-structure/amazon-managed-apache-flink/amazon-managed-apache-flink-application-mode-structure/)
+- …and 272 more published on APIs.io
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Amazon Managed Apache Flink Context](https://apis.io/jsonld/amazon-managed-apache-flink/amazon-managed-apache-flink-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Amazon Managed Apache Flink Vocabulary](https://apis.io/vocabularies/amazon-managed-apache-flink/amazon-managed-apache-flink-vocabulary/)
+
+#### Examples (297)
+
+Example requests and responses.
+
+- [Amazon Managed Apache Flink Add Application Cloud Watch Logging Option Request Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-cloud-watch-logging-option-request-example/)
+- [Amazon Managed Apache Flink Add Application Cloud Watch Logging Option Response Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-cloud-watch-logging-option-response-example/)
+- [Amazon Managed Apache Flink Add Application Input Processing Configuration Request Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-processing-configuration-request-example/)
+- [Amazon Managed Apache Flink Add Application Input Processing Configuration Response Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-processing-configuration-response-example/)
+- [Amazon Managed Apache Flink Add Application Input Request Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-request-example/)
+- [Amazon Managed Apache Flink Add Application Input Response Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-input-response-example/)
+- [Amazon Managed Apache Flink Add Application Output Request Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-output-request-example/)
+- [Amazon Managed Apache Flink Add Application Output Response Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-output-response-example/)
+- [Amazon Managed Apache Flink Add Application Reference Data Source Request Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-reference-data-source-request-example/)
+- [Amazon Managed Apache Flink Add Application Reference Data Source Response Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-reference-data-source-response-example/)
+- [Amazon Managed Apache Flink Add Application Vpc Configuration Request Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-vpc-configuration-request-example/)
+- [Amazon Managed Apache Flink Add Application Vpc Configuration Response Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-add-application-vpc-configuration-response-example/)
+- [Amazon Managed Apache Flink Application Code Configuration Description Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-code-configuration-description-example/)
+- [Amazon Managed Apache Flink Application Code Configuration Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-code-configuration-example/)
+- [Amazon Managed Apache Flink Application Code Configuration Update Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-code-configuration-update-example/)
+- [Amazon Managed Apache Flink Application Configuration Description Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-configuration-description-example/)
+- [Amazon Managed Apache Flink Application Configuration Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-configuration-example/)
+- [Amazon Managed Apache Flink Application Configuration Update Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-configuration-update-example/)
+- [Amazon Managed Apache Flink Application Description Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-description-example/)
+- [Amazon Managed Apache Flink Application Detail Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-detail-example/)
+- [Amazon Managed Apache Flink Application Maintenance Configuration Description Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-configuration-description-example/)
+- [Amazon Managed Apache Flink Application Maintenance Configuration Update Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-configuration-update-example/)
+- [Amazon Managed Apache Flink Application Maintenance Window End Time Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-window-end-time-example/)
+- [Amazon Managed Apache Flink Application Maintenance Window Start Time Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-maintenance-window-start-time-example/)
+- [Amazon Managed Apache Flink Application Mode Example](https://apis.io/examples/amazon-managed-apache-flink/amazon-managed-apache-flink-application-mode-example/)
+- …and 272 more published on APIs.io
+
+#### Collections (62)
+
+Postman and Open Collection request collections.
+
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationcloudwatchloggingoption-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationInput API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinput-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationInputProcessingConfiguration API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationinputprocessingconfiguration-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationOutput API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationoutput-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationReferenceDataSource API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationreferencedatasource-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationVpcConfiguration API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-addapplicationvpcconfiguration-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.CreateApplication API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplication-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.CreateApplicationPresignedUrl API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationpresignedurl-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.CreateApplicationSnapshot API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-createapplicationsnapshot-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplication API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplication-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationCloudWatchLoggingOption API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationcloudwatchloggingoption-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationInputProcessingConfiguration API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationinputprocessingconfiguration-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationOutput API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationoutput-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationReferenceDataSource API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationreferencedatasource-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationSnapshot API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationsnapshot-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DeleteApplicationVpcConfiguration API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-deleteapplicationvpcconfiguration-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DescribeApplication API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplication-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DescribeApplicationSnapshot API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationsnapshot-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DescribeApplicationVersion API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-describeapplicationversion-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.DiscoverInputSchema API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-discoverinputschema-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.ListApplications API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplications-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.ListApplicationSnapshots API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationsnapshots-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.ListApplicationVersions API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listapplicationversions-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.ListTagsForResource API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-listtagsforresource-api/)
+- [Amazon Kinesis Analytics #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.AddApplicationCloudWatchLoggingOption #X Amz Target=KinesisAnalytics 20180523.RollbackApplication API](https://apis.io/collections/amazon-managed-apache-flink/open-amazon-managed-apache-flink-x-amz-target-kinesisanalytics-20180523-rollbackapplication-api/)
+- …and 37 more published on APIs.io
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Amazon Managed Service for Apache Flink — jsonschema rules](https://apis.io/rules/amazon-managed-apache-flink/amazon-managed-apache-flink-jsonschema-spectral-rules/)
+- [Amazon Managed Service for Apache Flink API Rules](https://apis.io/rules/amazon-managed-apache-flink/amazon-managed-apache-flink-spectral-rules/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Amazon Managed Apache Flink Authentication](https://apis.io/security/amazon-managed-apache-flink/amazon-managed-apache-flink-authentication/)
+- [Amazon Managed Apache Flink Domain Security](https://apis.io/security/amazon-managed-apache-flink/amazon-managed-apache-flink-domain-security/)
+- [Amazon Managed Apache Flink Trust Center](https://apis.io/security/amazon-managed-apache-flink/amazon-managed-apache-flink-trust-center/)
+- [Amazon Managed Apache Flink Vulnerability Disclosure](https://apis.io/security/amazon-managed-apache-flink/amazon-managed-apache-flink-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Amazon Managed Apache Flink Plans Pricing](https://apis.io/plans/amazon-managed-apache-flink/amazon-managed-apache-flink-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Amazon Managed Apache Flink Rate Limits](https://apis.io/rate-limits/amazon-managed-apache-flink/amazon-managed-apache-flink-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Amazon Managed Apache Flink Finops](https://apis.io/finops/amazon-managed-apache-flink/amazon-managed-apache-flink-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://aws.amazon.com/managed-service-apache-flink/)
 - [Documentation](https://docs.aws.amazon.com/managed-flink/)
-- [TermsOfService](https://aws.amazon.com/service-terms/)
-- [PrivacyPolicy](https://aws.amazon.com/privacy/)
 - [Support](https://aws.amazon.com/premiumsupport/)
 - [Blog](https://aws.amazon.com/blogs/big-data/tag/amazon-managed-service-for-apache-flink/)
-- [GitHubOrganization](https://github.com/aws)
-- [Console](https://console.aws.amazon.com/flink/)
-- [SignUp](https://portal.aws.amazon.com/billing/signup)
-- [Login](https://signin.aws.amazon.com/)
-- [StatusPage](https://health.aws.amazon.com/health/status)
-- [Contact](https://aws.amazon.com/contact-us/)
-- [SpectralRules](rules/amazon-managed-apache-flink-spectral-rules.yml)
-- [Vocabulary](vocabulary/amazon-managed-apache-flink-vocabulary.yaml)
-- [NaftikoCapability](capabilities/streaming-analytics-workflow.yaml)
+- [Terms of service](https://aws.amazon.com/service-terms/)
+- [Privacy policy](https://aws.amazon.com/privacy/)
+- [GitHub](https://github.com/aws)
+- [Status](https://health.aws.amazon.com/health/status)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Fully Managed Apache Flink | Run Apache Flink applications without managing infrastructure, patching, or capacity planning. |
-| Auto Scaling | Automatically scales application parallelism based on streaming data volume. |
-| Application Snapshots | Create point-in-time snapshots of application state for fault tolerance and version management. |
-| VPC Integration | Deploy Flink applications within a VPC for secure access to private data sources. |
-| Multiple Input Sources | Connect to Kinesis Data Streams, Kinesis Data Firehose, MSK, and S3 as data sources. |
+**Kin Score 54.5** — strong · rubric 0.25.0 · scored 2026-10-23
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 63.2 |
+| Contract governance | 27.3 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 59.0 |
+| Access clarity | 53.9 |
 
-| Name | Description |
-|------|-------------|
-| Real-Time Analytics | Build streaming analytics pipelines to analyze data as it arrives from IoT devices, logs, or transactions. |
-| Event-Driven Processing | Process and transform event streams for real-time dashboards and operational monitoring. |
-| Anomaly Detection | Detect anomalies in streaming data for fraud detection and security monitoring. |
-| ETL Pipelines | Build real-time ETL pipelines to transform and enrich streaming data before loading to destinations. |
+**Agent readiness 27.0** — agent-aware
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
 
-| Name | Description |
-|------|-------------|
-| Amazon Kinesis Data Streams | Use Kinesis streams as input sources for Flink applications. |
-| Amazon MSK | Connect to managed Kafka clusters as input sources. |
-| Amazon S3 | Read reference data from S3 and write output to S3 buckets. |
-| Amazon CloudWatch | Monitor application metrics and logs in CloudWatch. |
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
 
-## Artifacts
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/amazon-managed-apache-flink/](https://apis.io/providers/amazon-managed-apache-flink/).
 
-Machine-readable API specifications organized by format.
+## How this profile is made
 
-### OpenAPI
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-- [Amazon Managed Service for Apache Flink OpenAPI](openapi/amazon-managed-apache-flink-openapi-original.yaml)
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amazon Managed Service for Apache Flink: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-### JSON Schema
+## Open an issue
 
-297 schema files available in the [json-schema/](json-schema/) directory.
-
-### JSON Structure
-
-297 structure files available in the [json-structure/](json-structure/) directory.
-
-### JSON-LD
-
-- [Amazon Managed Service for Apache Flink Context](json-ld/amazon-managed-apache-flink-context.jsonld)
-
-### Examples
-
-297 example files available in the [examples/](examples/) directory.
-
-## Capabilities
-
-Naftiko capabilities organized as shared per-API definitions composed into customer-facing workflows.
-
-### Shared Per-API Definitions
-
-- [Amazon Managed Service for Apache Flink](capabilities/shared/managed-apache-flink.yaml) — 6 operations for application lifecycle management
-
-### Workflow Capabilities
-
-| Workflow | APIs Combined | Tools | Persona |
-|----------|--------------|-------|---------|
-| [Streaming Analytics Workflow](capabilities/streaming-analytics-workflow.yaml) | Amazon Managed Service for Apache Flink | 5 | Data Engineer, Analytics Engineer |
-
-## Vocabulary
-
-- [Amazon Managed Service for Apache Flink Vocabulary](vocabulary/amazon-managed-apache-flink-vocabulary.yaml) — Unified taxonomy mapping 5 resources, 8 actions, 1 workflow, and 2 personas
-
-## Rules
-
-- [Amazon Managed Service for Apache Flink Spectral Rules](rules/amazon-managed-apache-flink-spectral-rules.yml) — 18 rules across 7 categories
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amazon-managed-apache-flink/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
