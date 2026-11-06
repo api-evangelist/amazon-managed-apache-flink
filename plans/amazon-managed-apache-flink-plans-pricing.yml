@@ -44,7 +44,7 @@ plans:
   unit: GB-month
   included_quota: Optional point-in-time recovery
 x-canonical:
-  generated: '2026-11-02'
+  generated: '2026-11-06'
   vocabulary: engine/economics/plans-canonical.yml
   models:
   - hybrid
